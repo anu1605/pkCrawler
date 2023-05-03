@@ -1,0 +1,834 @@
+e" href="https://epaper.prabhatkhabar.com/t/18632"> 
+              SUPAUL 
+            </a>
+            </li></ul></section> </amp-accordion></li><li><amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown absolute top-0 left-0 right-0 bottom-0">
+              <section><header>Gaya</header><ul class="ampstart-dropdown-items list-reset m0 p0"><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/6204"> 
+              GAYA - City 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/18657"> 
+              KAIMUR 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/18658"> 
+              SASARAM 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/18659"> 
+              AURANGABAD 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/18660"> 
+              NAWADA 
+            </a>
+            </li></ul></section> </amp-accordion></li><li><amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown absolute top-0 left-0 right-0 bottom-0">
+              <section><header>Magazines</header><ul class="ampstart-dropdown-items list-reset m0 p0"><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/12615"> 
+              Surbhi 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/6267"> 
+               RAVI RANG 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/6258"> 
+              Healthy Life 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/6240"> 
+              BAL-PRABHAT 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/6173"> 
+              Awsar 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/27580"> 
+              LOKSABHA ELECTION 2019 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/12091"> 
+              Jyotish Visheshank 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/17860"> 
+              Deepawali Visheshank 
+            </a>
+            </li><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/24504"> 
+              RAMAZAN 
+            </a>
+            </li></ul></section> </amp-accordion></li><li><amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown absolute top-0 left-0 right-0 bottom-0">
+              <section><header>panchayatnama</header><ul class="ampstart-dropdown-items list-reset m0 p0"><li class="ampstart-dropdown-item">            <a class="text-decoration-none" href="https://epaper.prabhatkhabar.com/t/6272"> 
+              Ranchi-Panchayatnama 
+            </a>
+            </li></ul></section> </amp-accordion></li>             <span><a href="https://epaper.prabhatkhabar.com/t/6272"><amp-img src="https://sf.readwhere.com/read/theme/panchayatnama/images/Panchayatnama_newlogo.png?v=1473402024" width="134" height="50"></amp-img></a></span> 
+      </ul>
+
+  </amp-sidebar>
+  <!-- header start -->
+  <header>
+    <div class="amp-section-box head-top">
+        <div class="top-header">
+            <div class="container-box">
+              <a href="https://www.prabhatkhabar.com/" class="web-link">Prabhat Khabar Main Site </a>
+              <a href="http://www.panchayatnama.com/" class="web-link">Panchayatnama</a>
+            </div>  
+        </div>  
+        <div class="col-12">
+          <div class="container-box">
+            <div class="md-col-4 col-12 logo-box">
+              <div class="amp-logo-left">
+                <a href="https://epaper.prabhatkhabar.com/" class="d-n-s">
+                  <amp-img src="https://sf.readwhere.com/read/theme/prabhatkhabar/images/logo.png" alt="logo" height="68" width="240"></amp-img>
+                </a>
+                <a href="https://epaper.prabhatkhabar.com/" class="d-n-l">
+                  <amp-img src="https://sf.readwhere.com/read/theme/prabhatkhabar/images/logo.png" alt="logo" height="68" width="240"></amp-img>
+                </a>
+                <div class="date-box">
+                  <span>
+                    Wednesday, May 03, 2023 | 05:20 PM                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="md-col-8">
+              <div class="add-top">
+                <div class="lg-d dn-1024">
+                  <amp-ad
+                       layout="fixed"
+                       width="728"
+                       height="90"
+                       type="adsense"
+                       data-ad-client="ca-pub-2931203390134969"
+                       data-ad-slot="2693900348">
+                  </amp-ad>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="menu-bar">
+          <div class="container-box">
+          <button on="tap:sidebar-left.toggle" class="ampstart-btn caps m2">
+            <span class="span_color">  </span>
+                    <span class="span_color">  </span>
+                    <span class="span_color">  </span>
+                    <div id="target-element-left">Editions</div>
+          </button>
+
+          <!-- main menu -->
+           <div class=" main-menu" >
+             <ul class="navbar-nav mr-auto top-menu">
+               
+                 <!-- main -->
+                 <li><a href="https://epaper.prabhatkhabar.com/">
+                    <amp-img src="https://marketing.readwhere.com/h-wite.png"
+                      width="25"
+                      height="20"
+                      alt="AMP">
+                    </amp-img>
+                  </a></li>
+
+
+                    <!-- menu magazine -->
+
+                    <li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Ranchi <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6185">
+                               RANCHI - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18525">
+                               Garhwa 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18526">
+                               Hazaribagh  Chatra 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18527">
+                               Gumla 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18528">
+                               Koderma 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18529">
+                               Khalari  
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18530">
+                               Khunti 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18532">
+                               Lohardaga 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18534">
+                               Palamu 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18536">
+                               Ramgarh 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18538">
+                               Silli 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Patna <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6192">
+                               PATNA - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18557">
+                               ARRAH 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18558">
+                               BEGUSARAI 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18560">
+                               BIHARSHARIF 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18567">
+                               BUXAR 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18572">
+                               GOPALGANJ 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18576">
+                               HAJIPUR 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18577">
+                               JEHANABAD 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18578">
+                               SARAN 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18579">
+                               SIWAN 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/30166">
+                               BALLIA 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Kolkata <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6244">
+                               KOLKATA - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6235">
+                               SILIGURI - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18661">
+                               SILPANCHAL 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Jamshedpur <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6232">
+                               JAMSHEDPUR - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18612">
+                               CHAIBASA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18614">
+                               GHATSILA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18613">
+                               CHANDIL 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/30159">
+                               ROURKELA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/33089">
+                               BHUBANESWAR 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Dhanbad <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6236">
+                               DHANBAD - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18616">
+                               BOKARO 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18617">
+                               GIRIDIH 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Deoghar <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6228">
+                               DEOGHAR - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18619">
+                               JAMTARA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18618">
+                               DUMKA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18621">
+                               GODDA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18620">
+                               SAHIBGANJ  
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/25463">
+                               PAKUR 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Muzaffarpur <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6211">
+                               MUZAFFARPUR - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18633">
+                               BETIAH 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18635">
+                               DARBHANGA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18636">
+                               MADHUBANI 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18637">
+                               MOTIHARI 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18639">
+                               SITAMARAHI 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18640">
+                               SAMSTIPUR 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Bhagalpur <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6218">
+                               BHAGALPUR - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/23762">
+                               KISHANGANJ 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18622">
+                               ARARIA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18623">
+                               BANKA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18625">
+                               KATIHAR 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18626">
+                               KHAGARIA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18627">
+                               LAKHISARAI 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/19402">
+                               JAMUI 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18628">
+                               MADHEPURA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18629">
+                               MUNGER 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18630">
+                               PURNIA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18631">
+                               SAHRSA 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18632">
+                               SUPAUL 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Gaya <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6204">
+                               GAYA - City 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18657">
+                               KAIMUR 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18658">
+                               SASARAM 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18659">
+                               AURANGABAD 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/18660">
+                               NAWADA 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Magazines <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/12615">
+                               Surbhi 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6267">
+                                RAVI RANG 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6258">
+                               Healthy Life 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6240">
+                               BAL-PRABHAT 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6173">
+                               Awsar 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/27580">
+                               LOKSABHA ELECTION 2019 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/12091">
+                               Jyotish Visheshank 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/17860">
+                               Deepawali Visheshank 
+                            </a>
+                                                 
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/24504">
+                               RAMAZAN 
+                            </a>
+                            </div>                                </li><li class="nav-item dropdown show" role="presentation" >                        <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            panchayatnama <span class="caret"></span> </a>
+                        <div class="dropdown-menu " aria-labelledby="navbarDropdown" id="s-div">                     
+                            <a class="dropdown-item" href="https://epaper.prabhatkhabar.com/t/6272">
+                               Ranchi-Panchayatnama 
+                            </a>
+                            </div>                                </li>                
+                <span><a href="https://epaper.prabhatkhabar.com/t/6272"><amp-img src="https://sf.readwhere.com/read/theme/panchayatnama/images/Panchayatnama_newlogo.png?v=1473402024" width="94" height="35"></amp-img></a></span>
+
+                </ul>
+          </div>
+
+          <!-- main menu end -->
+
+        </div>
+    </div> 
+  </header>
+  <!-- header end -->
+  <!-- conatiner start -->  
+  <div class="amp-section-box mt-10">
+    <div class="container-box">
+
+      <div class="col-md-12">
+        <div class="top-add">
+          <div style="float: left;width:100%;margin:0px 0 10px 0;" class="d-n-s">
+            <span class="break-news">Trending News</span>
+              <amp-iframe  layout="responsive" width="400" height="65" 
+                        sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0"
+                        src="https://adxwidgets.readwhere.com/trendingxml?site=prabhatkhabar">
+              <amp-img layout="fill" width="1" height="1" style="width:1px;"
+                       src="https://marketing.readwhere.com/favicon_pk.ico"
+                       placeholder></amp-img>
+            </amp-iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- container start -->
+      <div class="md-col-8 epaper-area">
+
+        <div class="top-add">
+          
+          <div class="sm-d">
+            <!-- <amp-ad width=300 height=250
+                type="doubleclick"
+                data-slot="/1009127/ca-pub-6070398767421094-tag/PK_ePaper_Mob_TOP_300x250_ADX">
+            </amp-ad> -->
+              <amp-ad
+                 layout="fixed"
+                 width="300"
+                 height="250"
+                 type="adsense"
+                 data-ad-client="ca-pub-2931203390134969"
+                 data-ad-slot="4114809133">
+            </amp-ad>
+          </div>
+        </div>
+
+        <!-- weakly end -->
+        
+       <h2> Garhwa  </h2>
+                    <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3698167">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/6b51f06ca83497f8-4aee3c9e-36f8daa0-bd9b996c-a92bafd7c5b5160f_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> May 03, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3697282">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/90a6f1d7b9447e85-f8e0fedd-01bbd3f7-a34fee82-1adec5aaa494eeb5_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> May 01, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3696845">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/bbf8aa3ca6b08ca9-25bef8fa-d62a79e7-1cff4158-eea43d414a670cdc_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 30, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3696324">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/56e41940aa1f2ef7-a5dc8312-a7c4d68f-d12807d3-d65fb87d497233be_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 29, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3695815">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/1c4cbc30a9518fac-179af051-cc5b4aeb-7fd79c58-6e5c531d28fa1da0_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 28, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3695338">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/9d058eb96d217534-2d4ede92-b35f6712-f5d45117-e2e612aa30245eac_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 27, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3694866">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/41f3211b1148d508-660c29bb-160f27ca-b37cb679-18281f6ae3ff4b99_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 26, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3694384">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/ae08a4f3e1804e2b-a5d05f35-192d0bb2-8ca0d5e1-9caf189e5b5c9a9d_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 25, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3693884">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/5091fca5bcc2d11a-c52bf0b6-582ba857-4e61c593-3f06bcfd6c30c225_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 24, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3693577">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/4f36f4e6004b4cc7-0717d4c4-b13cd59e-886b4b56-2a5eb74d1222d6c9_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 23, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3693049">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/8a178782ff677472-cc26e46c-82723228-9c9653f8-99e9b7c53f9f40c1_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 22, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3692705">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/c2bd5d47c72bab5e-39e1097c-0ed572d9-466b6738-d682ef897b5591ba_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 21, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3692138">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/419cabce8ceb73de-d995c773-d1acf9f7-66c136d6-bfbe525a5e26ad90_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 20, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3691719">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/91222a2e608213ee-4aa8cbcb-933e0035-c953ead8-372b1e79a99ab50a_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 19, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3691161">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/767d0c92068688e7-e1487432-13b3a775-fb8904c6-a4ff11c75103a156_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 18, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3690598">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/136403ce23450c18-12d6d8cc-89bd0ed7-ff8406eb-d37047c2c04725d1_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 17, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3690277">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/c7d296993b8f530c-c5bc9870-e48401ad-34828d3f-986b51ca55923b6d_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 16, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3689664">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/04c00d850e42f71c-ff643147-c5f45be5-ca6a8f97-642287d7c6301008_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 15, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3689134">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/8b1b1a823694aea9-2e88514e-13e47c4b-eb8deb73-b08fab9b8eb32d99_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 14, 2023 </span></h3>
+                </div>
+              </a>
+        </div>         <div class="col-12 sm-col-3 md-col-4 card-box">              <a href="https://epaper.prabhatkhabar.com/r/3688651">
+                <div class="papr-card">
+                  <div class="papr-img">
+                    <amp-img src="https://webpcache.epapr.in/index.php?in=https://cache.epapr.in/resourcethumb/79ebb99d5e51d9a9-926868ca-a2eb9071-4e2cfe80-cac71cf24b1c7bf7_300.jpg"
+                      width="350"
+                      height="549"
+                      layout="responsive"
+                      alt="AMP">
+                    </amp-img>
+                  </div>
+                  <h3><span> Apr 13, 2023 </span></h3>
+                </div>
+              </a>
+        </div>
+      </div>
+      <!-- container end -->
+      <!-- side bar start -->
+      <div class="md-col-4 side-widget">
+        <div class="add-area lg-d">
+          <amp-ad
+               layout="fixed"
+               width="300"
+               height="600"
+               type="adsense"
+               data-ad-client="ca-pub-2931203390134969"
+               data-ad-slot="3053008904">
+            </amp-ad>
+        </div>
+        
+      </div>
+      <!-- side bar end -->
+    </div>
+  </div>
+  <!-- container end -->
+  <!-- footer start -->
+  <div class="amp-section-box foot-bg">
+    <div class="container-box">
+      <div class="copyright">
+        <h3>Copyrights © 2023. All Right Reserved.</h3>
+      </div>
+      <div class="power-by">
+        <h3><a href=""><span>Powered By</span> <amp-img src="https://www.readwhere.com/img/ver16_logo_white.png"
+            width="94"
+          height="21"
+            alt="AMP"></amp-img>
+          </a></h3>
+      </div>
+
+     <!--  <amp-iframe width="85"
+      height="164"
+      sandbox="allow-scripts allow-same-origin allow-popups allow-top-navigation"
+      resizable
+      frameborder="0" src="https://adxwidgets.readwhere.com/coronainfo?state=bihar&site=prabhatkhabar&align=right"
+      id="rwadx_adunit">
+      <div overflow
+        tabindex="0"
+        role="button"
+        class="ampstart-card"
+        aria-label="rwadx"></div>
+        <amp-img layout="fill"
+        src="https://mcmscache.epapr.in/mcms/100/23c93de509a478f13b1d2b16cf6757c38a38a38d.png"
+        placeholder></amp-img> </amp-iframe>
+
+ -->
+    </div>
+  </div>
+  <!-- footer end -->
+  
+    <amp-sticky-ad layout="nodisplay">
+     <!--  <div class="sm-d">
+        <amp-ad width=320 height=100
+            type="doubleclick"
+            data-slot="/1009127/ca-pub-6070398767421094-tag/PK_ePaper_Mob_Sticky_ADX">
+        </amp-ad>
+      </div>
+      <div class="lg-d dn-1024"> -->
+  
+                <amp-ad
+             layout="fixed"
+             width="320"
+             height="50"
+             type="adsense"
+             data-ad-client="ca-pub-2931203390134969"
+             data-ad-slot="1488645796">
+        </amp-ad>
+     <!--  </div> -->
+    </amp-sticky-ad>
+
+</body>
