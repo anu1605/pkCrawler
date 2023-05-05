@@ -1,14 +1,1 @@
-HT - hindustan times
-MC - mumbai choufer
-OHO - oheraldo
-YB - yashobhumi
-NT - namaste telangana
-HB - hari bhoomi
-NGS - nav gujrat samay
-NBT - nav bharat times
-SAK - sakshi
-TH - the hindu
-LH - live hindustan
-NHT - nav hind times
-PUD - pudhari
-SBP - sangbad pratidin
+hindustan times,mumbai choufer,oheraldo,yashobhumi,namaste telangana,hari bhoomi,nav gujrat samay,nav bharat times,sakshi,the hindu,live hindustan,nav hind times,pudhari,sangbad pratidin

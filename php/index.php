@@ -32,11 +32,24 @@
 // $array = array("6185" => "RANCHI - City");
 // foreach ($array as $key => $value){
 
-//     echo file_get_contents("https://epaper.prabhatkhabar.com/t/" . $key);
+//     echo file_get_contents("https://epaper.prabhatkhabar.com/t/" . $key);html content incomplete
 // }
 
 <?php
 
-echo file_get_contents("https://epaper.prabhatkhabar.com/3698171/Hazaribagh-Chatra/Hazaribagh-Chatra#page/4/3");
+// echo file_get_contents("https://keralakaumudi.com/epaper/article");working
+// echo file_get_contents("https://epaper.jansatta.com/t/22558/latest/चंडीगढ़");same as prabhat khabar
+// echo file_get_contents("https://epaper.naidunia.com/epaper/05-may-2023-74-indore-edition-indore.html");incomplete html 
+// echo file_get_contents("https://www.enewspapr.com/News/NAVABHARAT/MUM/2023/05/05/20230505_3.jpg"); imageLink
+// echo file_get_contents("https://epaper.navhindtimes.in/mainpage.aspx?pdate=2023-05-03");working
+// echo file_get_contents("https://niyomiyabarta.com/epaper/05052023/images/p2/main.gif");working
+// echo file_get_contents("https://odishabhaskar.com/epaper/edition/3727/odisha-bhaskar/page/1");working
+// echo file_get_contents("https://www.prameyaepaper.com/");same as prabhat khabar
+// echo file_get_contents("https://e2india.com/pratidin/");same as sangbad pratidin
+// echo file_get_contents("https://www.glpublications.in/PurvanchalPrahari/Guwahati/05-May-2023/Page-2");working
+// echo file_get_contents("http://rashtriyasahara.com/epaper/1/71/2023-05-05/1");http://sahara.4cplus.net/epaperimages//04052023//04052023-hr-md-1ll.png
+
+
+
 
 ?>
