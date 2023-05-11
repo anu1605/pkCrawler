@@ -1,0 +1,1262 @@
+
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg1-0022812200.png" title="1" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom2">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg2-0005608957.png" title="2" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom3">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg3-0023058030.png" title="3" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom4">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg4-0015754447.png" title="4" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom5">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg5-0013632337.png" title="5" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom6">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg6-0011638010.png" title="6" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom7">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg7-0021320937.png" title="7" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom8">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg8-0023342813.png" title="8" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom9">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg9-0015506357.png" title="9" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom10">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg10-0020637983.png" title="10" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom11">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg11-0013902643.png" title="11" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom12">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg12-0015426280.png" title="12" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom13">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg13-0022525450.png" title="13" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom14">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg14-0010908197.png" title="14" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom15">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg15-0011405347.png" title="15" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom16">
+		    <a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	<img data-src="https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg16-0023625350.png" title="16" class="lazyload" />
+            </div>
+        </div>        <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+                
+		<div class="bb-item" id="item1"  style="display:block;">
+            <div class="flexcenter">
+                <div class="scroller-bar">
+
+				<div class="taboolaAds">
+				<div id="taboola-below-article-thumbnails-epaper"></div>
+				<script type="text/javascript">
+				  window._taboola = window._taboola || [];
+				  _taboola.push({
+					mode: "alternating-thumbnails-a",
+					container: "taboola-below-article-thumbnails-epaper",
+					placement: "Below Article Thumbnails Epaper",
+					target_type: "mix"
+				  });
+				</script>
+				</div>
+
+					<img data-src="https://epaperapi.jagran.com/naiduniaEpaper/11052023/gwalior/10cty-pg1-0022812200.png" src="https://epaperapi.jagran.com/naiduniaEpaper/11052023/gwalior/10cty-pg1-0022812200.png" title="1" id="image1"  alt="Jagran 11 May 2023 Gwalior Edition Newspaper Page 1" usemap="#Map1" class="img-responsive lazyload mapnew" />
+					<div class="ads" id="div-gpt-ad-1549524744233-0">
+        <script>
+            googletag.cmd.push(function() { googletag.display("div-gpt-ad-1549524744233-0"); });
+        </script>
+    </div>
+					<p class="text-center legal-action">All contents and images on this website are the subject of copyright and copying, reproducing, modifying, distributing, displaying, transmitting any of the content for any purpose may expose you to legal action for copyright infringement.</p>
+                </div>
+            </div>            
+        </div><map name="Map1"><area id='3276' shape="rect" class="borderimage" coords="417.21449472,422.52092928,446.84370432,463.5212544" href="javascript:void(0)" onclick="return show_pop('147','3276','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','3276',9.169291,10.059055,9.054134,9.697129,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3276',9.169291,10.059055,9.054134,9.697129,'2023-05-11',147,1,52)" >
+<area id='3240' shape="rect" class="borderimage" coords="483.00092928,422.8837632,512.47231488,463.23634176" href="javascript:void(0)" onclick="return show_pop('147','3240','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','3240',9.177165,10.052872,10.481791,11.121361,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3240',9.177165,10.052872,10.481791,11.121361,'2023-05-11',147,1,52)" >
+<area id='3206' shape="rect" class="borderimage" coords="450.22109184,422.52092928,479.69247744,463.23634176" href="javascript:void(0)" onclick="return show_pop('147','3206','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','3206',9.169291,10.052872,9.770423,10.409993,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3206',9.169291,10.052872,9.770423,10.409993,'2023-05-11',147,1,52)" >
+<area id='1960' shape="rect" class="borderimage" coords="149.98030848,442.60429824,217.14029568,482.29323264" href="javascript:void(0)" onclick="return show_pop('147','1960','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','1960',9.605128,10.466433,3.254781,4.712246,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','1960',9.605128,10.466433,3.254781,4.712246,'2023-05-11',147,1,52)" >
+<area id='2685' shape="rect" class="borderimage" coords="1.82550528,244.21123584,39.1873536,282.35257344" href="javascript:void(0)" onclick="return show_pop('147','2685','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','2685',5.299723,6.127443,0.039616,0.85042,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','2685',5.299723,6.127443,0.039616,0.85042,'2023-05-11',147,1,52)" >
+<area id='3751' shape="rect" class="borderimage" coords="411.77240064,159.80871168,586.78493184,252.71207424" href="javascript:void(0)" onclick="return show_pop('147','3751','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','3751',3.468071,5.484203,8.936033,12.734048,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3751',3.468071,5.484203,8.936033,12.734048,'2023-05-11',147,1,52)" >
+<area id='3405' shape="rect" class="borderimage" coords="148.71684096,190.36588032,291.9453696,359.08190208" href="javascript:void(0)" onclick="return show_pop('147','3405','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','3405',4.131204,7.792576,3.227362,6.33562,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3405',4.131204,7.792576,3.227362,6.33562,'2023-05-11',147,1,52)" >
+<area id='3961' shape="rect" class="borderimage" coords="1.8141696,497.922048,69.12,587.52" href="javascript:void(0)" onclick="return show_pop('147','3961','1','2023-05-11',1,52)" onMouseover="borderit(this,'black','3961',10.8056,12.75,0.03937,1.5,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3961',10.8056,12.75,0.03937,1.5,'2023-05-11',147,1,52)" >
+<area id='3379' shape="rect" class="borderimage" coords="75.71907072,115.342848,587.06643456,395.3664" href="javascript:void(0)" onclick="return show_pop('147','3379','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','3379',2.5031,8.58,1.643209,12.740157,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3379',2.5031,8.58,1.643209,12.740157,'2023-05-11',147,1,52)" >
+<area id='4096' shape="rect" class="borderimage" coords="1.76974848,12.40805376,586.86280704,108.258048" href="javascript:void(0)" onclick="return show_pop('147','4096','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','4096',0.269272,2.34935,0.038406,12.735738,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','4096',0.269272,2.34935,0.038406,12.735738,'2023-05-11',147,1,52)" >
+<area id='2417' shape="rect" class="borderimage" coords="1.43313408,114.84306432,70.15408128,494.16763392" href="javascript:void(0)" onclick="return show_pop('147','2417','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','2417',2.492254,10.724124,0.031101,1.522441,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','2417',2.492254,10.724124,0.031101,1.522441,'2023-05-11',147,1,52)" >
+<area id='2341' shape="rect" class="borderimage" coords="1.8141696,590.024448,69.550848,951.6529152" href="javascript:void(0)" onclick="return show_pop('147','2341','1','2023-05-11',1,52)" onMouseover="borderit(this,'black','2341',12.80435,20.65219,0.03937,1.50935,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','2341',12.80435,20.65219,0.03937,1.50935,'2023-05-11',147,1,52)" >
+<area id='3997' shape="rect" class="borderimage" coords="75.7870848,398.734848,291.33356544,590.024448" href="javascript:void(0)" onclick="return show_pop('147','3997','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','3997',8.6531,12.80435,1.644685,6.322343,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','3997',8.6531,12.80435,1.644685,6.322343,'2023-05-11',147,1,52)" >
+<area id='4095' shape="rect" class="borderimage" coords="292.73596416,397.8277632,586.86280704,495.37552896" href="javascript:void(0)" onclick="return show_pop('147','4095','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','4095',8.633415,10.750337,6.352777,12.735738,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','4095',8.633415,10.750337,6.352777,12.735738,'2023-05-11',147,1,52)" >
+<area id='1844' shape="rect" class="borderimage" coords="75.26601216,589.6041984,292.96677888,952.4388096" href="javascript:void(0)" onclick="return show_pop('147','1844','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','1844',12.79523,20.669245,1.633377,6.357786,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','1844',12.79523,20.669245,1.633377,6.357786,'2023-05-11',147,1,52)" >
+<area id='1834' shape="rect" class="borderimage" coords="296.59511808,498.89553408,586.86280704,952.4388096" href="javascript:void(0)" onclick="return show_pop('147','1834','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','1834',10.826726,20.669245,6.436526,12.735738,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','1834',10.826726,20.669245,6.436526,12.735738,'2023-05-11',147,1,52)" >
+<area id='2912' shape="rect" class="borderimage" coords="489.6,12.45293568,586.86280704,108.2322432" href="javascript:void(0)" onclick="return show_pop('147','2912','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','2912',0.270246,2.34879,10.625,12.735738,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','2912',0.270246,2.34879,10.625,12.735738,'2023-05-11',147,1,52)" >
+<area id='2420' shape="rect" class="borderimage" coords="1.9003392,384.565248,69.550848,457.6764672" href="javascript:void(0)" onclick="return show_pop('147','2420','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','2420',8.3456,9.932215,0.04124,1.50935,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','2420',8.3456,9.932215,0.04124,1.50935,'2023-05-11',147,1,52)" >
+<area id='2576' shape="rect" class="borderimage" coords="1.8141696,340.69584384,70.15408128,380.93419008" href="javascript:void(0)" onclick="return show_pop('147','2576','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','2576',7.393573,8.266801,0.03937,1.522441,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','2576',7.393573,8.266801,0.03937,1.522441,'2023-05-11',147,1,52)" >
+<area id='2628' shape="rect" class="borderimage" coords="1.43313408,114.84306432,69.57351936,241.96225536" href="javascript:void(0)" onclick="return show_pop('147','2628','4','2023-05-11',1,52)" onMouseover="borderit(this,'black','2628',2.492254,5.250917,0.031101,1.509842,'2023-05-11',147,1,52)" onMouseout="borderit(this,'white','2628',2.492254,5.250917,0.031101,1.509842,'2023-05-11',147,1,52)" >
+</map>            </div>
+            
+                        <nav>
+                <span id="bb-nav-prev" class="disable">&larr;</span>
+                <span id="bb-nav-next" class="disable" data-step="1" data-intro="Click to go to next page of this edition" data-position='left'>&rarr;</span>
+            </nav>
+			            <span id="tblcontents" class="menu-button disable" data-step="2" data-intro="Change page" data-position='top'>Pages <i class="arrow"></i></span>
+            <span id="toggle-menu" class="toggle-menu"><i></i></span>
+            
+        </div>
+    </div><!-- /container -->
+
+
+</div>
+	
+	
+	<div class="gutter-banner left text-center" id='div-gpt-ad-1549524685179-0'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1549524685179-0'); });
+		</script>
+	</div>
+	<div class="gutter-banner right text-center" id='div-gpt-ad-1549524773786-0'>
+		<script>
+			googletag.cmd.push(function() { googletag.display('div-gpt-ad-1549524773786-0'); });
+		</script>
+	</div>
+    
+    <div class="news_toggle_overlay"></div>
+<div class="news_toggle">
+   
+    <ul class="share_art" >
+        <li>Share this Article</li>
+        <li><a class="facebook-btn" id="fbArtical" href="'http://www.facebook.com/sharer.php?u=https://epaper.naidunia.com/epaper/11-may-2023-52-gwalior-edition-gwalior.html'" target="_blank"><i class="facebook"></i> Facebook</a></li>
+        <li><a class="twitter-btn" id="twitterArtical" href='https://twitter.com/intent/tweet?text= Edition&amp;url=https://epaper.naidunia.com/epaper/11-may-2023-52-gwalior-edition-gwalior.html&amp;via=naidunialive' target="_blank"><i class="twitter"></i> Twitter</a></li>
+        <!--<li><a href="mailto:" id="mailArtical"><i class="email"></i></a></li>-->
+    </ul>
+    <a href="javascript:void(0)" class="close_toggle">CLOSE</a>
+    <!--a href="javascript:void(0)" class="next_art">Next</a>
+    <a href="javascript:void(0)" class="prev_art">Previous</a-->
+    <div class="news_reader">
+        <div class="newscontent" id="newscontent"></div>
+    </div>
+</div>
+<style>
+	
+.popover.top {
+    margin-top: -10px;
+}
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+.fade.in {
+    opacity: 1;
+}
+.popover {
+    position: fixed;
+    top: 30px !important;
+    right: 80px;
+    z-index: 1010;
+    display: none;
+    max-width: 276px;
+    padding: 1px;
+    text-align: left;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    white-space: normal;
+    left: inherit !important;
+}
+.popover.top>.arrow {
+    left: 50%;
+    margin-left: -11px;
+    border-bottom-width: 0;
+    border-top-color: #999;
+    border-top-color: rgba(0,0,0,.25);
+    bottom: -11px;
+}
+.popover>.arrow, .popover>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.popover.top>.arrow:after {
+    content: " ";
+    bottom: 1px;
+    margin-left: -10px;
+    border-bottom-width: 0;
+    border-top-color: #fff;
+}
+.popover>.arrow:after {
+    border-width: 10px;
+    content: "";
+}
+.popover>.arrow, .popover>.arrow:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+:before, :after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.popover-title {
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px 5px 0 0;
+}
+.popover-content {
+    padding: 9px 14px;
+}
+</style>
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/lazysizes.min.js"></script>
+<script src="https://epaper.naidunia.com/epaper/js/page1.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#tblcontents").click(function(){
+    $(".container").toggleClass("slideRight");
+  });
+});
+</script>
+	
+<script>
+     /* $(function() {
+        var editionlists = ['Lucknow','Allahabad','Varanasi','Bareilly','Meerut','Agra','Gorakhapur','Patna','Muzaffarpur','Bhagalpur','Kanpur','Talimi','Aligarh','Mumbai','Delhi'];
+		$( "#searchtags" ).autocomplete({
+		  source: editionlists
+		});
+    } ); */
+</script>
+<script>
+    window.lazySizesConfig = window.lazySizesConfig || {};
+    window.lazySizesConfig.addClasses = true;
+
+//	var intro = getCookie('intro');
+
+//	if(intro==""){
+//		introJs().start();
+//	}
+    $(window).on("load", function() {
+        Page.init();
+        $('.scroll-pane').jScrollPane();
+		
+    });
+    
+   
+    /*search*/
+
+    $(document).ready(function(){
+
+        $("#toggle-menu").click(function(){
+            $('.toggle-menu-col').toggleClass('slideLeft');
+            $('#toggle-menu').toggleClass('slideMenu close-menu');
+           // $('#bb-nav-prev,#bb-nav-next,#tblcontents').toggleClass('hide');
+        });
+		$("#bb-nav-prev").click(function(e){
+			pn = $("#pageno").val();
+			$("#pageno").val(parseInt(pn)-1);
+			url = $("#pageurl").val();
+			
+			un = getCookie("username");
+			if(un!='') {
+				ut = 'loggedin';
+				lc = getCookie("l_c");
+				lp = getCookie("l_p");
+				ll = getCookie("l_l");
+			} else {
+				un='NA';
+				lc='NA';
+				lp = 'NA';
+				ll='NA';
+				ut='NA';
+			}
+			//alert($("#pageno").val());
+			//pn = $("#image").attr('title');
+			ep = $("#edition").val();
+			url = $("#pageurl").val();
+			if(pn==2)
+			url = url.replace("-page-"+pn,"");
+			else
+			url = url.replace("-page-"+pn,"-page-"+(parseInt(pn)-1));
+			$("#pageurl").val(url);
+			//alert(url);
+						//$("#pageurl").val(url);
+						location.href = url;
+						return false;
+		});
+		$("#bb-nav-prev1").click(function(e){
+			pn = $("#pageno").val();
+			$("#pageno").val(parseInt(pn)-1);
+			url = $("#pageurl").val();
+			un = getCookie("username");
+			if(un!='') {
+				ut = 'loggedin';
+				lc = getCookie("l_c");
+				lp = getCookie("l_p");
+				ll = getCookie("l_l");
+			}
+			else{
+				un='NA';
+				lc='NA';
+				lp = 'NA';
+				ll='NA';
+				ut='NA';
+			}
+			
+			$("#bb-nav-prev").addClass('disable');//.delay( 12000 );
+			$("#bb-nav-next").addClass('disable');//.delay( 12000 );
+			$("#tblcontents").addClass('disable');//.delay( 12000 );
+			
+			//googletag.pubads().refresh([slot1,slotL,slotR], {changeCorrelator: false});
+			//googletag.pubads().updateCorrelator();
+												
+			url1 = url.replace("-page-"+pn,"-page-"+(parseInt(pn)-1));
+			if(pn > 2)
+			url = url.replace("-page-"+pn,"-page-"+(parseInt(pn)-1));
+			else
+			url = url.replace("-page-"+pn,"");
+			$("#pageurl").val(url1);
+			window.history.pushState("Page No"+(parseInt(pn)-1), "Page No"+(parseInt(pn)-1), url);
+			setTimeout(function() { 
+				if(pn>1){
+						var data = {
+						"event": "tvc_epaper_pageview", 
+						"edition_date":"2023-05-11" ,  
+						"edition_month": "05" , 
+						"edition_year": "2023" ,  
+						"edition_name": "Gwalior" ,  
+						"total_pages": "16" ,  
+						"current_page_number": (parseInt(pn)-1), 
+						"category": "NA" ,  
+						"page_type" : "Edition Page",
+						"view_type" : "Image",    
+						"edition_availabe" :"yes" ,								
+						"uid": un,
+						
+						"usertype": ut
+			
+						}
+						
+						updDataLayer(data);
+					}
+				}, 2000); // for 5 second delay 
+					
+				$("#bb-nav-prev").removeClass('disable');//.delay( 12000 );
+				$("#bb-nav-next").removeClass('disable');//.delay( 12000 );
+				$("#tblcontents").removeClass('disable');//.delay( 12000 );
+					
+			
+		 });
+		 
+		$( window ).on( "load", function() {
+			// alert('test123');
+			pn = $("#pageno").val();
+			totalpn = $("#totalpage").val();
+			//alert(pn+" aaa "+totalpn);
+			if(pn==totalpn)
+			{
+				
+				$("#bb-nav-prev").removeClass('disable');//.delay( 12000 );
+				$("#bb-nav-next").addClass('disable');//.delay( 12000 );
+				$("#bb-nav-prev").css("display", "block");
+				$("#bb-nav-next").css("display", "none");
+			}
+			else if(pn==1)
+			{
+				
+				$("#bb-nav-next").removeClass('disable');//.delay( 12000 );
+				$("#bb-nav-prev").addClass('disable');//.delay( 12000 );
+				$("#bb-nav-prev").css("display", "none");
+				$("#bb-nav-next").css("display", "block");
+			}
+			else
+			{
+				
+				$("#bb-nav-next").removeClass('disable');//.delay( 12000 );
+				$("#bb-nav-prev").removeClass('disable');//.delay( 12000 );
+				$("#bb-nav-prev").css("display", "block");
+				$("#bb-nav-next").css("display", "block");
+			}
+			$("#tblcontents").removeClass('disable');//.delay( 12000 );
+			
+			//pn = $("#pageno").val();
+			//$('#items'+pn).trigger('click');
+					
+		});
+
+		$("#thumbimg,#items"+$("#pageno").val()).click(function(e){
+			var pn1='';
+			pn1 = $(this).attr('title');
+				//alert(pn);
+				$("#pageno").val(pn1);
+			
+			url = $("#pageurl").val();
+			
+			un = getCookie("username");
+			if(un!='') {
+				ut = 'loggedin';
+				lc = getCookie("l_c");
+				lp = getCookie("l_p");
+				ll = getCookie("l_l");
+			} else {
+				un='NA';
+				lc='NA';
+				lp = 'NA';
+				ll='NA';
+				ut='NA';
+			}
+			//alert($("#pageno").val());
+			//pn = $("#image").attr('title');
+			ep = $("#edition").val();
+			url = $("#pageurl").val();
+
+			url = $("#pageurl").val();
+					url1 = url.replace("-page-"+pn,"-page-"+pn1);
+					if(pn1==1) {
+						url = url.replace("-page-"+pn,"");
+					} else {
+						url = url.replace("-page-"+pn,"-page-"+pn1);
+					}
+					$("#pageurl").val(url1);
+
+			
+			//alert(url);
+						//$("#pageurl").val(url);
+						location.href = url;
+						return false;
+		});
+		 
+		$("#thumbimg1,#items1"+$("#pageno").val()).click(function(e){
+			//alert($("#image").attr('title')); 
+			var pn1='';
+			if($(this).attr('id')=='thumbimg'){
+				pn = $("#pageno").val();
+				url = $("#pageurl").val();
+				un = getCookie("username");
+				if(un!='') {
+					ut = 'loggedin';
+					lc = getCookie("l_c");
+					lp = getCookie("l_p");
+					ll = getCookie("l_l");
+				} else {
+					un='NA';
+					lc='NA';
+					lp = 'NA';
+					ll='NA';
+					ut='NA';
+				}
+				pn1 = $(this).attr('title');
+				//alert(pn);
+				$("#pageno").val(pn1);
+			} else {
+				pn = $("#pageno").val();
+				$("#pageno").val(parseInt(pn)+1);
+			}
+			//	alert(pn);
+			$("#pageimg").val($("#image"+pn).attr("src"));
+		
+			//pn = $("#image").attr('title');
+			ep = $("#edition").val();
+			$("#bb-nav-prev").addClass('disable');//.delay( 12000 );
+			$("#bb-nav-next").addClass('disable');//.delay( 12000 );
+			$("#tblcontents").addClass('disable');//.delay( 12000 );
+			validuser = getCookie('validuser');
+			user = getCookie('user');
+			
+			if(user!='' && validuser=='a6105c0a611b41b08f1209506350279e')
+			{
+				//googletag.pubads().refresh([slot1,slotL,slotR], {changeCorrelator: false});
+  				//googletag.pubads().updateCorrelator();
+					
+					//updDataLayer(parseInt(pn)+1);
+					//if(pn=='') pn=1;
+					url = $("#pageurl").val();
+					url1 = url.replace("-page-"+pn,"-page-"+pn1);
+					if(pn1==1) {
+						url = url.replace("-page-"+pn,"");
+					} else {
+						url = url.replace("-page-"+pn,"-page-"+pn1);
+					}
+					$("#pageurl").val(url1);
+					window.history.pushState("Page No"+pn, "Page No"+pn, url);
+						 setTimeout(function() { 
+    						if(pn>1){
+								var data = {
+								"event": "tvc_epaper_pageview", 
+								"edition_date":"2023-05-11" ,  
+								"edition_month": "05" , 
+								"edition_year": "2023" ,  
+								"edition_name": "Gwalior" ,  
+								"total_pages": "16" ,  
+								"current_page_number": (parseInt(pn)+1), 
+								"category": "NA" ,  
+								"page_type" : "Edition Page",
+								"view_type" : "Image",    
+								"edition_availabe" :"yes" ,								
+								"uid": un,
+								
+								"usertype": ut				
+								}
+								
+								updDataLayer(data);
+							}
+						  }, 2000); // for 5 second delay 
+					
+					$("#bb-nav-prev").removeClass('disable');//.delay( 12000 );
+					$("#bb-nav-next").removeClass('disable');//.delay( 12000 );
+					$("#tblcontents").removeClass('disable');//.delay( 12000 );
+			}
+			else
+			{
+			
+			
+			
+			//pn = $("#image").attr('title');
+			var dataString = 'ep='+ep+'&pn='+pn1+"&ppm="+pn+'&pr=1';
+			//alert('http://localhost/epaper/india/post.php?ep='+ep+'&pn='+pn);
+			$.ajax({
+				type: "POST",
+				url: "/epaper/post.php",
+				data: dataString,
+				success: function(data){
+					//alert(data+pn);
+					if(data.trim()=='Already Done')
+					{
+						$(".login-col").show();
+						$(".close-btn").show();
+					}
+					else
+					{
+					//	alert("Slot 1 "+slot1);
+					//googletag.pubads().refresh([slot1,slotL,slotR], {changeCorrelator: false});
+  					//googletag.pubads().updateCorrelator();
+					
+					//updDataLayer(pn);
+					
+					
+				//	window.history.pushState("Page No"+pn, "Page No"+pn, "https://epaperdemo.jagran.com/epaper/10-oct-2018-4-delhi-city-edition-delhi-city-page-"+pn+".html");
+			//	var url = "https://epaper.naidunia.com/epaper/11-may-2023-52-gwalior-edition-gwalior.html";
+					//if(pn=='2')
+					//pn = parseInt(pn)-1;
+					url = $("#pageurl").val();
+			
+					if(pn1==1)
+					url = url.replace("-page-"+pn,"");
+					else
+					url = url.replace("-page-"+pn,"-page-"+pn1);
+					$("#pageurl").val(url);
+					window.history.pushState("Page No"+pn, "Page No"+pn, url);
+		
+					setTimeout(function() { 
+					if(pn>1){
+								var data = {
+								"event": "tvc_epaper_pageview", 
+								"edition_date":"2023-05-11" ,  
+								"edition_month": "05" , 
+								"edition_year": "2023" ,  
+								"edition_name": "Gwalior" ,  
+								"total_pages": "16" ,  
+								"current_page_number": pn1, 
+								"category": "NA" ,  
+								"page_type" : "Edition Page",
+								"view_type" : "Image",    
+								"edition_availabe" :"yes",								
+								"uid": un,
+								
+								"usertype": ut
+						
+								}
+								
+								updDataLayer(data);
+							}
+				  }, 2000); // for 5 second delay 
+					$("#bb-nav-prev").removeClass('disable');//.delay( 12000 );
+					$("#bb-nav-next").removeClass('disable');//.delay( 12000 );
+					$("#tblcontents").removeClass('disable');//.delay( 12000 );
+					
+					}
+				
+				}
+			});
+			}
+		});
+		
+		$("#bb-nav-next").click(function(e){
+			if($(this).attr('id')=='thumbimg'){
+				pn = $(this).attr('title');
+				//alert(pn);
+				$("#pageno").val(pn);
+			}
+			else{
+				pn = $("#pageno").val();
+				$("#pageno").val(parseInt(pn)+1);
+			}
+			url = $("#pageurl").val();
+			un = getCookie("username");
+			if(un!='') {
+				ut = 'loggedin';
+				lc = getCookie("l_c");
+				lp = getCookie("l_p");
+				ll = getCookie("l_l");
+			} else {
+				un='NA';
+				lc='NA';
+				lp = 'NA';
+				ll='NA';
+				ut='NA';
+			}
+			//alert($("#pageno").val());
+			//pn = $("#image").attr('title');
+			ep = $("#edition").val();
+			url = $("#pageurl").val();
+			url = url.replace("-page-"+pn,"-page-"+(parseInt(pn)+1));
+			$("#pageurl").val(url);
+			//alert(url);
+						//$("#pageurl").val(url);
+						location.href = url;
+						return false;
+		});
+
+		 $("#bb-nav-next1").click(function(e){
+			//alert($("#image").attr('title')); 
+			if($(this).attr('id')=='thumbimg'){
+				pn = $(this).attr('title');
+				//alert(pn);
+				$("#pageno").val(pn);
+			}
+			else{
+				pn = $("#pageno").val();
+				$("#pageno").val(parseInt(pn)+1);
+			}
+			url = $("#pageurl").val();
+			un = getCookie("username");
+			if(un!='') {
+				ut = 'loggedin';
+				lc = getCookie("l_c");
+				lp = getCookie("l_p");
+				ll = getCookie("l_l");
+			} else {
+				un='NA';
+				lc='NA';
+				lp = 'NA';
+				ll='NA';
+				ut='NA';
+			}
+			//alert($("#pageno").val());
+			//pn = $("#image").attr('title');
+			ep = $("#edition").val();
+			url = $("#pageurl").val();
+		//	var div1=$('#div-gpt-ad-1490154655077-1').html();
+		//	var div2=$('#div-gpt-ad-1490154655077-4').html();
+			//pn = $("#image").attr('title');
+			var dataString = 'ep='+ep+'&pn='+pn+'&pr=1';
+			$("#bb-nav-prev").addClass('disable');//.delay( 12000 );
+			$("#bb-nav-next").addClass('disable');//.delay( 12000 );
+			$("#tblcontents").addClass('disable');//.delay( 12000 );
+			//alert('http://localhost/epaper/india/post.php?ep='+ep+'&pn='+pn);
+			validuser = getCookie('validuser');
+			user = getCookie('user');
+			if(user!='' && validuser=='a6105c0a611b41b08f1209506350279e')
+			{
+					//googletag.pubads().refresh([slot1,slotL,slotR], {changeCorrelator: false});
+  					//googletag.pubads().updateCorrelator();
+					
+					//updDataLayer(parseInt(pn)+1);
+					//if(pn=='') pn=1;
+					url = url.replace("-page-"+pn,"-page-"+(parseInt(pn)+1));
+						$("#pageurl").val(url);
+						location.href = url;
+						return false;
+						// url = url.replace(".html", "-page-"+(parseInt(pn)+1)+".html");
+						//window.history.pushState("Page No"+pn, "Page No"+pn, url);
+						 setTimeout(function() { 
+    						if(pn>=1){
+								var data = {
+								"event": "tvc_epaper_pageview", 
+								"edition_date":"2023-05-11" ,  
+								"edition_month": "05" , 
+								"edition_year": "2023" ,  
+								"edition_name": "Gwalior" ,  
+								"total_pages": "16" ,  
+								"current_page_number": (parseInt(pn)+1), 
+								"category": "NA" ,  
+								"page_type" : "Edition Page",
+								"view_type" : "Image",    
+								"edition_availabe" :"yes" ,
+								"content_type" : "NA",  
+								"article_title": "NA",
+								"uid": un,
+								
+								"usertype": ut
+					
+								}
+								
+								updDataLayer(data);
+							}
+						  }, 2000); // for 5 second delay 
+					
+					$("#bb-nav-prev").removeClass('disable');//.delay( 12000 );
+					$("#bb-nav-next").removeClass('disable');//.delay( 12000 );
+					$("#tblcontents").removeClass('disable');//.delay( 12000 );
+			}
+			else
+			{
+			$.ajax({
+				type: "POST",
+				url: "/epaper/post.php",
+				data: dataString,
+				success: function(data){
+					//alert(data+pn);
+					if(data.trim()=='Already Done')
+					{
+						$(".login-col").show();
+							$(".close-btn").show();
+					}
+					else
+					{
+					//	alert("Slot 1 "+slot1);
+					//googletag.pubads().refresh([slot1,slotL,slotR], {changeCorrelator: false});
+  					//googletag.pubads().updateCorrelator();
+					
+					//updDataLayer(parseInt(pn)+1);
+					//if(pn=='') pn=1;
+					url = url.replace("-page-"+pn,"-page-"+(parseInt(pn)+1));
+						$("#pageurl").val(url);
+						// url = url.replace(".html", "-page-"+(parseInt(pn)+1)+".html");
+						window.history.pushState("Page No"+pn, "Page No"+pn, url);
+						 setTimeout(function() { 
+    						if(pn>=1){
+								var data = {
+								"event": "tvc_epaper_pageview", 
+								"edition_date":"2023-05-11" ,  
+								"edition_month": "05" , 
+								"edition_year": "2023" ,  
+								"edition_name": "Gwalior" ,  
+								"total_pages": "16" ,  
+								"current_page_number": (parseInt(pn)+1), 
+								"category": "NA" ,  
+								"page_type" : "Edition Page",
+								"view_type" : "Image",    
+								"edition_availabe" :"yes" ,
+								"content_type" : "NA",  
+								"article_title": "NA",
+								"uid": un,
+								
+								"usertype": ut
+					
+								}
+								
+								updDataLayer(data);
+							}
+						  }, 2000); // for 5 second delay 
+					
+					$("#bb-nav-prev").removeClass('disable');//.delay( 12000 );
+					$("#bb-nav-next").removeClass('disable');//.delay( 12000 );
+					$("#tblcontents").removeClass('disable');//.delay( 12000 );
+					
+					}
+				
+				}
+			});
+			}
+		});
+		
+		 $("#bookmark").click(function(e){
+			//alert($("#edition").val()); 
+			pn = $("#pageno").val();
+			ep = $("#edition").val();
+			ed = $("#pagedt").val();
+			
+			en = "Gwalior";
+			//pu = "https://epaperapi.jagran.com/naiduniaEpaper/11052023/gwalior/10cty-pg16-0023625350.png";			
+			//var pu = "https://epaperapi.jagran.com/naiduniaEpaper/11052023/gwalior/10cty-pg16-0023625350.png";			
+			var pu = $("#pageurl").val();		
+			//pn = $("#image").attr('title');
+			var dataString = 'ep='+ep+'&pn='+pn+'&ed='+ed+'&en='+en+'&pu='+pu;
+			//	alert('http://localhost/epaper/india/post.php?ep='+ep+'&pn='+pn+'&ed='+ed+'&en='+en+'&pu='+pu);
+			$.ajax({
+				type: "POST",
+				url: "/epaper/post.php?bookmark=1",
+				data: dataString,
+				success: function(data)
+				{
+				//	alert(data);
+					if(data.trim()=='Already Done')
+					{
+						alert("You have already added this page as bookmark");
+						//$("#bookmark").parent('li').attr("class","active");
+					}
+					else if(data.trim()=='Done')
+					{
+						//$("#bookmark").parent('li').attr("class","active");
+						alert("You have added this page as bookmark successfully");
+					}
+					else if(data.trim()=='Not Login')
+					{
+						$(".login-col").show();
+						$(".close-btn").show();
+					}
+				}
+			});
+			
+			
+		
+        });
+		
+		/*$(".introjs-skipbutton").click(function(e){
+			setCookie('intro', 'set', '365');
+		});*/
+		
+		$("#download").click(function(e){
+		//	alert($("#edition").val()); 
+			pn = $("#pageno").val();
+			ep = $("#edition").val();
+			ed = $("#pagedt").val();
+			
+			en = "Gwalior";
+			pu = $("#img"+pn).attr("src");
+			purl = pu.replace("0ss.png","0.pdf");
+			window.open(purl, '_blank');
+			
+			//alert(pu);
+			//pn = $("#image").attr('title');
+			/* var dataString = 'ep='+ep+'&pn='+pn+'&ed='+ed+'&en='+en+'&pu='+pu;
+				//alert('https://epaper.naidunia.com/epaper/post.php?d=1&ep='+ep+'&pn='+pn+'&ed='+ed+'&en='+en+'&pu='+pu);
+			$.ajax({
+				type: "POST",
+				url: "https://epaper.naidunia.com/epaper/post.php?d=1",
+				data: dataString,
+				success: function(data)
+				{
+					//alert(data);
+					if(data.trim()=='Already Done')
+					{
+						//alert("You have already added this page in your downloaded.");
+						
+						
+						
+					//	var url = "https://epaperapi.jagran.com/naiduniaEpaper/11052023/gwalior/10cty-pg16-0023625350ss.pdf";
+					var url = pu;
+						//var url = url.replace("pg1", "pg"+pn);
+						window.open(url, '_blank');
+					}
+					else if(data.trim()=='Done')
+					{
+						//alert("You have added this page in your downloaded successfully");
+						//https://epaperdemo.naidunia.com/EpaperImages/10102018/Delhi/M-09del-pg8-0.png
+					//	var url = "https://epaperapi.jagran.com/naiduniaEpaper/11052023/gwalior/10cty-pg16-0023625350ss.pdf";
+					var url = pu;
+						//var url = url.replace("pg1", "pg"+pn);
+						window.open(url, '_blank');
+					}
+					else if(data.trim()=='Not Login')
+					{
+						$(".login-col").show();
+						$(".close-btn").show();
+					}
+				}
+			});		 */	
+		
+        });
+		
+		/*$("#favourit").click(function(e){
+			//alert($("#edition").val()); 
+			//pn = $("#pageno").val();
+			//ep = $("#edition").val();
+			//ed = $("#pagedt").val();
+			ep = $("#edition").val();
+			ed = $("#pagedt").val();
+			
+			en = "Gwalior";
+			pu = "https://epaperapi.jagran.com/naiduniaEpaper/11052023/gwalior/10cty-pg16-0023625350.png";
+			
+			
+			
+			//pn = $("#image").attr('title');
+			var dataString = 'ep='+ep+'&ed='+ed+'&en='+en+'&pu='+pu;
+			//	alert('http://localhost/epaper/india/post.php?ep='+ep+'&pn='+pn+'&ed='+ed+'&un='+un+'&en='+en+'&pu='+pu);
+			$.ajax({
+				type: "POST",
+				url: "/epaper/post.php?favourit=1",
+				data: dataString,
+				success: function(data)
+				{
+					//alert(data);
+					if(data.trim()=='Already Done')
+					{
+						alert("You have already added this edition as favourite");
+					}
+					else if(data.trim()=='Done')
+					{
+						alert("You have added this edition as favourite successfully");
+					}
+					else if(data.trim()=='Not Login')
+					{
+						$(".login-col").show();
+						$(".close-btn").show();
+					}
+				}
+			});		
+		
+        });		 */
+		
+        $("#tblcontents").click(function(){
+            $(".toggle-menu").toggleClass('hide');
+        });
+       
+        $("#change-city").click(function(){
+			$( "#searchtags" ).val('');
+            $(".change-city-col").show();
+        });
+        $(".login-overlay,#login").click(function(){
+            $(".login-col").show();
+            $(".close-btn").show();
+        });
+        $(".close-btn").click(function(){
+            $('.login-col').hide();
+        });
+        $("#dates").click(function(){
+            $(".date-col").show();
+        });
+        $("#info-col").click(function(){
+            $(".info-col").show();
+        });
+        $("#options").click(function(){
+            $(".options-col").show();
+        });
+        $("#share").click(function(){
+            $(".share-this").show();
+            $(".share-close").show();
+        });
+        $(".share-close").click(function(){
+            $(this).parent().hide();
+        });
+        $("#display").click(function(){
+            $("body,html").toggleClass("black");
+        });
+        $(".close").click(function(){
+            $(this).parent().hide();
+        });
+        $(".close-date").click(function(){
+            $('.date-col').hide();
+        });
+        $(".close-info").click(function(){
+            $('.info-col').hide();
+        });
+        $("#zoom-img").click(function(){
+			
+			zpn = $("#pageno").val();
+            //alert(zpn)
+            $("#item-zoom"+zpn).show();
+            $('.zoom-close').show();		
+						
+           
+        }); 
+		
+		$("#crop-share").click(function(){
+            zpn = $("#pageno").val();
+            $("#item-crop"+zpn).show();
+            $('.zoom-close').show();
+        });
+		$(".menu-button").click(function(){
+            $(this).toggleClass('toggleArrow');
+        });
+        $(".btn-link").click(function(){
+            $('.imgcrop').imgAreaSelect({hide:true});
+        });
+        $(".zoom-close").click(function(){
+            $(this).parent().hide();
+            $("#clip-options").hide();
+			 $('.imgcrop').imgAreaSelect({hide:true});
+        }); 
+		
+		/* var touchtime = 0;
+		$("#image"+$("#pageno").val()).on("click", function() {
+		  if (((new Date().getTime()) - touchtime) < 500) {
+		   // alert("double clicked");
+			 zpn = $("#pageno").val();
+					$("#item-crop"+zpn).show();
+					$('.zoom-close').show();
+		  }
+		  touchtime = new Date().getTime();
+		}); */
+		
+		
+		/* $("#search").click(function(){
+			 var searchval = $( "#searchtags" ).val();
+			// alert(searchval);
+			 var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+			 window.location = "/epaper/edition-"+date+"-"+searchval+".html";
+            
+        }); */
+		
+		
+		
+		
+    });
+
+    /*datepicker*/
+    $(function() {
+        var cal = $( '#calendar' ).calendario( {
+                onDayClick : function( $el, $contentEl, dateProperties ) {
+					var monthNames = [ "", "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+					var currmonth = dateProperties['month'];
+                    if(dateProperties['month']<10) dateProperties['month'] = "0"+dateProperties['month'];
+					if(dateProperties['day']<10) dateProperties['day'] = "0"+dateProperties['day'];
+					//var date1 = dateProperties['day']+"-"+dateProperties['month']+"-"+dateProperties['year'];					
+					var date1 = dateProperties['day']+"-"+monthNames[currmonth]+"-"+dateProperties['year'];
+				   console.log(date1);
+					//if(date1<="2023-05-11"){
+						var date2  = new Date(date1);
+						var date3  = new Date("11-May-2023"); 
+						//alert(date2.getTime()+" 1683743400"+date3.getTime());
+					if(date2.getTime()<=date3.getTime()){
+						// window.location.href = 'detail.php?id=52&eddt='+date1;
+						//window.location.href = 'edition-'+date1+'-52-Gwalior.html';
+						window.location.href = date1+'-52-gwalior-edition-gwalior.html';
+						
+					}
+					else
+						alert("Future date's newspaper is not available.");
+
+					for( var key in dateProperties ) {
+						//  alert(key + ' = ' + dateProperties[ key ]);
+						console.log( key + ' = ' + dateProperties[ key ] );
+					}
+
+                },
+                //caldata : codropsEvents
+            } ),
+		$month = $( '#custom-month' ).html( cal.getMonthName() ),
+		$year = $( '#custom-year' ).html( cal.getYear() );
+        $( '#custom-next' ).on( 'click', function() {
+            cal.gotoNextMonth( updateMonthYear );
+        } );
+        $( '#custom-prev' ).on( 'click', function() {
+            cal.gotoPreviousMonth( updateMonthYear );
+        } );
+        $( '#custom-current' ).on( 'click', function() {
+            cal.gotoNow( updateMonthYear );
+        } );
+        function updateMonthYear() {
+			var tdmonth = "May";
+			var td6month = "February";
+			var tdyear = "2023";
+			var prevyear = "2023";
+
+
+			var st = getCookie('l_p');
+			 if(st=='Quarterly'){
+				 var td3month = "April";
+				 var tdyear = "2023";
+				 var prevyear = "2023";
+			 }
+             else if(st=='HalfYearly'){
+				 var td3month = "February";
+				 var tdyear = "2023";
+				 var prevyear = "2023";
+			 }
+			 else if(st=='Annual')
+			 {
+				 var td3month = "November";
+				 var tdyear = "2023";
+				 var prevyear = "2022";
+			 }
+
+
+
+			if(tdmonth==cal.getMonthName() && tdyear==cal.getYear())
+				$( '#custom-next' ).hide();
+			else
+				$( '#custom-next' ).show();
+
+			if(td3month==cal.getMonthName() && prevyear==cal.getYear())
+				$( '#custom-prev' ).hide();
+			else
+				$( '#custom-prev' ).show();
+            $month.html( cal.getMonthName() );
+            $year.html( cal.getYear() );
+        }
+    });
+
+</script>
+<script>
+$(document).ready(function(){
+ //$(".borderimage, .newslist").click(function(){
+	$(".borderimage").click(function(){
+		
+		
+		var id = $(this).attr('id');
+		var solr_id = $(this).attr('onclick');
+		solr_id = solr_id.replace("return show_pop('","");	
+		solr_id = solr_id.split(",");
+		var boxid = solr_id[0].replace("'","");	
+		//alert(solr_id[0]);	
+		//alert(boxid);	
+
+		var zpn = $("#pageno").val();
+		//var ep = $("#edition").val();
+		var pageimg = $("#image"+zpn).attr("src");
+		//alert(pageimg);
+		var ed = $("#pagedt").val();
+		var en = "Gwalior";	
+		
+		var share_link = "https://epaper.naidunia.com/epaper/image-11-May-2023-edition-gwalior-"+zpn+"-"+id+".html";		
+		//alert(share_link);
+		location.href = share_link;
+		return false;
+		var dataString = 'action=imagepopup&pn='+zpn+'&ed='+ed+'&en='+en+'&pageimg='+pageimg+'&storyid='+id;
+		$.ajax({
+			type: "POST",
+			url: "/epaper/ajaxresult.php",
+			data: dataString,
+			success: function(data)
+			{
+				//alert(data);
+				
+				$("#newscontent").html(data);
+				$("#fbArtical").attr('href', "http://www.facebook.com/sharer.php?u="+share_link);
+				$("#twitterArtical").attr('href', "https://twitter.com/intent/tweet?text=Gwalior Edition&amp;url="+share_link+"&amp;via=naidunialive");
+				$(".news_toggle_overlay").slideToggle();
+				$(".news_toggle").slideToggle();
+				$("body").toggleClass('overflow_h');
+				
+				
+			}
+		});		
+	});
+	$(".close_toggle").click(function(){
+		$(".news_toggle").slideToggle();
+		$(".news_toggle_overlay").slideToggle();
+		$("body").toggleClass('overflow_h');
+
+	});
+});
+
+window.onload = function () {
+    var ImageMap = function (map, img) {
+            var n,
+                areas = map.getElementsByTagName('area'),
+                len = areas.length,
+                coords = [],
+                previousWidth = 128;
+            for (n = 0; n < len; n++) {
+                coords[n] = areas[n].coords.split(',');
+            }
+            this.resize = function () {
+                var n, m, clen,
+                    x = img.offsetWidth / previousWidth;
+                for (n = 0; n < len; n++) {
+                    clen = coords[n].length;
+                    for (m = 0; m < clen; m++) {
+                        coords[n][m] *= x;
+                    }
+                    areas[n].coords = coords[n].join(',');
+                }
+                previousWidth = document.body.clientWidth;
+                return true;
+            };
+            window.onresize = this.resize;
+        },
+        imageMap = new ImageMap(document.getElementById('map_ID'), document.getElementById('img_ID'));
+    imageMap.resize();
+    return;
+}
+</script>
+<script language="javascript" src="js/jquery.maphilight.min.js"></script>
+ <script type="text/javascript">
+        $(function () {
+            $('.mapnew').maphilight();
+        });
+    </script>
+
+<!-- Start Taboola Foot -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+<!-- End Taboola Foot -->
+<div class="csc-paywall csc-popup">
+<div id="csc-paywall" min-width="800px" min-height="400px"></div>
+</div>
+</body>
+</html>

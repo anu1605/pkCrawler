@@ -1,1 +1,29 @@
-hindustan times,mumbai choufer,oheraldo,yashobhumi,namaste telangana,hari bhoomi,nav gujrat samay,nav bharat times,sakshi,the hindu,live hindustan,nav hind times,pudhari,sangbad pratidin
+DC (eng) - deccan chronicles
+HB (hin) - hari bhumi
+HT (eng) - hindustan times
+KM (kan) - karnataka malla
+LH (hin) - live hindustan
+MC (mar) - mumbai chaufer
+MM (kan) - Mysuru Mithra
+NBT (hin) - nav bharat times
+NGS (guj) - nav gujrat samay
+NHT (eng) - nav hind times
+NT (tel) - namaste telangana
+OHO (eng) - o herald o
+PAP (hin) - purvanchal purhari
+PBK (hin) - prabhat khabar
+PRM (ori) - premaya
+PRJ (kan) - Prajavani
+PUD (mar) - pudhari
+SAK (tel) - sakshi
+SBP (ben) - sangbad pratidin
+SKE(eng) - sikkim express
+SKL(mar) - sakal
+SMJ (ori) - Samaja
+SOM (kan) - Star of Mysore
+SY (kan) - Samyuktha
+TB (eng) - the tribune
+TH (eng) - the hindu
+UV (kan) - Udayavani
+VV (kan) - Vijayavani
+YB (hin) - yasho bhumi

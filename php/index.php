@@ -49,7 +49,16 @@
 // echo file_get_contents("https://www.glpublications.in/PurvanchalPrahari/Guwahati/05-May-2023/Page-2");working
 // echo file_get_contents("http://rashtriyasahara.com/epaper/1/71/2023-05-05/1");http://sahara.4cplus.net/epaperimages//04052023//04052023-hr-md-1ll.png
 
+// echo file_get_contents("https://www.bhaskar.com/epaper/detail-page/ranchi/109/2023-05-05?pid=3");
 
 
+
+// echo file_get_contents("https://epaper.prabhatkhabar.com/3699317/RANCHI-City/RANCHI-City#page/1/1");
+// echo file_get_contents("https://epaper.esakal.com/FlashClient/Client_Panel.aspx#currPage=2");
+
+// file_put_contents(dirname(__FILE__, 2) . "/php/nd.txt", file_get_contents("https://epaper.naidunia.com/epaper/11-may-2023-52-gwalior-edition-gwalior.html"));
+$url = "https://epaper.naidunia.com/epaper/11-may-2023-52-gwalior-edition-gwalior.html";
+
+file_put_contents(dirname(__FILE__, 1) . '/section.txt', (explode('<div class="slidebox" id="item-zoom1">', file_get_contents($url))[1]));
 
 ?>
