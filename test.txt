@@ -1,0 +1,127 @@
+
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg1-0022812200.png" title="1" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom2">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg2-0005608957.png" title="2" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom3">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg3-0023058030.png" title="3" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom4">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg4-0015754447.png" title="4" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom5">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg5-0013632337.png" title="5" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom6">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg6-0011638010.png" title="6" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom7">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg7-0021320937.png" title="7" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom8">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg8-0023342813.png" title="8" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom9">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg9-0015506357.png" title="9" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom10">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg10-0020637983.png" title="10" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom11">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg11-0013902643.png" title="11" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom12">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg12-0015426280.png" title="12" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom13">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg13-0022525450.png" title="13" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom14">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg14-0010908197.png" title="14" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom15">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg15-0011405347.png" title="15" class="lazyload" />
+            </div>
+        </div>
+		
+		<div class="slidebox" id="item-zoom16">
+<a href="javascript:void(0)" class="zoom-close"><i class="close"></i></a>
+            <div class="scrollerbox">
+                	
+                    https://epaperapi.jagran.com/naiduniaepaper/11052023/gwalior/m-10cty-pg16-0023625350.png" title="16" class="lazyload" />
+            </div>
+        </div>
