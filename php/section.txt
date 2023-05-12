@@ -1085,10 +1085,10 @@ $(document).ready(function(){
 					//var date1 = dateProperties['day']+"-"+dateProperties['month']+"-"+dateProperties['year'];					
 					var date1 = dateProperties['day']+"-"+monthNames[currmonth]+"-"+dateProperties['year'];
 				   console.log(date1);
-					//if(date1<="2023-05-11"){
+					//if(date1<="2023-05-12"){
 						var date2  = new Date(date1);
-						var date3  = new Date("11-May-2023"); 
-						//alert(date2.getTime()+" 1683743400"+date3.getTime());
+						var date3  = new Date("12-May-2023"); 
+						//alert(date2.getTime()+" 1683829800"+date3.getTime());
 					if(date2.getTime()<=date3.getTime()){
 						// window.location.href = 'detail.php?id=52&eddt='+date1;
 						//window.location.href = 'edition-'+date1+'-52-Gwalior.html';

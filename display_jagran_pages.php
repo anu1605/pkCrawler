@@ -1,58 +1,56 @@
 <?php
 error_reporting(E_ERROR);
 
-if (empty($_POST['images'])) {
+// if (empty($_POST['images'])) {
 
-	$images = array();
-	$imageNameToSave = array();
+$images = array();
+$imageNameToSave = array();
 
-	$filenamedate = date('Y-m-d', time());
-	$dateForLinks = date('d-M-Y', time());
+$filenamedate = date('Y-m-d', time());
+$dateForLinks = date('d-M-Y', time());
 
-	$paperArray = array("Delhi", "Kanpur", "Patna", "Lucknow", "Varanasi", "Prayagraj", "Gorakhpur", "Agra", "Meerut", "Bhagalpur", "Muzaffarpur");
+$paperArray = array("indore", "bhopal", "gwalior", "jabalpur", "raipur", "bilaspur");
 
-	$paperString = array("-4-Delhi-City-edition-Delhi-City", "-64-Kanpur-edition-Kanpur", "-84-Patna-Nagar-edition-Patna-Nagar", "-11-Lucknow-edition-Lucknow", "-45-Varanasi-City-edition-Varanasi-City", "-79-Prayagraj-City-edition-Prayagraj-City", "-56-Gorakhpur-City-edition-Gorakhpur-City", "-193-Agra-edition-Agra", "-29-Meerut-edition-Meerut", "-205-Bhagalpur-City-edition-Bhagalpur-City", "-203-Muzaffarpur-Nagar-edition-Muzaffarpur-Nagar");
+$paperString = array("74", "33", "52", "59", "50", "71");
 
-	echo '<div id="crawlinfo"></div>';
+echo '<div id="crawlinfo"></div>';
 
-	for ($edition = 0; $edition < count($paperArray); $edition++) {
+for ($edition = 0; $edition < count($paperArray); $edition++) {
+	$code = $paperString[$edition];
+	$city = $paperArray[$edition];
+	$pageURL = "https://epaper.naidunia.com/epaper/" . $dateForLinks . "-" . $code . "-" . $city . "-edition-" . $city . ".html";
+	$response = file_get_contents($pageURL);
 
-		$response = file_get_contents("https://epaper.jagran.com/epaper/" . $dateForLinks . $paperString[$edition] . ".html");
 
-		$a = explode('<ul id="menu-toc" class="menu-toc">', $response);
-		$b = explode('</ul>', $a[1]);
-		$pagesHTML = $b[0];
 
-		$a = explode('ss.png">', $pagesHTML);
+	$a =  number_format(explode('"', explode('<input type="hidden" name="totalpage" id="totalpage" value="', $response)[1])[0]);
+	$array = (explode('<img data-src="',  explode('<div class="slidebox" id="item-zoom1">', $response)[1]));
 
-		$number = 1;
+	$number = 1;
 
-		for ($i = 0; $i < count($a) - 1; $i++) {
+	for ($i = 0; $i <= $a; $i++) {
 
-			$b = explode('data-src="', $a[$i]);
-			$url = $b[1];
-			$url_parts = explode('/', $url);
-			$last_part = end($url_parts);
-			$modified_last_part = 'M-' . $last_part . '.png';
-			$url_parts[count($url_parts) - 1] = $modified_last_part;
-			$pgImageURL = implode('/', $url_parts);
+		$pgImageURL = explode('" title', $array[$i])[0];
 
-			array_push($images, $pgImageURL);
-			$filepath = "DJ_" . $paperArray[$edition] . "_" . $filenamedate . "_" . $number . "_hin.jpg";
-			array_push($imageNameToSave, $filepath);
 
-			//echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
-			//ob_flush();
-			//flush();
+		array_push($images, $pgImageURL);
+		$filepath = "ND_" . $paperArray[$edition] . "_" . $filenamedate . "_" . $number . "_hin.jpg";
+		array_push($imageNameToSave, $filepath);
 
-			$number++;
-		}
+		//echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
+		//ob_flush();
+		//flush();
+
+		$number++;
 	}
-} else {
-
-	$images = explode(',', $_POST['images']);
-	$imageNameToSave = explode(',', $_POST['imageNameToSave']);
 }
+
+// }
+//  else {
+
+// 	$images = explode(',', $_POST['images']);
+// 	$imageNameToSave = explode(',', $_POST['imageNameToSave']);
+// }
 
 $num_images = count($images);
 ?>
@@ -76,10 +74,6 @@ $num_images = count($images);
 				float: left;
 				overflow: hidden;
 
-				img {
-					//max-width: 400px;
-					//height: auto;
-				}
 			}
 
 			.crop {
@@ -90,6 +84,11 @@ $num_images = count($images);
 					border: 1px solid black;
 				}
 			}
+		}
+
+		img {
+			max-width: 400px;
+			height: auto;
 		}
 
 		.jcrop-holder img {
