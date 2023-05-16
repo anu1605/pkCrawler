@@ -1,17 +1,16 @@
+
 <?php
 
-$url = "https://epaper.prabhatkhabar.com/3699317/RANCHI-City/RANCHI-City#page/1/1";
-
-$curl = curl_init();
-
-curl_setopt($curl, CURLOPT_URL, $url);
-curl_setopt($curl, CURLOPT_HEADER, 0);
-curl_setopt($curl, CURLOPT_TIMEOUT, 300);
-curl_setopt($curl, CURLOPT_USERAGENT, 'Mozilla/5.0 (compatible; MSIE 8.0; Trident/4.0)');
-curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1);
-curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-
-$data = curl_exec($curl);
-echo $data;
-$http_status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-curl_close($curl);
+$content = file_get_contents("https://epaper.prabhatkhabar.com/");
+$section1 = explode('<h2 class="section_heading_amp"> Ranchi </h2>', $content)[1];
+$section2 = explode("<!-- container end -->", $section1)[0];
+$section3 = explode('<div class="col-12 sm-col-4 md-col-4 card-box">                      <a href="', $section2);
+// echo gettype($section2[0]);
+// file_put_contents(dirname(__FILE__, 1) . "/test.txt", $section3);
+for ($i = 0; $i < count($section3); $i++) {
+    $linkSection = $section3[$i];
+    if (trim($linkSection) != '') {
+        echo str_replace("<br>", "", $linkSection);
+    }
+}
+?>

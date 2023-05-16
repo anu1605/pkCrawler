@@ -1,0 +1,36 @@
+$filenamedate = date('Y-m-d', time());
+// $dateForLinks = date('d-M-Y', time());
+
+$paperArray = array("Hyderabad", "Chennai", "Vijayawada", "Karimnagar", "Nellore", "Ananthapur", "Coimbatore", "Madurai");
+
+
+
+$paperString = ["HYD", "CHN", "VIJ", "KRM", "NEL", "ATP", "CBE", "MAD"];
+
+$pageNumber = 30;
+$sectionNumber = 30;
+echo '<div id="crawlinfo"></div>';
+
+for ($edition = 0; $edition < 1; $edition++) {
+    $code = $paperString[$edition];
+    $city = $paperArray[$edition];
+    $number = 1;
+
+    for ($i = 1; $i <= 1; $i++) {
+        if (strlen(file_get_contents("http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $i . "_1.jpg") != 0)) {
+
+            for ($j = 1; $j < 20; $j++) {
+
+                $link = "http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $i . "_" . $j . ".jpg";
+                if (strlen(file_get_contents($link)) == 0) {
+                    break;
+                } else {
+                    array_push($images, $link);
+                    $filepath = "DC_" . $paperArray[$edition] . "_" . $filenamedate . "_" . $number . "_hin.jpg";
+                    array_push($imageNameToSave, $filepath);
+                    $number++;
+                }
+            }
+        } else break;
+    }
+}
