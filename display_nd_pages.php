@@ -155,7 +155,6 @@ $num_images = count($images);
 		for ($i = 0; $i < count($images); $i++) {
 
 			$image = $images[$i];
-			echo $image;
 			$filename = $imageNameToSave[$i];
 			if ($image[$i] != '' && $image[$i] != null) {
 

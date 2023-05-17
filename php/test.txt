@@ -1,36 +1,3 @@
-$filenamedate = date('Y-m-d', time());
-// $dateForLinks = date('d-M-Y', time());
+<div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-1ss.jpg' class='pagethumb' onclick='pagechange(1);'></div></div><div id='pgmain2' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 2</span><div class='grthumbpgnumber'>2</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-2ss.jpg' class='pagethumb' onclick='pagechange(2);' ></div></div><div id='pgmain3' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 3</span><div class='grthumbpgnumber'>3</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-3ss.jpg' class='pagethumb' onclick='pagechange(3);' ></div></div><div id='pgmain4' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 4</span><div class='grthumbpgnumber'>4</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-4ss.jpg' class='pagethumb' onclick='pagechange(4);' ></div></div><div id='pgmain5' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 5</span><div class='grthumbpgnumber'>5</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-5ss.jpg' class='pagethumb' onclick='pagechange(5);' ></div></div><div id='pgmain6' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 6</span><div class='grthumbpgnumber'>6</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-6ss.jpg' class='pagethumb' onclick='pagechange(6);' ></div></div><div id='pgmain7' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 7</span><div class='grthumbpgnumber'>7</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-7ss.jpg' class='pagethumb' onclick='pagechange(7);' ></div></div><div id='pgmain8' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 8</span><div class='grthumbpgnumber'>8</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-8ss.jpg' class='pagethumb' onclick='pagechange(8);' ></div></div><div id='pgmain9' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 9</span><div class='grthumbpgnumber'>9</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-9ss.jpg' class='pagethumb' onclick='pagechange(9);' ></div></div><div id='pgmain10' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 10</span><div class='grthumbpgnumber'>10</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-10ss.jpg' class='pagethumb' onclick='pagechange(10);' ></div></div><div id='pgmain11' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 11</span><div class='grthumbpgnumber'>11</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-11ss.jpg' class='pagethumb' onclick='pagechange(11);' ></div></div><div id='pgmain12' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 12</span><div class='grthumbpgnumber'>12</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-12ss.jpg' class='pagethumb' onclick='pagechange(12);' ></div></div><div id='pgmain13' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 13</span><div class='grthumbpgnumber'>13</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-13ss.jpg' class='pagethumb' onclick='pagechange(13);' ></div></div><div id='pgmain14' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 14</span><div class='grthumbpgnumber'>14</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-14ss.jpg' class='pagethumb' onclick='pagechange(14);' ></div></div><div id='pgmain15' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 15</span><div class='grthumbpgnumber'>15</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-15ss.jpg' class='pagethumb' onclick='pagechange(15);' ></div></div><div id='pgmain16' class='leftthumb'><span class='thumbtitle'>पृष्ठ संख्या 16</span><div class='grthumbpgnumber'>16</div><div class='imgd'><img src='https://image.mepaper.navbharattimes.com/epaperimages//17052023//17052023-md-de-16ss.jpg' class='pagethumb' onclick='pagechange(16);' ></div></div></div>
 
-$paperArray = array("Hyderabad", "Chennai", "Vijayawada", "Karimnagar", "Nellore", "Ananthapur", "Coimbatore", "Madurai");
-
-
-
-$paperString = ["HYD", "CHN", "VIJ", "KRM", "NEL", "ATP", "CBE", "MAD"];
-
-$pageNumber = 30;
-$sectionNumber = 30;
-echo '<div id="crawlinfo"></div>';
-
-for ($edition = 0; $edition < 1; $edition++) {
-    $code = $paperString[$edition];
-    $city = $paperArray[$edition];
-    $number = 1;
-
-    for ($i = 1; $i <= 1; $i++) {
-        if (strlen(file_get_contents("http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $i . "_1.jpg") != 0)) {
-
-            for ($j = 1; $j < 20; $j++) {
-
-                $link = "http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $i . "_" . $j . ".jpg";
-                if (strlen(file_get_contents($link)) == 0) {
-                    break;
-                } else {
-                    array_push($images, $link);
-                    $filepath = "DC_" . $paperArray[$edition] . "_" . $filenamedate . "_" . $number . "_hin.jpg";
-                    array_push($imageNameToSave, $filepath);
-                    $number++;
-                }
-            }
-        } else break;
-    }
-}
+</div>

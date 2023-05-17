@@ -1,0 +1,66 @@
+		/* Set the maximum width and height of the thumbnails */
+		.thumbnail {
+		    width: 600px;
+		    height: auto;
+		    object-fit: contain;
+		}
+
+		/* Create a grid to display the thumbnails */
+		.gallery {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+		    grid-gap: 20px;
+		}
+
+		/* Style the image div */
+		.image {
+		    display: inline-block;
+		    vertical-align: top;
+		    text-align: center;
+		    padding: 10px;
+		    border: 1px solid #ddd;
+		    border-radius: 10px;
+		    box-sizing: border-box;
+		}
+		/* Style the image filename */
+		.filename {
+			margin-top: 10px;
+			font-size: 14px;
+			text-align: center;
+		}
+
+		/* Style the filter field and label */
+		.filter-label {
+			margin-bottom: 10px;
+		}
+		.filter-input {
+			padding: 5px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-size: 16px;
+			width: 600px;
+			box-sizing: border-box;
+		}
+		.filter-count {
+			margin-left: 10px;
+			color: #999;
+		}
+		.delete-icon {
+			display: block;
+			top: 5px;
+			right: 5px;
+			color: #ff0000;
+			cursor: pointer;
+		}
+
+		.image:hover .delete-icon {
+			display: block;
+		}
+
+		.delete-icon:hover {
+			color: #fff;
+			background-color: #ff0000;
+			border-radius: 50%;
+			padding: 5px;
+		}
+
