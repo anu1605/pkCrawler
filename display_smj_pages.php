@@ -6,44 +6,53 @@ error_reporting(E_ERROR);
 $images = array();
 $imageNameToSave = array();
 
-$date = date('Y-m-d', time());
+// $date = date('Y-m-d', time());
+// $linkDate = date('Y/m/d', time());
 
-$paperArray = array("Delhi", "Mumbai", "Lucknow", "Noida", "Ghaziabad", "faridabad", "Gurugram");
 
-$paperString = array("delhi/" . $date . "/13", "mumbai/" . $date . "/16", "lucknow-kanpur/" . $date . "/9", "noida/" . $date . "/19", "ghaziabad/" . $date . "/20", "faridabad/" . $date . "/24", "gurugram/" . $date . "/25");
+
+
+
 
 echo '<div id="crawlinfo"></div>';
+$date = date('Y-m-d', time());
 
-for ($edition = 0; $edition < count($paperString); $edition++) {
-    $code = $paperString[$edition];
-    $city = $paperArray[$edition];
-    $pageURL = "https://epaper.navbharattimes.com/" . $paperString[$edition] . "/page-1.html";
-    $content = file_get_contents($pageURL);
 
-    $section1 = explode("class='orgthumbpgnumber'>1</div>", $content)[1];
-    $section2 = explode('<div id="rsch"', $section1)[0];
-    $linkArray = explode("<div class='imgd'><img src='", $section2);
-    $number = 1;
-    foreach ($linkArray as $link) {
-        if (trim($link) != '') {
-            $imageLink =  str_replace('ss', '', trim(explode("' class='pagethumb'", $link)[0]));
-            array_push($images, $imageLink);
-            $filepath = "NBT_" . $paperArray[$edition] . "_" . $date . "_" . $number . "_hin.jpg";
-            array_push($imageNameToSave, $filepath);
-            $number++;
-        }
+$content = file_get_contents("https://samajaepaper.in/epaper/1/73/" . $date . "/1");
+$pageArray = explode("class='map", $content);
+
+
+
+
+$number = 1;
+for ($page = 1; $page < count($pageArray); $page++) {
+    $sections = explode("show_pop('", $pageArray[$page]);
+    file_put_contents(dirname(__FILE__) . "/test.txt", $sections[1]);
+    for ($sec = 1; $sec < count($sections); $sec++) {
+        $name = explode("','", $sections[$sec])[1];
+        $link = "https://samajaepaper.in/epaperimages/18052023/18052023-md-bh-" . $page . "/" . $name . ".jpg";
+        array_push($images, $link);
+        $filepath = "SMJ_Bhubaneswar"  . "_" . $date . "_" . $number . "_ori.jpg";
+        array_push($imageNameToSave, $filepath);
+        $number++;
     }
-
-
-
-
-
-    //echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
-    //ob_flush();
-    //flush();
-
-
 }
+
+
+
+
+
+
+
+
+
+
+//echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
+//ob_flush();
+//flush();
+
+
+
 
 $num_images = count($images);
 ?>
@@ -140,7 +149,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_nbt_folder()" class='btn btn-primary' style="float:right;">Clear nbt Folder</a>
+        <a href="javascript:void(0)" onclick="clear_smj_folder()" class='btn btn-primary' style="float:right;">Clear smj Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -153,14 +162,12 @@ $num_images = count($images);
 
             $image = $images[$i];
             $filename = $imageNameToSave[$i];
-            if ($image[$i] != '' && $image[$i] != null) {
 
-                echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
-            }
+            echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
         }
         ?>
     </div>
-    <form method="POST" action="display_nbt_pages.php" id="submit_form">
+    <form method="POST" action="display_smj_pages.php" id="submit_form">
         <input type="hidden" name="image_url" id="image_url">
         <input type="hidden" name="file_name" id="file_name">
         <input type="hidden" name="after_edit_cropped_imge" id="after_edit_cropped_imge">
@@ -207,14 +214,17 @@ $num_images = count($images);
             $("#loader").fadeOut();
         });
 
-        // claer jargan image folder
-        function clear_nbt_folder() {
-            $("#action").val('Clear_nbt_image_folder');
+        // claer smj image folder
+        function clear_smj_folder() {
+            $("#action").val('Clear_smj_image_folder');
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
-                data: formData,
+                url: 'paper_ajax.php',
+                data: formData + {
+                    paper: 'smj'
+                },
+                ,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
@@ -225,7 +235,8 @@ $num_images = count($images);
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                }
+                },
+
             });
         }
 
@@ -236,8 +247,11 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
-                data: formData,
+                url: 'paper_ajax.php',
+                data: formData + {
+                    paper: 'smj'
+                },
+
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
@@ -253,7 +267,9 @@ $num_images = count($images);
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                }
+                },
+
+
             });
         }
         // download image on server
@@ -265,8 +281,11 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
-                data: formData,
+                url: 'paper_ajax.php',
+                data: formData + {
+                    paper: 'smj'
+                },
+                ,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
@@ -277,7 +296,8 @@ $num_images = count($images);
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                }
+                },
+                paper: "smj"
             });
         }
 
@@ -288,21 +308,24 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
-                data: formData,
+                url: 'paper_ajax.php',
+                data: formData + {
+                    paper: 'smj'
+                },
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
                 success: function(response) {
                     $("#loader").fadeOut();
-                    var image_url = './nbt_images/' + filename;
+                    var image_url = './smj_images/' + filename;
                     var file_name = filename;
                     cropped_images(image_url, file_name);
                 },
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                }
+                },
+
             });
         }
         var multiplyFactor;

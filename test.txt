@@ -1,0 +1,2 @@
+17','18520232302249','4')" onMouseover="borderit(this,'black','')" onMouseout="borderit(this,'white')" data-tooltip="" > 
+<area shape="rect" class="borderimage"  coords="353.28,89.89,656.82,328.41"coords="384.798816,101.3741568,738.6095808,369.601848" href="#" onclick="return 

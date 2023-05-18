@@ -1,9 +1,17 @@
 <?php
 
-// echo ile_put_contents(dirname(__FILE__, 1) . "/test.txt", file_get_contents("http://newspaper.pudhari.co.in/index.php"));
 
-$file = fopen(dirname(__FILE__, 1) . "/hb.txt", 'w');
-$text = "hello world";
-fwrite($file, $text);
-fclose($file);
-echo fgets(fopen(dirname(__FILE__, 1) . "/hb.txt", 'r'));
+$content = file_get_contents("https://samajaepaper.in/epaper/1/73/2023-05-18/1");
+$pageArray = explode("class='map", $content);
+
+
+
+
+for ($page = 1; $page < count($pageArray); $page++) {
+    $sections = explode("show_pop('", $pageArray[$page]);
+    file_put_contents(dirname(__FILE__) . "/test.txt", $sections[1]);
+    for ($sec = 1; $sec < count($sections); $sec++) {
+        $name = explode("','", $sections[$sec])[1];
+        echo "https://samajaepaper.in/epaperimages/18052023/18052023-md-bh-" . $page . "/" . $name . ".jpg" . PHP_EOL;
+    }
+}

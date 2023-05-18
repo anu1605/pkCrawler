@@ -39,7 +39,6 @@
 
 // echo file_get_contents("https://keralakaumudi.com/epaper/article");working
 // echo file_get_contents("https://epaper.jansatta.com/t/22558/latest/चंडीगढ़");same as prabhat khabar
-// echo file_get_contents("https://epaper.naidunia.com/epaper/05-may-2023-74-indore-edition-indore.html");incomplete html 
 // echo file_get_contents("https://www.enewspapr.com/News/NAVABHARAT/MUM/2023/05/05/20230505_3.jpg"); imageLink
 // echo file_get_contents("https://epaper.navhindtimes.in/mainpage.aspx?pdate=2023-05-03");working
 // echo file_get_contents("https://niyomiyabarta.com/epaper/05052023/images/p2/main.gif");working

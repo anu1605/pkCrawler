@@ -7,43 +7,46 @@ $images = array();
 $imageNameToSave = array();
 
 $date = date('Y-m-d', time());
+$linkdate = date('dmY', time());
 
-$paperArray = array("Delhi", "Mumbai", "Lucknow", "Noida", "Ghaziabad", "faridabad", "Gurugram");
-
-$paperString = array("delhi/" . $date . "/13", "mumbai/" . $date . "/16", "lucknow-kanpur/" . $date . "/9", "noida/" . $date . "/19", "ghaziabad/" . $date . "/20", "faridabad/" . $date . "/24", "gurugram/" . $date . "/25");
 
 echo '<div id="crawlinfo"></div>';
 
-for ($edition = 0; $edition < count($paperString); $edition++) {
-    $code = $paperString[$edition];
-    $city = $paperArray[$edition];
-    $pageURL = "https://epaper.navbharattimes.com/" . $paperString[$edition] . "/page-1.html";
-    $content = file_get_contents($pageURL);
-
-    $section1 = explode("class='orgthumbpgnumber'>1</div>", $content)[1];
-    $section2 = explode('<div id="rsch"', $section1)[0];
-    $linkArray = explode("<div class='imgd'><img src='", $section2);
-    $number = 1;
-    foreach ($linkArray as $link) {
-        if (trim($link) != '') {
-            $imageLink =  str_replace('ss', '', trim(explode("' class='pagethumb'", $link)[0]));
+for ($pageNumber = 1; $pageNumber <= 20; $pageNumber++) {
+    if ($pageNumber == 1)
+        $page = "index.php";
+    else $page = "page" . $pageNumber . ".php";
+    $content = file_get_contents("https://niyomiyabarta.com/epaper/" . $linkdate . "/" . $page);
+    if ($content) {
+        $section1 = explode('<map name="Map2"', $content)[1];
+        $section2 = explode('</map>', $section1)[0];
+        $linkArray = explode("redirectme('", $section2);
+        file_put_contents(dirname(__FILE__, 1) . "/test.txt", $content);
+        $number = 1;
+        for ($page = 1; $page < count($linkArray); $page++) {
+            $pageName = explode("',", $linkArray[$page])[0];
+            // echo "https://niyomiyabarta.com/epaper/17052023/images/p" . $pageNumber . "/" . $pageName . PHP_EOL;
+            $imageLink =  "https://niyomiyabarta.com/epaper/" . $linkdate . "/images/p" . $pageNumber . "/" . $pageName;
             array_push($images, $imageLink);
-            $filepath = "NBT_" . $paperArray[$edition] . "_" . $date . "_" . $number . "_hin.jpg";
+            $filepath = "Nyb_" . "Guwahati" . "_" . $date . "_" . $number . "_hin.jpg";
             array_push($imageNameToSave, $filepath);
             $number++;
         }
-    }
-
-
-
-
-
-    //echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
-    //ob_flush();
-    //flush();
-
-
+    } else break;
 }
+
+
+
+
+
+
+
+//echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
+//ob_flush();
+//flush();
+
+
+
 
 $num_images = count($images);
 ?>
@@ -140,7 +143,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_nbt_folder()" class='btn btn-primary' style="float:right;">Clear nbt Folder</a>
+        <a href="javascript:void(0)" onclick="clear_nyb_folder()" class='btn btn-primary' style="float:right;">Clear nyb Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -160,7 +163,7 @@ $num_images = count($images);
         }
         ?>
     </div>
-    <form method="POST" action="display_nbt_pages.php" id="submit_form">
+    <form method="POST" action="display_nyb_pages.php" id="submit_form">
         <input type="hidden" name="image_url" id="image_url">
         <input type="hidden" name="file_name" id="file_name">
         <input type="hidden" name="after_edit_cropped_imge" id="after_edit_cropped_imge">
@@ -208,12 +211,12 @@ $num_images = count($images);
         });
 
         // claer jargan image folder
-        function clear_nbt_folder() {
-            $("#action").val('Clear_nbt_image_folder');
+        function clear_nyb_folder() {
+            $("#action").val('Clear_nyb_image_folder');
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
+                url: 'ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -236,7 +239,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
+                url: 'ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -265,7 +268,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
+                url: 'ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -288,14 +291,14 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'nbt_ajax.php',
+                url: 'ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
                 success: function(response) {
                     $("#loader").fadeOut();
-                    var image_url = './nbt_images/' + filename;
+                    var image_url = './nyb_images/' + filename;
                     var file_name = filename;
                     cropped_images(image_url, file_name);
                 },
