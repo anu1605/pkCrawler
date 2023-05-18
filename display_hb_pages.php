@@ -2,10 +2,7 @@
 error_reporting(E_ERROR);
 
 // if (empty($_POST['images'])) {
-echo dirname(__FILE__, 1) . "/hb.txt";
-echo fgets(fopen(dirname(__FILE__, 1) . "/hb.txt", "w+"));
 
-die();
 $images = array();
 $imageNameToSave = array();
 
@@ -34,7 +31,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
     $code = $cityCode[$edition];
     $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityLink[$edition] . "/";
     if (!file_get_contents($link . $code)) {
-        for ($i = 50; $i < 60; $i++) {
+        for ($i = 45; $i < 60; $i++) {
             $code = $cityCode[$edition] + $i;
             if (file_get_contents($link . $code)) {
                 array_push($newCodes, strval($code));
@@ -71,13 +68,19 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
 }
 if (count($newCodes) != 0) {
     // unlink(dirname(__FILE__) . "/hb.txt");
-    $myfile = fopen(dirname(__FILE__, 1) . "/hb.txt", "w") or die("Unable to open file!");
-    $txt =  $newCodes[0] . "," . $newCodes[1] . "," . $newCodes[2] . "";
-    fwrite($myfile, $txt);
-    fclose($myfile);
+    // $myfile = fopen(dirname(__FILE__, 1) . "/hb.txt", "w") or die("Unable to open file!");
+    // $txt =  $newCodes[0] . "," . $newCodes[1] . "," . $newCodes[2] . "";
+    // fwrite($myfile, $txt);
+    // fclose($myfile);
+
+    $file = fopen(dirname(__FILE__, 1) . "/hb.txt", 'w');
+    $txt =  "raipur=>" . $newCodes[0] . ",bilaspur=>" . $newCodes[1] . ",bhopal=>" . $newCodes[2] . "";
+    fwrite($file, $txt);
+    fclose($file);
 }
 
-print_r($newCodes);
+echo file_get_contents(dirname(__FILE__) . "/hb.txt");
+// print_r($newCodes);
 $num_images = count($images);
 ?>
 <!DOCTYPE html>
