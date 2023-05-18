@@ -31,7 +31,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
     $code = $cityCode[$edition];
     $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityLink[$edition] . "/";
     if (!file_get_contents($link . $code)) {
-        for ($i = 45; $i < 60; $i++) {
+        for ($i = 45; $i < 65; $i++) {
             $code = $cityCode[$edition] + $i;
             if (file_get_contents($link . $code)) {
                 array_push($newCodes, strval($code));
