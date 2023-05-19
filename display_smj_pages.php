@@ -3,6 +3,7 @@ error_reporting(E_ERROR);
 
 // if (empty($_POST['images'])) {
 
+
 $images = array();
 $imageNameToSave = array();
 
@@ -30,7 +31,7 @@ for ($page = 1; $page < count($pageArray); $page++) {
     file_put_contents(dirname(__FILE__) . "/test.txt", $sections[1]);
     for ($sec = 1; $sec < count($sections); $sec++) {
         $name = explode("','", $sections[$sec])[1];
-        $link = "https://samajaepaper.in/epaperimages/18052023/18052023-md-bh-" . $page . "/" . $name . ".jpg";
+        $link = "https://samajaepaper.in/epaperimages/19052023/19052023-md-bh-" . $page . "/" . $name . ".jpg";
         array_push($images, $link);
         $filepath = "SMJ_Bhubaneswar"  . "_" . $date . "_" . $number . "_ori.jpg";
         array_push($imageNameToSave, $filepath);
@@ -55,6 +56,7 @@ for ($page = 1; $page < count($pageArray); $page++) {
 
 
 $num_images = count($images);
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -149,7 +151,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_smj_folder()" class='btn btn-primary' style="float:right;">Clear smj Folder</a>
+        <a href="javascript:void(0)" onclick="clear_smj_folder()" class='btn btn-primary' style="float:right;">Clear nai dunia Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -162,8 +164,10 @@ $num_images = count($images);
 
             $image = $images[$i];
             $filename = $imageNameToSave[$i];
+            if ($image[$i] != '' && $image[$i] != null) {
 
-            echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
+                echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
+            }
         }
         ?>
     </div>
@@ -174,6 +178,7 @@ $num_images = count($images);
         <input type="hidden" name="images" value="<?php echo implode(',', $images); ?>">
         <input type="hidden" name="imageNameToSave" value="<?php echo implode(',', $imageNameToSave); ?>">
         <input type="hidden" name="action" id="action">
+        <input type="hidden" name="paper" id="paper" value='smj'>
         <button type="submit" style="display:none;"></button>
     </form>
     <div id="loader"></div>
@@ -214,17 +219,14 @@ $num_images = count($images);
             $("#loader").fadeOut();
         });
 
-        // claer smj image folder
+        // claer jargan image folder
         function clear_smj_folder() {
             $("#action").val('Clear_smj_image_folder');
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
                 url: 'paper_ajax.php',
-                data: formData + {
-                    paper: 'smj'
-                },
-                ,
+                data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
@@ -235,8 +237,7 @@ $num_images = count($images);
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                },
-
+                }
             });
         }
 
@@ -248,10 +249,7 @@ $num_images = count($images);
             $.ajax({
                 type: 'POST',
                 url: 'paper_ajax.php',
-                data: formData + {
-                    paper: 'smj'
-                },
-
+                data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
@@ -267,9 +265,7 @@ $num_images = count($images);
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                },
-
-
+                }
             });
         }
         // download image on server
@@ -282,10 +278,7 @@ $num_images = count($images);
             $.ajax({
                 type: 'POST',
                 url: 'paper_ajax.php',
-                data: formData + {
-                    paper: 'smj'
-                },
-                ,
+                data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
@@ -296,8 +289,7 @@ $num_images = count($images);
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                },
-                paper: "smj"
+                }
             });
         }
 
@@ -309,9 +301,7 @@ $num_images = count($images);
             $.ajax({
                 type: 'POST',
                 url: 'paper_ajax.php',
-                data: formData + {
-                    paper: 'smj'
-                },
+                data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
@@ -324,8 +314,7 @@ $num_images = count($images);
                 error: function(xhr, status, error) {
                     $("#loader").fadeOut();
                     alert("Faced an error");
-                },
-
+                }
             });
         }
         var multiplyFactor;

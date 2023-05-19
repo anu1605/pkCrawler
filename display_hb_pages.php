@@ -30,15 +30,26 @@ echo '<div id="crawlinfo"></div>';
 for ($edition = 0; $edition < count($cityArray); $edition++) {
     $code = $cityCode[$edition];
     $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityLink[$edition] . "/";
+
     if (!file_get_contents($link . $code)) {
         for ($i = 40; $i < 70; $i++) {
             $code = $cityCode[$edition] + $i;
+            if ($cityArray[$edition] == "raipur") {
+                $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
+                if (file_get_contents($link2 . $code)) {
+                    $link = $link2;
+                    array_push($newCodes, strval($code));
+                    break;
+                }
+            }
             if (file_get_contents($link . $code)) {
                 array_push($newCodes, strval($code));
                 break;
             }
         }
+        array_push($newCodes, $cityCode[$edition]);
     }
+
 
     $content = file_get_contents($link . $code);
     $section1 = explode('id="slider-epaper" class="imageGalleryWrapper"><li data-index="0" ', $content)[1];

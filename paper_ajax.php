@@ -1,7 +1,7 @@
 <?php
 
 $paperCode = $_POST['paper'];
-if ($_POST['action'] == 'Clear_smj_image_folder') {
+if ($_POST['action'] == 'Clear_' . $paperCode . '_image_folder') {
 
     $dir = './' . $paperCode . '_images';
     foreach (glob($dir . '/*') as $file) {
@@ -38,11 +38,18 @@ if ($_POST['action'] == 'update_cropped_image') {
         return false;
     }
 }
-if ($_POST['action'] == 'upload_images_on_server' && $_POST['paper'] == "smj") {
+// if ($_POST['action'] == 'upload_images_on_server') {
+//     $url = $_POST['image_url'];
+//     $response = file_get_contents($url);
+//     if ($response and file_put_contents("/var/www/d78236gbe27823/marketing/Whatsapp2/smj_images/" . $_POST['file_name'], $response)) {
+//         echo "Success";
+//     } else return false;
+// }
+if ($_POST['action'] == 'upload_images_on_server') {
     $paper = $_POST['paper'];
     $url = $_POST['image_url'];
     $response = file_get_contents($url);
-    if ($response and file_put_contents("/var/www/d78236gbe27823/marketing/Whatsapp2/smj_images/" . $_POST['file_name'], $response)) {
+    if ($response and file_put_contents("/var/www/d78236gbe27823/marketing/Whatsapp2/" . $paper . "_images/" . $_POST['file_name'], $response)) {
         echo "Success";
     } else return false;
 }
