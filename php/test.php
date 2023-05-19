@@ -1,55 +1,38 @@
 <?php
 
-
-$images = array();
-$imageNameToSave = array();
-
-// $date = date('Y-m-d', time());
-// $linkDate = date('Y/m/d', time());
+// $content = file_get_contents("https://www.mumbaichoufer.com/view/83/mc");
+// $idArray = explode('"mp_id":"', $content);
+// echo count($idArray);
+// file_put_contents(dirname(__FILE__) . "/test.txt", $content);
 
 
+// file_put_contents(dirname(__FILE__) . "/test.txt", $content);
 
+// $cityArray = array("mumbai" => "PM", "pune" => "PU", "nashik" => "NS", "aurangabad" => "AUR", "nagpur" => "NAG", "kolhapur" => "KOL", "satara" => "STR", "nanded" => "NDD", "latur" => "LTR", "ahmednagar" => "AH", "jalgaon" => "JAL");
 
+// for ($page = 1; $page < 20; $page++) {
+//     $link = "http://epunyanagari.com/articlepage.php?articleid=PNAGARI_NS_20230519_";
+//     for ($section = 1; $section < 30; $section++) {
 
+//         $content = file_get_contents($link . sprintf('%02d', $page) . "_" . $section);
+//         if ($content) {
+//             $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
+//             $imageInfo = getimagesize($imagelink);
+//             if (!$imageInfo)
+//                 break;
 
-echo '<div id="crawlinfo"></div>';
-$date = date('Y-m-d', time());
+//             $width = $imageInfo[0];
+//             $height = $imageInfo[1];
+//             if ($width >= $height)
+//                 $minHeight = $width + intdiv((3 * $width), 4);
+//             else
+//                 $minHeight =  $width - intdiv((2 * $width), 5);
+//             if ($height >= $minHeight || $height >= $width + 10 || $height >= $width - 100) {
+//                 echo $imagelink . PHP_EOL;
+//             }
+//         }
+//     }
+// }
 
-
-$content = file_get_contents("https://samajaepaper.in/epaper/1/73/" . $date . "/1");
-$pageArray = explode("class='map", $content);
-
-
-
-
-$number = 1;
-for ($page = 1; $page < count($pageArray); $page++) {
-    $sections = explode("show_pop('", $pageArray[$page]);
-    file_put_contents(dirname(__FILE__) . "/test.txt", $sections[1]);
-    for ($sec = 1; $sec < count($sections); $sec++) {
-        $name = explode("','", $sections[$sec])[1];
-        $link = "https://samajaepaper.in/epaperimages/19052023/19052023-md-bh-" . $page . "/" . $name . ".jpg";
-        array_push($images, $link);
-        $filepath = "SMJ_Bhubaneswar"  . "_" . $date . "_" . $number . "_ori.jpg";
-        array_push($imageNameToSave, $filepath);
-        $number++;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-//echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
-//ob_flush();
-//flush();
-
-
-
-
-$num_images = count($images);
+$content = file_get_contents("http://epaper.heraldgoa.in/viewpage.php?edition=oHeraldo&date=2023-05-19&edid=OHERALDO_GOA&pn=1");
+file_put_contents(dirname(__FILE__) . "/test.txt", $content);

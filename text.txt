@@ -3,13 +3,13 @@ HB (hin) - hari bhumi
 HT (eng) - hindustan times
 KM (kan) - karnataka malla
 LH (hin) - live hindustan
-MC (mar) - mumbai chaufer
-MM (kan) - Mysuru Mithra
+MC (mar) - mumbai chaufer(combined)
+MM (kan) - Mysuru Mithra(only html content)
 NBT (hin) - nav bharat times(D)
-NGS (guj) - nav gujrat samay
-NHT (eng) - nav hind times
-NT (tel) - namaste telangana
-OHO (eng) - o herald o
+NGS (guj) - nav gujrat samay(section images)
+NHT (eng) - nav hind times(time consuming)
+NT (tel) - namaste telangana(get request failed)
+OHO (eng) - o herald o()
 PAP (hin) - purvanchal purhari
 PBK (hin) - prabhat khabar
 PRM (ori) - premaya

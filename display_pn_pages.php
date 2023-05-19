@@ -3,60 +3,59 @@ error_reporting(E_ERROR);
 
 // if (empty($_POST['images'])) {
 
-
 $images = array();
 $imageNameToSave = array();
 
-$date = date('Y-m-d', time());
-$linkDate = date('dmY', time());
+$filenamedate = date('Y-m-d', time());
+$dateForLinks = date('Ymd', time());
 
-
-
-
-
+// $cityarray = array("mumbai" => "PM", "pune" => "PU", "nashik" => "NS", "aurangabad" => "AUR", "nagpur" => "NAG", "kolhapur" => "KOL", "satara" => "STR", "nanded" => "NDD", "latur" => "LTR", "ahmednagar" => "AH", "jalgaon" => "JAL");
+$cityarray = ["pune", "nashik", "aurangabad", "nagpur", "kolhapur", "satara", "nanded", "latur", "ahmednagar", "jalgaon",];
+$citycodes = ["PU", "NS", "AUR", "NAG", "KOL", "STR", "NDD", "LTR", "AH", "JAL"];
 
 echo '<div id="crawlinfo"></div>';
-$date = date('Y-m-d', time());
 
+for ($edition = 0; $edition < count($cityarray); $edition++) {
+    $code = $citycodes[$edition];
+    $city = $cityarray[$edition];
 
-$content = file_get_contents("https://samajaepaper.in/epaper/1/73/" . $date . "/1");
-$pageArray = explode("class='map", $content);
+    $number = 1;
+    for ($page = 1; $page < 20; $page++) {
+        $link = "http://epunyanagari.com/articlepage.php?articleid=PNAGARI_" . $code . "_" . $dateForLinks . "_";
+        for ($section = 1; $section < 30; $section++) {
 
+            $content = file_get_contents($link . sprintf('%02d', $page) . "_" . $section);
+            if ($content) {
+                $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
+                $imageInfo = getimagesize($imagelink);
+                if (!$imageInfo)
+                    break;
 
-
-
-$number = 1;
-for ($page = 1; $page < count($pageArray); $page++) {
-    $sections = explode("show_pop('", $pageArray[$page]);
-    file_put_contents(dirname(__FILE__) . "/test.txt", $sections[1]);
-    for ($sec = 1; $sec < count($sections); $sec++) {
-        $name = explode("','", $sections[$sec])[1];
-        $link = "https://samajaepaper.in/epaperimages/" . $linkDate . "/" . $linkDate . "-md-bh-" . $page . "/" . $name . ".jpg";
-        array_push($images, $link);
-        $filepath = "SMJ_Bhubaneswar"  . "_" . $date . "_" . $number . "_ori.jpg";
-        array_push($imageNameToSave, $filepath);
-        $number++;
+                $width = $imageInfo[0];
+                $height = $imageInfo[1];
+                if ($height >= $width)
+                    $minHeight = $width + intdiv((3 * $width), 4);
+                else
+                    $minHeight =  $width - intdiv((2 * $width), 5);
+                if ($height >= $minHeight || $height >= $width + 10 || $height >= $width - 100) {
+                    array_push($images, $imagelink);
+                    $filepath = "PN_" . $cityarray[$edition] . "_" . $filenamedate . "_" . $number . "_mar.jpg";
+                    array_push($imageNameToSave, $filepath);
+                    $number++;
+                }
+            }
+        }
     }
+
+
+    //echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
+    //ob_flush();
+    //flush();
+
+
 }
 
-
-
-
-
-
-
-
-
-
-//echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
-//ob_flush();
-//flush();
-
-
-
-
 $num_images = count($images);
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -151,7 +150,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_smj_folder()" class='btn btn-primary' style="float:right;">Clear nai dunia Folder</a>
+        <a href="javascript:void(0)" onclick="clear_pn_folder()" class='btn btn-primary' style="float:right;">Clear nai dunia Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -164,21 +163,20 @@ $num_images = count($images);
 
             $image = $images[$i];
             $filename = $imageNameToSave[$i];
-            if ($image[$i] != '' && $image[$i] != null) {
 
-                echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
-            }
+
+            echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
         }
         ?>
     </div>
-    <form method="POST" action="display_smj_pages.php" id="submit_form">
+    <form method="POST" action="display_pn_pages.php" id="submit_form">
         <input type="hidden" name="image_url" id="image_url">
         <input type="hidden" name="file_name" id="file_name">
         <input type="hidden" name="after_edit_cropped_imge" id="after_edit_cropped_imge">
         <input type="hidden" name="images" value="<?php echo implode(',', $images); ?>">
         <input type="hidden" name="imageNameToSave" value="<?php echo implode(',', $imageNameToSave); ?>">
         <input type="hidden" name="action" id="action">
-        <input type="hidden" name="paper" id="paper" value='smj'>
+        <input type="hidden" name="paper" id="paper" value="pn">
         <button type="submit" style="display:none;"></button>
     </form>
     <div id="loader"></div>
@@ -220,8 +218,8 @@ $num_images = count($images);
         });
 
         // claer jargan image folder
-        function clear_smj_folder() {
-            $("#action").val('Clear_smj_image_folder');
+        function clear_pn_folder() {
+            $("#action").val('Clear_pn_image_folder');
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
@@ -248,7 +246,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'paper_ajax.php',
+                url: 'nd_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -307,7 +305,7 @@ $num_images = count($images);
                 },
                 success: function(response) {
                     $("#loader").fadeOut();
-                    var image_url = './smj_images/' + filename;
+                    var image_url = './pn_images/' + filename;
                     var file_name = filename;
                     cropped_images(image_url, file_name);
                 },
