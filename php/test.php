@@ -31,8 +31,8 @@
 //                 echo $imagelink . PHP_EOL;
 //             }
 //         }
-//     }
+//     }php
 // }
 
-$content = file_get_contents("http://epaper.heraldgoa.in/viewpage.php?edition=oHeraldo&date=2023-05-19&edid=OHERALDO_GOA&pn=1");
+$content = file_get_contents("https://epaper.starofmysore.com/epaper/edition/2272/star-mysore/page/2");
 file_put_contents(dirname(__FILE__) . "/test.txt", $content);
