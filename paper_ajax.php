@@ -49,6 +49,7 @@ if ($_POST['action'] == 'upload_images_on_server') {
     $paper = $_POST['paper'];
     $url = $_POST['image_url'];
     $response = file_get_contents($url);
+    echo $response;
     if ($response and file_put_contents("/var/www/d78236gbe27823/marketing/Whatsapp2/" . $paper . "_images/" . $_POST['file_name'], $response)) {
         echo "Success";
     } else return false;

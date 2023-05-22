@@ -34,5 +34,7 @@
 //     }php
 // }
 
-$content = file_get_contents("https://epaper.thehindu.com/reader");
-file_put_contents(dirname(__FILE__) . "/test.txt", $content);
+$content = file_get_contents("http://karnatakamalla.com/");
+$getdate = explode('&pn', explode('KARMAL_MAI&date=', $content)[1])[0];
+$time = strtotime($getdate);
+echo date('Y-m-d', $time);

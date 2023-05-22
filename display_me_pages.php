@@ -18,23 +18,23 @@ for ($edition = 0; $edition < 3; $edition++) {
         $datecode = file_get_contents(dirname(__FILE__) . "/mc.txt");
 
 
-        for ($count = 0; $count < 20; $count++) {
-            $datecode = $datecode + $count;
-            if (file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc")) {
-                $file = fopen(dirname(__FILE__) . "/mc.txt", "w+");
-                $txt = $datecode;
-                fwrite($file, $txt);
-                fclose($file);
-                break;
-            }
+
+        $code = $datecode + 1;
+        if (file_get_contents("https://www.mumbaichoufer.com/view/" . $code . "/mc")) {
+            $file = fopen(dirname(__FILE__) . "/mc.txt", "w+");
+            $txt = $datecode;
+            $datecode = $code;
+            fwrite($file, $txt);
+            fclose($file);
         }
 
 
+
         $content =   file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
-        $url = "https://www.mumbaichoufer.com/view/" . $datecode . "/mc/10";
-        $section1 = explode($url, $content)[0];
-        $idarray = explode('"mp_id":"', $section1);
-        for ($id = 1; $id < count($idarray); $id++) {
+        $firstId = explode('"', explode('{"mp_id":"', $content)[1])[0];
+        $section1 = explode($firstId, $content)[1];
+        $idarray = explode('{"mp_id":"', $section1);
+        for ($id = 1; $id < count($idarray) - 1; $id++) {
             $imageId = explode('"', $idarray[$id])[0];
             $imagelink = "https://www.mumbaichoufer.com/map-image/" . $imageId . ".jpg";
             array_push($images, $imagelink);
@@ -47,9 +47,14 @@ for ($edition = 0; $edition < 3; $edition++) {
 
     if ($edition == 1) {
         $number = 1;
+        $content = file_get_contents("http://karnatakamalla.com/");
+        $getdate = explode('&pn', explode('KARMAL_MAI&date=', $content)[1])[0];
+        $time = strtotime($getdate);
+        $kmdate = date('Ymd', $time);
+        $kmfilenamedate = date('Y-m-d', $time);
         for ($page = 1; $page < 20; $page++) {
             for ($section = 1; $section < 30; $section++) {
-                $content = file_get_contents("http://karnatakamalla.com/articlepage.php?articleid=KARMAL_MAI_" . $date . "_" .  $page . "_" . $section);
+                $content = file_get_contents("http://karnatakamalla.com/articlepage.php?articleid=KARMAL_MAI_" . $kmdate . "_" .  $page . "_" . $section);
                 if ($content) {
                     $imagelink = explode('"', explode('id="artimg"  src="', $content)[1])[0];
                     $imageInfo = getimagesize($imagelink);
@@ -61,7 +66,7 @@ for ($edition = 0; $edition < 3; $edition++) {
 
                     if ($height >= $width) {
                         array_push($images, $imagelink);
-                        $filepath = "KM_" . "Karnataka" . "_" . $filenamedate . "_" . $number . "_kan.jpg";
+                        $filepath = "KM_" . "Karnataka" . "_" . $kmfilenamedate . "_" . $number . "_kan.jpg";
                         array_push($imageNameToSave, $filepath);
                         $number++;
                     }
@@ -194,7 +199,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_se_folder()" class='btn btn-primary' style="float:right;">Clear nai dunia Folder</a>
+        <a href="javascript:void(0)" onclick="clear_me_folder()" class='btn btn-primary' style="float:right;">Clear me Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -208,18 +213,19 @@ $num_images = count($images);
             $image = $images[$i];
             $filename = $imageNameToSave[$i];
 
+
             echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
         }
         ?>
     </div>
-    <form method="POST" action="display_se_pages.php" id="submit_form">
+    <form method="POST" action="display_me_pages.php" id="submit_form">
         <input type="hidden" name="image_url" id="image_url">
         <input type="hidden" name="file_name" id="file_name">
         <input type="hidden" name="after_edit_cropped_imge" id="after_edit_cropped_imge">
         <input type="hidden" name="images" value="<?php echo implode(',', $images); ?>">
         <input type="hidden" name="imageNameToSave" value="<?php echo implode(',', $imageNameToSave); ?>">
         <input type="hidden" name="action" id="action">
-        <input type="hidden" name="paper" id="paper" value="se">
+        <input type="hidden" name="paper" id="paper" value="me">
         <button type="submit" style="display:none;"></button>
     </form>
     <div id="loader"></div>
@@ -261,8 +267,8 @@ $num_images = count($images);
         });
 
         // claer jargan image folder
-        function clear_se_folder() {
-            $("#action").val('Clear_se_image_folder');
+        function clear_me_folder() {
+            $("#action").val('Clear_me_image_folder');
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
@@ -348,7 +354,7 @@ $num_images = count($images);
                 },
                 success: function(response) {
                     $("#loader").fadeOut();
-                    var image_url = './se_images/' + filename;
+                    var image_url = './me_images/' + filename;
                     var file_name = filename;
                     cropped_images(image_url, file_name);
                 },

@@ -1,57 +1,825 @@
-<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="google-site-verification" content="WY1FmWvKRVS0orKhLIaom7dbGrniILc-sHUaRmeR6cs" /><link rel="icon" href="/favicon.ico"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="Stylesheet" /><link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css"><title>Epaper-The Hindu</title><script defer="defer" src="/js/chunk-vendors.77f6cd47.js"></script><script defer="defer" src="/js/app.2f6960e7.js"></script><link href="/css/app.78b59faa.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but Epaper-The Hindu doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><div id="consent_blackbar"></div><script src="https://cdn.piano.io/api/tinypass.min.js"></script><script src="https://experience.tinypass.com/xbuilder/experience/load?aid=zUShAI0Opu"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script><script charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script><script>window.$ = $;
-      window.th_ep = {}</script><script>var _paq = (window._paq = window._paq || []);
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      (function () {
-        var u = "//mtdg.thehindu.com/";
-        _paq.push(["setTrackerUrl", u + "matomo.php"]);
-        _paq.push(["setSiteId", "1"]);
-        var d = document,
-          g = d.createElement("script"),
-          s = d.getElementsByTagName("script")[0];
-        g.async = true;
-        g.src = u + "matomo.js";
-        s.parentNode.insertBefore(g, s);
-      })();
-      
-      function openNav() {
-          $('.navbar-collapse').show();
-          document.getElementById("navbarResponsive").style.width = "100%";
-      }
+<!DOCTYPE html>
+<html>
+<head>
 
-      function closeNav() {
-          document.getElementById("navbarResponsive").style.width = "0%";
-          $('.navbar-collapse').hide();
-      }
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <title>KarnatakaMalla</title>
+    <meta name="author" content="eReleGo Digi Media Pvt Ltd">
+	<link rel="shortcut icon" type="image/png" href="#" />
+  <meta name="author" content="eReleGo Digi Media Pvt Ltd">
+	<link rel="shortcut icon" type="image/png" href="#" />
+  
+<meta name="og:title" content="KarnatakaMalla">       
+<meta name="description" content="KarnatakaMalla.">  
+<meta name="keywords" content="KarnatakaMalla">
+	<meta property="og:site_name" content="epaper KarnatakaMalla">
+	<meta property="og:title" content="KarnatakaMalla " />
+	<meta property="og:description" content="KarnatakaMalla" />
+	<meta property="og:image" itemprop="image" content="//cjss.enewspapr.com/KarnatakaMalla/images/northlines.png">
+	<meta property="og:type" content="website" />
 
-      var dataLayer = window.dataLayer = window.dataLayer || [];
-      /* Google tag manager */
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', "GTM-PBKNQ29");</script><script data-cfasync="false">var thgCookieConsent = new Promise(function (resolve, reject) {
-        let script = document.createElement('script');
-        script.src = "https://consent.truste.com/notice?domain=hindugroup.com&c=teconsent&gtm=1&pcookie&js=nj&noticeType=bb&gtm=1&text=true";
-        script.async = true;
-        script.onload = function () {
-          resolve(script);
-        }
-        script.onerror = function () {
-          resolve(script);
-        }
-        document.head.append(script);
-      });</script><script>function readCookie(name) {
-        var nameEQ = name + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-          var c = ca[i];
-          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-      }
-      var thg = { required: !0, functional: !1, advertising: !1, requiredCookie: function () { return thg.required }, functionalCookie: function () { return thg.functional }, advertisingCookie: function () { return thg.advertising } }; thgCookieConsent.then(function () { var constentbehavior = readCookie("notice_behavior"), cookieconsent = readCookie("cmapi_cookie_privacy"); null == cookieconsent && null != constentbehavior && -1 == constentbehavior.indexOf("eu") ? (thg.functional = !0, thg.advertising = !0) : null !== cookieconsent ? (cookieconsent.indexOf("permit") > -1 && cookieconsent.indexOf("2") > -1 && (thg.functional = !0), cookieconsent.indexOf("permit") > -1 && cookieconsent.indexOf("3") > -1 && (thg.advertising = !0)) : null == constentbehavior && (thg.functional = !0, thg.advertising = !0); });</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cacd0fd886c415e","version":"2023.4.0","b":1,"token":"eaed15cee0874f9fad025889fee44b63","si":100}' crossorigin="anonymous"></script>
-</body></html>
+<script>
+var selfUrl = 'http://karnatakamalla.com/';
+var baseUrl = 'http://www.enewspapr.com/';
+</script>
+
+<link type="text/css" rel="stylesheet" href="http://cjss.enewspapr.com/common/css/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="http://cjss.enewspapr.com/KarnatakaMalla/includes/css/font-awesome.min.css">
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jquery.js"></script>
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/bootstrap.min.js"></script>
+<style>
+html{
+	background-color: #c1c1c1!important;
+}
+img {
+  transition: opacity .3s ease-in;
+}
+.Newtabs li a:hover , .Newtabs li a:focus {
+	color: white;
+	background-color: #ff5722;
+}
+.ed-title span {
+    background: #2c5c8a none repeat scroll 0 0;
+    bottom: 0;
+    color: #fff;
+    /* float: left; */
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    padding: 5px 15px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+#modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+	text-align:center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+#modal-bg a{
+	display:block;
+	margin-top:10px;
+}
+#modal-close-btn {
+    position: fixed;
+    top: 0px;
+    right: 5px;
+    width: 32px;
+    padding: 0px 5px;
+    height: 32px;
+    color: white;
+    background: black;
+    font-size: 23px;
+    text-shadow: 0 1px 2px #333;
+    z-index: 999;
+}
+.thumbnl{
+padding: 10px 10px !important;
+    text-align: center;
+    color: white;
+    
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 13px;
+    text-transform: none !important;
+    font-weight: bold;
+    /* line-height: 23px; */
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+
+}
+.text-center.affix {
+    top: 0px;
+    position: fixed;
+    background-color: #efefef;
+    width: 100% !important;
+}
+.logo_head {
+    background-color: #ffffff !important;
+    box-shadow: 4px 2px 17px 2px rgba(187, 187, 187,0.4);
+    float: left;
+    width: 100% !important;
+} 
+.logo_main {
+
+ width: 31%;
+}
+.logo_cls {
+    float: left;
+    width: 100%;
+	 padding: 5px 0px 5px;
+}
+.logo_main a {
+   
+}
+.logo_main a img{
+    width: 100%;
+}
+.navbar-right {
+    float: left !important;
+    margin-left: 13%;
+}
+.scrolltop {
+	display:none;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	bottom:20px;
+	right:10px;	
+}
+.scroll {
+	position:absolute;
+	right:20px;
+	bottom:20px;
+	background:#b2b2b2;
+	background:rgba(178,178,178,0.7);
+	padding:20px;
+	text-align: center;
+	margin: 0 0 0 0;
+	cursor:pointer;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover {
+	background:rgba(178,178,178,1.0);
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 		
+}
+.scroll:hover .fa {
+	padding-top:-10px;
+}
+.scroll .fa {
+	font-size:30px;
+	margin-top:-5px;
+	margin-left:1px;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.header-ad {
+    margin: 10px 0;
+}
+@media screen and (min-width:768px) {
+	.text-center,#share_whtsup {
+		
+	}
+}
+@media screen and (max-width:767px) {
+	#fbbtn{
+		display:inline-flex;
+		text-align:center;
+	}
+	#IconsDiv {
+    background-color: #000 !important;
+    padding: 5px;
+    box-shadow: 4px 2px 17px 2px rgba(187, 187, 187,0.4);
+  
+    width: 100% !important;
+    text-align: center!important;
+}
+	.mbl_view_date{
+		display:inline-flex;
+		text-align:center;
+	}
+	#fbbtn,PrintImg,#zoomIn,#share_link {
+		
+	}
+		.article-content {
+		width:100% !important;
+		margin:0 !important;
+		margin-top:30px !important;
+	}
+		#mydata1 {
+			margin-right:0 !important;
+		}
+	.logo_main {
+    width: 100%;
+	text-align:center;
+}
+
+.img-section {
+	background:none !important;
+	margin:10px 0 !important;
+	border: 1px solid #ddd;
+	border-radius:0 !important;
+}
+.img-section img{
+width:100% !important;
+}
+.img-section ul{
+	background:#fff !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding: 5px 25px !important;
+	border-radius:0 !important;
+}
+}
+.logo_header{
+	background-color:#ffffff;
+}
+</style> 
+
+
+
+
+		<script>
+	 $(document).ready(function(){
+	
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 300 ) {
+        $('.scrolltop:hidden').stop(true, true).fadeIn();
+    } else {
+        $('.scrolltop').stop(true, true).fadeOut();
+    }
+});
+$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:0},"1000");return false})})
+	
+});
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PGGQRL1EL9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PGGQRL1EL9');
+</script>
+
+
+<meta name="google-site-verification" content="xFuXTD_TLGkgBMbZmDOWXJ9NSPNqX3dKpG8e58VSzhQ" />
+</head>
+		<div class="logo_header">
+         <div class="container">
+            
+               <div class="logo_main">
+                  
+                  <div class="logo_cls">
+                     <a href="http://www.thenorthlines.com/"> 
+                        <img alt="KarnatakaMalla" src="http://cjss.enewspapr.com/KarnatakaMalla/includes/images/logo.png" alt="logo" > 
+                     </a>
+                  </div>
+            
+               </div>
+            
+           
+                <div class="header-ad" style="float:right;">
+				  				
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
+     crossorigin="anonymous"></script>
+<!-- karnatakamalla_ROS_D_728x90_Top -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8618678329245343"
+     data-ad-slot="6820183624"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			
+						
+								               </div> 
+<!-- <a href="https://bfrealty.in//bf-meadows-apartment-for-sale-in-ravora-north-goa/"> 
+                        <img style="width:auto;" alt="meadows" src="includes/images/728X90_MEADOWS.jpg"> 
+                     </a> -->
+			
+			</div>
+         </div>
+		 
+		 
+		 
+		 
+		    <div class="mainedition_inner" style="border-top: 1px solid #ffffff;background-color: white;border-block-color: black;">
+<a href="http://mumbaichoufer.com/" target="_blank"><img src="http://karnatakamalla.com/includes/images/MumbaiChoufernew.png" alt="mumbaichaufer_logo" class="edition-logo" style="width: 118px;"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<a href="http://yeshobhumi.com/" target="_blank"><img src="http://yeshobhumi.com/includes/images/Yashobhumi.jpg" alt="yashobhumi_logo" class="edition-logo yahobhumilogo" style="width: 118px;"></a>
+
+<a href="http://epunyanagari.com/" target="_blank"><img src="http://epunyanagari.com//includes/images/punyanagari.jpg" alt="punyanagari" class="edition-logo punyanagari" style="width: 144px;margin-left: 10px;"></a>
+
+
+</div>
+  
+         
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
+     crossorigin="anonymous"></script>
+
+<script>
+var edid = 'KARMAL_MAI';
+</script>
+
+
+<script>
+ if(typeof colombia == 'undefined')
+		{
+			var colombia = colombia || {};
+			colombia.fns = colombia.fns || [];
+			(function() {
+				  var cads = document.createElement("script");
+				  cads.async = true;
+				  cads.type = "text/javascript";
+				  cads.src = "//static.clmbtech.com/ctn/commons/js/colombia_v2.js";
+				  var node = document.getElementsByTagName("script")[0];
+				  node.parentNode.insertBefore(cads, node);
+			})();
+		}
+  
+           
+</script> 
+
+
+<style>
+#IconsDiv {
+    background-color: #000 !important;
+    padding: 5px;
+    box-shadow: 4px 2px 17px 2px rgba(187, 187, 187,0.4);
+    float: left;
+    width: 100% !important;
+} 
+img.ui-datepicker-trigger {
+    height: 18px;
+}
+@media screen and (max-width:767px) {
+	.col-md-6 {
+		width:48%;
+		padding-right:5px !important;
+		float:left;
+	}
+	.Edrow {
+		padding:0 !important;
+	}
+
+}
+.header_items{
+	background-color:black;
+}
+
+
+
+.main_header {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    color: #2c5c8a;
+}
+
+.main_header {
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.45);
+    margin-bottom: 10px;
+}
+.sj_container {
+    margin: 0 40px;
+    padding: 0;
+}
+.main_header .navbar {
+    margin: 0;
+    border: 0;
+}
+.main_header .navbar {
+    margin: 0;
+    border: 0;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #2c5c8a;
+}
+
+.navbar-nav>li>a {
+    padding-top: 9px;
+    padding-bottom: 0px;
+	
+}
+.navbar {
+    position: relative;
+    min-height: 40px !important;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+@media only screen and (max-width: 480px) {
+	.logo_main {
+    float: left;
+    padding: 15px 0px 15px!important;
+    width: 30%;
+}
+.ed_da{
+	margin-bottom:-13%;	
+	}
+.logo_main a img {
+    width: 100%;
+}
+.navbar-nav {
+    margin: 0px -15px!important;
+}
+.socail_links{
+		display:inline-flex!important;
+		margin-top:-1%!important;
+		font-weight:600;
+		color:white;
+		line-height:0px!important;
+	
+}
+.socail_links #date{
+	float:left!important;
+	
+}
+.socail_links .links{
+	float:right!important;
+}
+.socail_links li a i{
+		display:inline-flex!important;
+		padding-left:10px;
+		padding-right:10px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 0px!important;
+}
+.fa {
+    margin-left: 0px!important;
+    margin-top: 0px!important;
+}
+}
+@media (min-width: 768px){
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: -15px;
+    display: none!important;
+}
+.socail_links{
+	float:right!important;
+}
+}
+
+.navbar-toggle {
+    position: relative!important;
+    float: right!important;
+    padding: 9px 10px!important;
+    margin-top: 8px!important;
+    margin-right: 15px!important;
+    margin-bottom: 8px!important;
+    background-color: transparent!important;
+    background-image: none!important;
+    border: 1px solid  #ddd!important;
+    border-radius: 4px!important;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff!important;
+}
+.navbar-default .navbar-brand {
+    color: #fff!important;
+}
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    margin-right: -15px!important;
+    margin-left: -15px!important;
+}
+.navbar-default .navbar-nav>li>a {
+   color: #2c5c8a!important;
+    font-weight: 600!important;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.datepicker span{
+			
+		font-weight:600;
+		color:#2c5c8a;
+}
+.ed_da p{
+	text-align:center;
+	padding:7px;
+	color:black;
+	font-weight:600;
+}
+
+.socail_links li a{
+	padding-left:15px;
+	padding-right:15px;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+   color: #fd8235!important;
+}
+.nav>li>a>i:focus, .nav>li>a>i:hover {
+   color: #fd8235!important;
+}
+.socail_links{
+	float:right!important;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/KarnatakaMalla/includes/css/style-index.css?v=230522111507" />
+<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/common/css/jquery-ui.min.css" />
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jquery-ui.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/KarnatakaMalla/css/style_common.css?v=1.0.0"/>
+	<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/KarnatakaMalla/css/responsive.css?v=1.0.0" />  
+
+<body>
+<div class="main_header">
+            
+              <div class="col-md-12">
+				 <nav class="navbar navbar-default">
+                  <div class="container">
+                     
+					<div class="row">
+						<div class="col-lg-6 col-sm-4" style="display: inline-flex;float: left;">
+							<ul class="nav navbar-nav ">
+							<li class="date">
+							<div class="datepicker " id="date">
+							<a onclick="triggerDatepicker()" style="padding-top: 9px;text-decoration:none;color:#009de0;cursor:pointer;display:block;"><input type="text" id="datepicker" style="display:none;"><span id="selectedDate" style="margin-left:10px;font-size:14px;text-transform:uppercase;"></span></a>
+								
+							</div>
+							</li>
+							</ul>
+						</div>
+						<div class="col-lg-6 col-sm-4" style="float:right;">
+						
+							<ul class="nav navbar-nav socail_links">
+							
+							<li class="links">
+									<a href=#" target="_blank">
+										<i style="color:#009de0;font-size:20px;" title="Facebook" class="fa fa-facebook fontawesome-18size"></i>
+									</a>
+								</li>
+								
+								<li class="links">
+									<a href="#" target="_blank">
+										<i style="color:#009de0;font-size:20px;" title="Twitter" class="fa fa-twitter fontawesome-18size"></i>
+									</a>
+								</li>
+								<li class="links">
+									<a href="#" target="_blank">
+										<i style="color:#009de0;font-size:20px;" title="Tumblr" class="fa fa-tumblr  fontawesome-18size"></i>
+									</a>
+								</li> 
+								<li class="links">
+									<a href="#" target="_blank">
+										<i style="color:#009de0;font-size:20px;" title="Website" class="fa fa-globe fontawesome-18size"></i>
+									</a>
+								</li>
+								
+							  </ul>
+						</div>
+                  </div>
+				  
+                 
+				
+               
+</div>
+  </nav>
+
+</div>
+</div>
+
+
+
+
+                        
+
+
+
+
+<div class="container Edrow">
+ <div class="row">
+   <div class="col-md-8">
+<div class="content-wrap">
+
+				
+<div class="col-md-6">  
+	<div class="img-section">
+		<a href="viewpage.php?edn=Main&edid=KARMAL_MAI&date=2023-05-20&pn=1" target="_blank">
+		<div class="img"> 
+		<img src="http://www.enewspapr.com/News/KARMAL/MAI/2023/05/20/1886188861small.jpg?v=230522111507">
+		</div>
+		</a>
+		<div class="info" >
+						 <div class="col-lg-6 ed_da"><p>KarnatakaMalla Edition</p></div>
+						<div class="col-lg-6 ed_da"><p><i style="color:gray;" class="fa fa-calendar fontawesome-18size"></i>&nbsp;&nbsp;<span>May 20 2023</span></p></div>
+						
+						</div>
+	
+	</div>
+</div>
+					 <div class="col-md-6">  
+	<div class="img-section">
+		<a href="viewpage.php?edn=Main&edid=KARMAL_MAI&date=2023-05-19&pn=1" target="_blank">
+		<div class="img"> 
+		<img src="http://www.enewspapr.com/News/KARMAL/MAI/2023/05/19/1354300688small.jpg?v=230522111507">
+		</div>
+		</a>
+		<div class="info" >
+						 <div class="col-lg-6 ed_da"><p>KarnatakaMalla Edition</p></div>
+						<div class="col-lg-6 ed_da"><p><i style="color:gray;" class="fa fa-calendar fontawesome-18size"></i>&nbsp;&nbsp;<span>May 19 2023</span></p></div>
+						
+						</div>
+	
+	</div>
+</div>
+					 	
+<div id="mydata"></div>	
+ 
+
+	</div>
+	</div>
+	  <div class="col-md-4">
+               <div class="viewport">
+                  <div class="overview">
+                     <div class="sidebar_ads">
+						<div class="side-top" style="float:right;margin-top:16px;">
+						
+						   						
+							
+						<div class="side-top" style="float:right;margin-top:26px;">	
+								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
+     crossorigin="anonymous"></script>
+<!-- karnatakamalla_ROS_D_300x250 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8618678329245343"
+     data-ad-slot="9254775270"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
+     crossorigin="anonymous"></script>
+<!-- karnatakamalla_ROS_D_300x600 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-8618678329245343"
+     data-ad-slot="1105069933"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+                        </div>
+						
+								  						
+                          
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+	</div>
+	</div>
+	
+	  
+	  
+	                       	
+	 
+							
+	
+	
+	
+	<div class='scrolltop'>
+    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
+</div>
+<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jquery.unveil.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+ $("img").unveil(0, function(){
+
+    $(this).load(function(){
+        this.style.opacity=1;
+
+    });
+});
+});
+function triggerDatepicker () {
+	$(".ui-datepicker-trigger").click();
+}
+</script>
+<script>
+var availableIssues = [{"pubdate":"2023-05-20"},{"pubdate":"2023-05-19"},{"pubdate":"2023-05-18"},{"pubdate":"2023-05-17"},{"pubdate":"2023-05-16"},{"pubdate":"2023-05-15"},{"pubdate":"2023-05-14"},{"pubdate":"2023-05-13"},{"pubdate":"2023-05-12"},{"pubdate":"2023-05-11"},{"pubdate":"2023-05-10"},{"pubdate":"2023-05-09"},{"pubdate":"2023-05-08"},{"pubdate":"2023-05-07"},{"pubdate":"2023-05-06"},{"pubdate":"2023-05-05"},{"pubdate":"2023-05-04"},{"pubdate":"2023-05-03"},{"pubdate":"2023-05-02"},{"pubdate":"2023-05-01"},{"pubdate":"2023-04-30"},{"pubdate":"2023-04-29"},{"pubdate":"2023-04-28"},{"pubdate":"2023-04-27"},{"pubdate":"2023-04-26"},{"pubdate":"2023-04-25"},{"pubdate":"2023-04-24"},{"pubdate":"2023-04-23"},{"pubdate":"2023-04-22"},{"pubdate":"2023-04-21"},{"pubdate":"2023-04-20"},{"pubdate":"2023-04-19"},{"pubdate":"2023-04-18"},{"pubdate":"2023-04-17"},{"pubdate":"2023-04-16"},{"pubdate":"2023-04-15"},{"pubdate":"2023-04-13"},{"pubdate":"2023-04-12"},{"pubdate":"2023-04-11"},{"pubdate":"2023-04-10"},{"pubdate":"2023-04-09"},{"pubdate":"2023-04-08"},{"pubdate":"2023-04-07"},{"pubdate":"2023-04-06"},{"pubdate":"2023-04-05"},{"pubdate":"2023-04-04"},{"pubdate":"2023-04-02"},{"pubdate":"2023-04-01"},{"pubdate":"2023-03-31"},{"pubdate":"2023-03-30"},{"pubdate":"2023-03-29"},{"pubdate":"2023-03-28"},{"pubdate":"2023-03-27"},{"pubdate":"2023-03-26"},{"pubdate":"2023-03-25"},{"pubdate":"2023-03-24"},{"pubdate":"2023-03-23"},{"pubdate":"2023-03-22"},{"pubdate":"2023-03-21"},{"pubdate":"2023-03-20"},{"pubdate":"2023-03-19"},{"pubdate":"2023-03-18"},{"pubdate":"2023-03-17"},{"pubdate":"2023-03-16"},{"pubdate":"2023-03-15"},{"pubdate":"2023-03-14"},{"pubdate":"2023-03-13"},{"pubdate":"2023-03-12"},{"pubdate":"2023-03-11"},{"pubdate":"2023-03-10"},{"pubdate":"2023-03-09"},{"pubdate":"2023-03-08"},{"pubdate":"2023-03-06"},{"pubdate":"2023-03-05"},{"pubdate":"2023-03-04"},{"pubdate":"2023-03-03"},{"pubdate":"2023-03-02"},{"pubdate":"2023-03-01"},{"pubdate":"2023-02-28"},{"pubdate":"2023-02-27"},{"pubdate":"2023-02-26"},{"pubdate":"2023-02-25"},{"pubdate":"2023-02-24"},{"pubdate":"2023-02-23"},{"pubdate":"2023-02-22"},{"pubdate":"2023-02-21"},{"pubdate":"2023-02-20"},{"pubdate":"2023-02-19"},{"pubdate":"2023-02-18"},{"pubdate":"2023-02-17"},{"pubdate":"2023-02-16"},{"pubdate":"2023-02-15"},{"pubdate":"2023-02-14"},{"pubdate":"2023-02-13"},{"pubdate":"2023-02-11"},{"pubdate":"2023-02-10"},{"pubdate":"2023-02-09"},{"pubdate":"2023-02-08"},{"pubdate":"2023-02-07"},{"pubdate":"2023-02-05"},{"pubdate":"2023-02-04"},{"pubdate":"2023-02-03"},{"pubdate":"2023-02-02"},{"pubdate":"2023-02-01"},{"pubdate":"2023-01-31"},{"pubdate":"2023-01-30"},{"pubdate":"2023-01-29"},{"pubdate":"2023-01-28"},{"pubdate":"2023-01-26"},{"pubdate":"2023-01-25"},{"pubdate":"2023-01-24"},{"pubdate":"2023-01-23"},{"pubdate":"2023-01-22"},{"pubdate":"2023-01-21"},{"pubdate":"2023-01-20"},{"pubdate":"2023-01-19"},{"pubdate":"2023-01-18"},{"pubdate":"2023-01-17"},{"pubdate":"2023-01-16"},{"pubdate":"2023-01-15"},{"pubdate":"2023-01-14"},{"pubdate":"2023-01-13"},{"pubdate":"2023-01-12"},{"pubdate":"2023-01-11"},{"pubdate":"2023-01-10"},{"pubdate":"2023-01-09"},{"pubdate":"2023-01-08"},{"pubdate":"2023-01-07"},{"pubdate":"2023-01-06"},{"pubdate":"2023-01-05"},{"pubdate":"2023-01-04"},{"pubdate":"2023-01-03"},{"pubdate":"2023-01-02"},{"pubdate":"2023-01-01"},{"pubdate":"2022-12-31"},{"pubdate":"2022-12-30"},{"pubdate":"2022-12-29"},{"pubdate":"2022-12-28"},{"pubdate":"2022-12-27"},{"pubdate":"2022-12-26"},{"pubdate":"2022-12-25"},{"pubdate":"2022-12-24"},{"pubdate":"2022-12-23"},{"pubdate":"2022-12-22"},{"pubdate":"2022-12-21"},{"pubdate":"2022-12-20"},{"pubdate":"2022-12-19"},{"pubdate":"2022-12-18"},{"pubdate":"2022-12-17"},{"pubdate":"2022-12-16"},{"pubdate":"2022-12-15"},{"pubdate":"2022-12-14"},{"pubdate":"2022-12-13"},{"pubdate":"2022-12-12"},{"pubdate":"2022-12-11"},{"pubdate":"2022-12-10"},{"pubdate":"2022-12-09"},{"pubdate":"2022-12-08"},{"pubdate":"2022-12-07"},{"pubdate":"2022-12-06"},{"pubdate":"2022-12-05"},{"pubdate":"2022-12-04"},{"pubdate":"2022-12-03"},{"pubdate":"2022-12-02"},{"pubdate":"2022-12-01"},{"pubdate":"2022-11-30"},{"pubdate":"2022-11-29"},{"pubdate":"2022-11-28"},{"pubdate":"2022-11-27"},{"pubdate":"2022-11-26"},{"pubdate":"2022-11-25"},{"pubdate":"2022-11-24"},{"pubdate":"2022-11-23"},{"pubdate":"2022-11-22"},{"pubdate":"2022-11-21"},{"pubdate":"2022-11-20"},{"pubdate":"2022-11-19"},{"pubdate":"2022-11-18"},{"pubdate":"2022-11-17"},{"pubdate":"2022-11-16"},{"pubdate":"2022-11-15"},{"pubdate":"2022-11-14"},{"pubdate":"2022-11-13"},{"pubdate":"2022-11-12"},{"pubdate":"2022-11-11"},{"pubdate":"2022-11-10"},{"pubdate":"2022-11-09"},{"pubdate":"2022-11-08"},{"pubdate":"2022-11-07"},{"pubdate":"2022-11-06"},{"pubdate":"2022-11-05"},{"pubdate":"2022-11-04"},{"pubdate":"2022-11-03"},{"pubdate":"2022-11-02"},{"pubdate":"2022-11-01"},{"pubdate":"2022-10-31"},{"pubdate":"2022-10-30"},{"pubdate":"2022-10-29"},{"pubdate":"2022-10-28"},{"pubdate":"2022-10-26"},{"pubdate":"2022-10-25"},{"pubdate":"2022-10-24"},{"pubdate":"2022-10-23"},{"pubdate":"2022-10-22"},{"pubdate":"2022-10-21"},{"pubdate":"2022-10-20"},{"pubdate":"2022-10-19"},{"pubdate":"2022-10-18"},{"pubdate":"2022-10-17"},{"pubdate":"2022-10-16"},{"pubdate":"2022-10-15"},{"pubdate":"2022-10-14"},{"pubdate":"2022-10-13"},{"pubdate":"2022-10-12"},{"pubdate":"2022-10-11"},{"pubdate":"2022-10-10"},{"pubdate":"2022-10-09"},{"pubdate":"2022-10-08"},{"pubdate":"2022-10-07"},{"pubdate":"2022-10-05"},{"pubdate":"2022-10-04"},{"pubdate":"2022-10-03"},{"pubdate":"2022-10-02"},{"pubdate":"2022-10-01"},{"pubdate":"2022-09-30"},{"pubdate":"2022-09-29"},{"pubdate":"2022-09-28"},{"pubdate":"2022-09-27"},{"pubdate":"2022-09-26"},{"pubdate":"2022-09-25"},{"pubdate":"2022-09-24"},{"pubdate":"2022-09-23"},{"pubdate":"2022-09-22"},{"pubdate":"2022-09-21"},{"pubdate":"2022-09-20"},{"pubdate":"2022-09-19"},{"pubdate":"2022-09-18"},{"pubdate":"2022-09-17"},{"pubdate":"2022-09-16"},{"pubdate":"2022-09-15"},{"pubdate":"2022-09-14"},{"pubdate":"2022-09-13"},{"pubdate":"2022-09-12"},{"pubdate":"2022-09-11"},{"pubdate":"2022-09-09"},{"pubdate":"2022-09-08"},{"pubdate":"2022-09-07"},{"pubdate":"2022-09-06"},{"pubdate":"2022-09-05"},{"pubdate":"2022-09-04"},{"pubdate":"2022-09-03"},{"pubdate":"2022-09-02"},{"pubdate":"2022-08-31"},{"pubdate":"2022-08-30"},{"pubdate":"2022-08-29"},{"pubdate":"2022-08-28"},{"pubdate":"2022-08-27"},{"pubdate":"2022-08-26"},{"pubdate":"2022-08-25"},{"pubdate":"2022-08-24"},{"pubdate":"2022-08-23"},{"pubdate":"2022-08-22"},{"pubdate":"2022-08-21"},{"pubdate":"2022-08-20"},{"pubdate":"2022-08-19"},{"pubdate":"2022-08-18"},{"pubdate":"2022-08-17"},{"pubdate":"2022-08-16"},{"pubdate":"2022-08-15"},{"pubdate":"2022-08-14"},{"pubdate":"2022-08-13"},{"pubdate":"2022-08-12"},{"pubdate":"2022-08-11"},{"pubdate":"2022-08-10"},{"pubdate":"2022-08-09"},{"pubdate":"2022-08-08"},{"pubdate":"2022-08-07"},{"pubdate":"2022-08-06"},{"pubdate":"2022-08-05"},{"pubdate":"2022-08-04"},{"pubdate":"2022-08-03"},{"pubdate":"2022-08-02"},{"pubdate":"2022-08-01"},{"pubdate":"2022-07-31"},{"pubdate":"2022-07-30"},{"pubdate":"2022-07-29"},{"pubdate":"2022-07-28"},{"pubdate":"2022-07-27"},{"pubdate":"2022-07-26"},{"pubdate":"2022-07-25"},{"pubdate":"2022-07-24"},{"pubdate":"2022-07-23"},{"pubdate":"2022-07-22"},{"pubdate":"2022-07-21"},{"pubdate":"2022-07-20"},{"pubdate":"2022-07-19"},{"pubdate":"2022-07-18"},{"pubdate":"2022-07-17"},{"pubdate":"2022-07-16"},{"pubdate":"2022-07-15"},{"pubdate":"2022-07-14"},{"pubdate":"2022-07-13"},{"pubdate":"2022-07-12"},{"pubdate":"2022-07-11"},{"pubdate":"2022-07-10"},{"pubdate":"2022-07-09"},{"pubdate":"2022-07-08"},{"pubdate":"2022-07-07"},{"pubdate":"2022-07-06"},{"pubdate":"2022-07-05"},{"pubdate":"2022-07-04"},{"pubdate":"2022-07-03"},{"pubdate":"2022-07-02"},{"pubdate":"2022-07-01"},{"pubdate":"2022-06-30"},{"pubdate":"2022-06-29"},{"pubdate":"2022-06-17"},{"pubdate":"2022-06-15"},{"pubdate":"2022-04-04"},{"pubdate":"2022-01-06"}];
+var archivedate = '2023-05-12';
+
+	availableDates = [];
+	for (var index = 0; index < availableIssues.length; index++) {
+		availableDates.push(availableIssues[index].pubdate);
+	}
+	var splitavdate = availableDates[0].split("-");
+					var Year = splitavdate[0];
+					var month = splitavdate[1];
+					var date = splitavdate[2];
+					var newDate = new Date(Year + '/' + month + '/' + date);
+			        var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ]; 
+			        var changedDate = monthNames[newDate.getMonth()] + ' '  + newDate.getDate() +  ' ' + newDate.getFullYear();
+	$("#selectedDate").html(changedDate);
+		$(document).ready(function() {
+
+                $("#datepicker").datepicker({
+                    showOn: 'button',
+                    buttonText: 'Show Date',
+                    buttonImageOnly: true,
+                    buttonImage: 'http://cjss.enewspapr.com/KarnatakaMalla/includes/images/cal.png',
+                    dateFormat: 'yy-mm-dd',
+					beforeShowDay: enableAllTheseDays,
+                    defaultDate: availableDates[0],
+					 onSelect: function (dateText, inst) {
+                var date = $(this).val();
+				
+				var rmspace = date.split("-");
+				var datenew = rmspace[0]+rmspace[1]+rmspace[2];
+				var isid = edid+"_"+datenew;
+				/* if(date < archivedate){
+				window.location.href= 'archive/viewpage.php?edid='+edid+'&date='+date+'&pn=1';
+				}
+				else {
+					window.location.href= 'viewpage.php?edid='+edid+'&date='+date+'&pn=1';
+				} */
+				
+               window.location.href='viewpage.php?edid='+edid+'&date='+date+'&pn=1';
+            }
+                });
+
+				
+				function enableAllTheseDays(date) {
+				var sdate = $.datepicker.formatDate('yy-mm-dd', date)
+				//console.log(sdate);
+				if ($.inArray(sdate, availableDates) != -1) {
+				return [true];
+				}
+				return [false];
+				}
+		});
+		
+				</script>
+<style>
+.footer {
+    width: 100%;
+    float: left;
+	 background: #2c5c8a;
+}
+#footer-top {
+    background: #2c5c8a;
+    font-size: 14px;
+    padding: 0px;
+    color: #fff;
+    font: 14px/16px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+   
+}
+  </style>
+  
+    
+  
+  <style>
+.button {
+  background-color: #337ab7; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 10px;  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {background-color: #337ab7;} /* Blue */
+
+</style>
+  
+  
+  
+  
+<div class="footer" style="text-align:center;">
+       <script type="text/javascript" src="http://cjss.enewspapr.com/footercontect/footer.js?v=1.3"></script>
+		             <p style="padding-top:5px;"> <script>document.write(footer1)</script> </p> 
+	        <p style="padding-top:5px;"><script>document.write(footer2)</script></p>
+            <p style="padding-bottom:10px;">Copyright © <script language="JavaScript" type="text/javascript">
+    now = new Date
+    theYear=now.getYear()
+    if (theYear < 1900)
+    theYear=theYear+1900
+    document.write(theYear)
+</script> All replicas reserved.</p>
+
+	
+
+</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="//cdn.ergadx.com/js/2603/ads.js"></script>
+</body>

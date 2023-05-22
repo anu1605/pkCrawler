@@ -19,7 +19,7 @@ SAK (tel) - sakshi(failed request)
 SBP (ben) - sangbad pratidin
 SKE(eng) - sikkim express
 SKL(mar) - sakal(only pune content)
-SMJ (ori) - Samaja(D)
+SMJ (ori) - Samaja( authentication error)
 SOM (kan) - Star of Mysore(D)
 SY (kan) - Samyuktha(section images)
 TB (eng) - the tribune

@@ -32,7 +32,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
     $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityLink[$edition] . "/";
 
     if (!file_get_contents($link . $code)) {
-        for ($i = 40; $i < 70; $i++) {
+        for ($i = 40; $i < 200; $i++) {
             $code = $cityCode[$edition] + $i;
             if ($cityArray[$edition] == "raipur") {
                 $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
@@ -46,8 +46,8 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                 array_push($newCodes, strval($code));
                 break;
             }
+            array_push($newCodes, $cityCode[$edition]);
         }
-        array_push($newCodes, $cityCode[$edition]);
     }
 
 
@@ -83,7 +83,8 @@ if (count($newCodes) != 0) {
     fwrite($file, $txt);
     fclose($file);
 }
-
+print_r($cityCode);
+print_r($newCodes);
 $num_images = count($images);
 ?>
 <!DOCTYPE html>
