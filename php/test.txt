@@ -1,825 +1,677 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-      <title>KarnatakaMalla</title>
-    <meta name="author" content="eReleGo Digi Media Pvt Ltd">
-	<link rel="shortcut icon" type="image/png" href="#" />
-  <meta name="author" content="eReleGo Digi Media Pvt Ltd">
-	<link rel="shortcut icon" type="image/png" href="#" />
-  
-<meta name="og:title" content="KarnatakaMalla">       
-<meta name="description" content="KarnatakaMalla.">  
-<meta name="keywords" content="KarnatakaMalla">
-	<meta property="og:site_name" content="epaper KarnatakaMalla">
-	<meta property="og:title" content="KarnatakaMalla " />
-	<meta property="og:description" content="KarnatakaMalla" />
-	<meta property="og:image" itemprop="image" content="//cjss.enewspapr.com/KarnatakaMalla/images/northlines.png">
-	<meta property="og:type" content="website" />
+<title>Prameya Epaper</title>
+<base href="/">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/home.css">
+<link rel="stylesheet" href="/assets/css/edition.css">
+<link rel="stylesheet" href="/assets/css/header.css">
+<link rel="stylesheet" href="/assets/css/footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+<script src="https://kit.fontawesome.com/e3ce8db1f7.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/lightbox.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/pdf-lib@1.4.0"></script>
+<script src="https://unpkg.com/downloadjs@1.4.7"></script>
 
-<script>
-var selfUrl = 'http://karnatakamalla.com/';
-var baseUrl = 'http://www.enewspapr.com/';
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/3.6.2/fabric.min.js">
+	
 </script>
-
-<link type="text/css" rel="stylesheet" href="http://cjss.enewspapr.com/common/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="http://cjss.enewspapr.com/KarnatakaMalla/includes/css/font-awesome.min.css">
-<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jquery.js"></script>
-<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/bootstrap.min.js"></script>
-<style>
-html{
-	background-color: #c1c1c1!important;
-}
-img {
-  transition: opacity .3s ease-in;
-}
-.Newtabs li a:hover , .Newtabs li a:focus {
-	color: white;
-	background-color: #ff5722;
-}
-.ed-title span {
-    background: #2c5c8a none repeat scroll 0 0;
-    bottom: 0;
-    color: #fff;
-    /* float: left; */
-    font-weight: bold;
-    font-size: 12px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    overflow: hidden;
-    padding: 5px 15px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-#modal-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-	text-align:center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 100;
-}
-#modal-bg a{
-	display:block;
-	margin-top:10px;
-}
-#modal-close-btn {
-    position: fixed;
-    top: 0px;
-    right: 5px;
-    width: 32px;
-    padding: 0px 5px;
-    height: 32px;
-    color: white;
-    background: black;
-    font-size: 23px;
-    text-shadow: 0 1px 2px #333;
-    z-index: 999;
-}
-.thumbnl{
-padding: 10px 10px !important;
-    text-align: center;
-    color: white;
-    
-    cursor: pointer;
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 13px;
-    text-transform: none !important;
-    font-weight: bold;
-    /* line-height: 23px; */
-    text-decoration: none;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-
-}
-.text-center.affix {
-    top: 0px;
-    position: fixed;
-    background-color: #efefef;
-    width: 100% !important;
-}
-.logo_head {
-    background-color: #ffffff !important;
-    box-shadow: 4px 2px 17px 2px rgba(187, 187, 187,0.4);
-    float: left;
-    width: 100% !important;
-} 
-.logo_main {
-
- width: 31%;
-}
-.logo_cls {
-    float: left;
-    width: 100%;
-	 padding: 5px 0px 5px;
-}
-.logo_main a {
-   
-}
-.logo_main a img{
-    width: 100%;
-}
-.navbar-right {
-    float: left !important;
-    margin-left: 13%;
-}
-.scrolltop {
-	display:none;
-	width:100%;
-	margin:0 auto;
-	position:fixed;
-	bottom:20px;
-	right:10px;	
-}
-.scroll {
-	position:absolute;
-	right:20px;
-	bottom:20px;
-	background:#b2b2b2;
-	background:rgba(178,178,178,0.7);
-	padding:20px;
-	text-align: center;
-	margin: 0 0 0 0;
-	cursor:pointer;
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 		
-}
-.scroll:hover {
-	background:rgba(178,178,178,1.0);
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 		
-}
-.scroll:hover .fa {
-	padding-top:-10px;
-}
-.scroll .fa {
-	font-size:30px;
-	margin-top:-5px;
-	margin-left:1px;
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 	
-}
-.header-ad {
-    margin: 10px 0;
-}
-@media screen and (min-width:768px) {
-	.text-center,#share_whtsup {
-		
-	}
-}
-@media screen and (max-width:767px) {
-	#fbbtn{
-		display:inline-flex;
-		text-align:center;
-	}
-	#IconsDiv {
-    background-color: #000 !important;
-    padding: 5px;
-    box-shadow: 4px 2px 17px 2px rgba(187, 187, 187,0.4);
-  
-    width: 100% !important;
-    text-align: center!important;
-}
-	.mbl_view_date{
-		display:inline-flex;
-		text-align:center;
-	}
-	#fbbtn,PrintImg,#zoomIn,#share_link {
-		
-	}
-		.article-content {
-		width:100% !important;
-		margin:0 !important;
-		margin-top:30px !important;
-	}
-		#mydata1 {
-			margin-right:0 !important;
-		}
-	.logo_main {
-    width: 100%;
-	text-align:center;
-}
-
-.img-section {
-	background:none !important;
-	margin:10px 0 !important;
-	border: 1px solid #ddd;
-	border-radius:0 !important;
-}
-.img-section img{
-width:100% !important;
-}
-.img-section ul{
-	background:#fff !important;
-	margin-top:0px !important;
-	margin-bottom:0px !important;
-	padding: 5px 25px !important;
-	border-radius:0 !important;
-}
-}
-.logo_header{
-	background-color:#ffffff;
-}
-</style> 
-
-
-
-
-		<script>
-	 $(document).ready(function(){
-	
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 300 ) {
-        $('.scrolltop:hidden').stop(true, true).fadeIn();
-    } else {
-        $('.scrolltop').stop(true, true).fadeOut();
-    }
-});
-$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:0},"1000");return false})})
-	
-});
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PGGQRL1EL9"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-PGGQRL1EL9');
-</script>
-
-
-<meta name="google-site-verification" content="xFuXTD_TLGkgBMbZmDOWXJ9NSPNqX3dKpG8e58VSzhQ" />
-</head>
-		<div class="logo_header">
-         <div class="container">
-            
-               <div class="logo_main">
-                  
-                  <div class="logo_cls">
-                     <a href="http://www.thenorthlines.com/"> 
-                        <img alt="KarnatakaMalla" src="http://cjss.enewspapr.com/KarnatakaMalla/includes/images/logo.png" alt="logo" > 
-                     </a>
-                  </div>
-            
-               </div>
-            
-           
-                <div class="header-ad" style="float:right;">
-				  				
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
-     crossorigin="anonymous"></script>
-<!-- karnatakamalla_ROS_D_728x90_Top -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
-     data-ad-client="ca-pub-8618678329245343"
-     data-ad-slot="6820183624"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-			
-						
-								               </div> 
-<!-- <a href="https://bfrealty.in//bf-meadows-apartment-for-sale-in-ravora-north-goa/"> 
-                        <img style="width:auto;" alt="meadows" src="includes/images/728X90_MEADOWS.jpg"> 
-                     </a> -->
-			
-			</div>
-         </div>
-		 
-		 
-		 
-		 
-		    <div class="mainedition_inner" style="border-top: 1px solid #ffffff;background-color: white;border-block-color: black;">
-<a href="http://mumbaichoufer.com/" target="_blank"><img src="http://karnatakamalla.com/includes/images/MumbaiChoufernew.png" alt="mumbaichaufer_logo" class="edition-logo" style="width: 118px;"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-
-<a href="http://yeshobhumi.com/" target="_blank"><img src="http://yeshobhumi.com/includes/images/Yashobhumi.jpg" alt="yashobhumi_logo" class="edition-logo yahobhumilogo" style="width: 118px;"></a>
-
-<a href="http://epunyanagari.com/" target="_blank"><img src="http://epunyanagari.com//includes/images/punyanagari.jpg" alt="punyanagari" class="edition-logo punyanagari" style="width: 144px;margin-left: 10px;"></a>
-
-
-</div>
-  
-         
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
-     crossorigin="anonymous"></script>
-
-<script>
-var edid = 'KARMAL_MAI';
-</script>
-
-
-<script>
- if(typeof colombia == 'undefined')
-		{
-			var colombia = colombia || {};
-			colombia.fns = colombia.fns || [];
-			(function() {
-				  var cads = document.createElement("script");
-				  cads.async = true;
-				  cads.type = "text/javascript";
-				  cads.src = "//static.clmbtech.com/ctn/commons/js/colombia_v2.js";
-				  var node = document.getElementsByTagName("script")[0];
-				  node.parentNode.insertBefore(cads, node);
-			})();
-		}
-  
-           
-</script> 
-
-
-<style>
-#IconsDiv {
-    background-color: #000 !important;
-    padding: 5px;
-    box-shadow: 4px 2px 17px 2px rgba(187, 187, 187,0.4);
-    float: left;
-    width: 100% !important;
-} 
-img.ui-datepicker-trigger {
-    height: 18px;
-}
-@media screen and (max-width:767px) {
-	.col-md-6 {
-		width:48%;
-		padding-right:5px !important;
-		float:left;
-	}
-	.Edrow {
-		padding:0 !important;
-	}
-
-}
-.header_items{
-	background-color:black;
-}
-
-
-
-.main_header {
-    width: 100%;
-    float: left;
-    background-color: #fff;
-    color: #2c5c8a;
-}
-
-.main_header {
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.45);
-    margin-bottom: 10px;
-}
-.sj_container {
-    margin: 0 40px;
-    padding: 0;
-}
-.main_header .navbar {
-    margin: 0;
-    border: 0;
-}
-.main_header .navbar {
-    margin: 0;
-    border: 0;
-}
-
-.navbar-default {
-    background-color: #fff;
-    border-color: #2c5c8a;
-}
-
-.navbar-nav>li>a {
-    padding-top: 9px;
-    padding-bottom: 0px;
-	
-}
-.navbar {
-    position: relative;
-    min-height: 40px !important;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-}
-@media only screen and (max-width: 480px) {
-	.logo_main {
-    float: left;
-    padding: 15px 0px 15px!important;
-    width: 30%;
-}
-.ed_da{
-	margin-bottom:-13%;	
-	}
-.logo_main a img {
-    width: 100%;
-}
-.navbar-nav {
-    margin: 0px -15px!important;
-}
-.socail_links{
-		display:inline-flex!important;
-		margin-top:-1%!important;
-		font-weight:600;
-		color:white;
-		line-height:0px!important;
-	
-}
-.socail_links #date{
-	float:left!important;
-	
-}
-.socail_links .links{
-	float:right!important;
-}
-.socail_links li a i{
-		display:inline-flex!important;
-		padding-left:10px;
-		padding-right:10px;
-}
-.nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 0px!important;
-}
-.fa {
-    margin-left: 0px!important;
-    margin-top: 0px!important;
-}
-}
-@media (min-width: 768px){
-.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
-    margin-left: -15px;
-    display: none!important;
-}
-.socail_links{
-	float:right!important;
-}
-}
-
-.navbar-toggle {
-    position: relative!important;
-    float: right!important;
-    padding: 9px 10px!important;
-    margin-top: 8px!important;
-    margin-right: 15px!important;
-    margin-bottom: 8px!important;
-    background-color: transparent!important;
-    background-image: none!important;
-    border: 1px solid  #ddd!important;
-    border-radius: 4px!important;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff!important;
-}
-.navbar-default .navbar-brand {
-    color: #fff!important;
-}
-.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
-    margin-right: -15px!important;
-    margin-left: -15px!important;
-}
-.navbar-default .navbar-nav>li>a {
-   color: #2c5c8a!important;
-    font-weight: 600!important;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-.datepicker span{
-			
-		font-weight:600;
-		color:#2c5c8a;
-}
-.ed_da p{
-	text-align:center;
-	padding:7px;
-	color:black;
-	font-weight:600;
-}
-
-.socail_links li a{
-	padding-left:15px;
-	padding-right:15px;
-}
-.nav>li>a:focus, .nav>li>a:hover {
-   color: #fd8235!important;
-}
-.nav>li>a>i:focus, .nav>li>a>i:hover {
-   color: #fd8235!important;
-}
-.socail_links{
-	float:right!important;
-}
-</style>
-<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/KarnatakaMalla/includes/css/style-index.css?v=230522111507" />
-<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/common/css/jquery-ui.min.css" />
-<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jquery-ui.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/KarnatakaMalla/css/style_common.css?v=1.0.0"/>
-	<link rel="stylesheet" type="text/css" href="http://cjss.enewspapr.com/KarnatakaMalla/css/responsive.css?v=1.0.0" />  
-
-<body>
-<div class="main_header">
-            
-              <div class="col-md-12">
-				 <nav class="navbar navbar-default">
-                  <div class="container">
-                     
-					<div class="row">
-						<div class="col-lg-6 col-sm-4" style="display: inline-flex;float: left;">
-							<ul class="nav navbar-nav ">
-							<li class="date">
-							<div class="datepicker " id="date">
-							<a onclick="triggerDatepicker()" style="padding-top: 9px;text-decoration:none;color:#009de0;cursor:pointer;display:block;"><input type="text" id="datepicker" style="display:none;"><span id="selectedDate" style="margin-left:10px;font-size:14px;text-transform:uppercase;"></span></a>
-								
-							</div>
-							</li>
-							</ul>
-						</div>
-						<div class="col-lg-6 col-sm-4" style="float:right;">
-						
-							<ul class="nav navbar-nav socail_links">
-							
-							<li class="links">
-									<a href=#" target="_blank">
-										<i style="color:#009de0;font-size:20px;" title="Facebook" class="fa fa-facebook fontawesome-18size"></i>
-									</a>
-								</li>
-								
-								<li class="links">
-									<a href="#" target="_blank">
-										<i style="color:#009de0;font-size:20px;" title="Twitter" class="fa fa-twitter fontawesome-18size"></i>
-									</a>
-								</li>
-								<li class="links">
-									<a href="#" target="_blank">
-										<i style="color:#009de0;font-size:20px;" title="Tumblr" class="fa fa-tumblr  fontawesome-18size"></i>
-									</a>
-								</li> 
-								<li class="links">
-									<a href="#" target="_blank">
-										<i style="color:#009de0;font-size:20px;" title="Website" class="fa fa-globe fontawesome-18size"></i>
-									</a>
-								</li>
-								
-							  </ul>
-						</div>
-                  </div>
-				  
-                 
-				
-               
-</div>
-  </nav>
-
-</div>
-</div>
-
-
-
-
-                        
-
-
-
-
-<div class="container Edrow">
- <div class="row">
-   <div class="col-md-8">
-<div class="content-wrap">
-
-				
-<div class="col-md-6">  
-	<div class="img-section">
-		<a href="viewpage.php?edn=Main&edid=KARMAL_MAI&date=2023-05-20&pn=1" target="_blank">
-		<div class="img"> 
-		<img src="http://www.enewspapr.com/News/KARMAL/MAI/2023/05/20/1886188861small.jpg?v=230522111507">
-		</div>
-		</a>
-		<div class="info" >
-						 <div class="col-lg-6 ed_da"><p>KarnatakaMalla Edition</p></div>
-						<div class="col-lg-6 ed_da"><p><i style="color:gray;" class="fa fa-calendar fontawesome-18size"></i>&nbsp;&nbsp;<span>May 20 2023</span></p></div>
-						
-						</div>
-	
-	</div>
-</div>
-					 <div class="col-md-6">  
-	<div class="img-section">
-		<a href="viewpage.php?edn=Main&edid=KARMAL_MAI&date=2023-05-19&pn=1" target="_blank">
-		<div class="img"> 
-		<img src="http://www.enewspapr.com/News/KARMAL/MAI/2023/05/19/1354300688small.jpg?v=230522111507">
-		</div>
-		</a>
-		<div class="info" >
-						 <div class="col-lg-6 ed_da"><p>KarnatakaMalla Edition</p></div>
-						<div class="col-lg-6 ed_da"><p><i style="color:gray;" class="fa fa-calendar fontawesome-18size"></i>&nbsp;&nbsp;<span>May 19 2023</span></p></div>
-						
-						</div>
-	
-	</div>
-</div>
-					 	
-<div id="mydata"></div>	
- 
-
-	</div>
-	</div>
-	  <div class="col-md-4">
-               <div class="viewport">
-                  <div class="overview">
-                     <div class="sidebar_ads">
-						<div class="side-top" style="float:right;margin-top:16px;">
-						
-						   						
-							
-						<div class="side-top" style="float:right;margin-top:26px;">	
-								<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
-     crossorigin="anonymous"></script>
-<!-- karnatakamalla_ROS_D_300x250 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-8618678329245343"
-     data-ad-slot="9254775270"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8618678329245343"
-     crossorigin="anonymous"></script>
-<!-- karnatakamalla_ROS_D_300x600 -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:600px"
-     data-ad-client="ca-pub-8618678329245343"
-     data-ad-slot="1105069933"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-
-                        </div>
-						
-								  						
-                          
-
-                     </div>
-                  </div>
-               </div>
-            </div>
-	</div>
-	</div>
-	
-	  
-	  
-	                       	
-	 
-							
-	
-	
-	
-	<div class='scrolltop'>
-    <div class='scroll icon'><i class="fa fa-4x fa-angle-up"></i></div>
-</div>
-<script type="text/javascript" src="http://cjss.enewspapr.com/common/js/jquery.unveil.js"></script>
-<script type="text/javascript">
+let full_array = [];
+let edition_date = '';
+let index = 0;
+let image_url = "";
 $(document).ready(function() {
 
- $("img").unveil(0, function(){
+    $("#pg-head").text("Page No - 01");
+   // edition_date = localStorage.getItem("edition_date");
 
-    $(this).load(function(){
-        this.style.opacity=1;
+    const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+    console.log(edition_date)
 
-    });
-});
-});
-function triggerDatepicker () {
-	$(".ui-datepicker-trigger").click();
-}
-</script>
-<script>
-var availableIssues = [{"pubdate":"2023-05-20"},{"pubdate":"2023-05-19"},{"pubdate":"2023-05-18"},{"pubdate":"2023-05-17"},{"pubdate":"2023-05-16"},{"pubdate":"2023-05-15"},{"pubdate":"2023-05-14"},{"pubdate":"2023-05-13"},{"pubdate":"2023-05-12"},{"pubdate":"2023-05-11"},{"pubdate":"2023-05-10"},{"pubdate":"2023-05-09"},{"pubdate":"2023-05-08"},{"pubdate":"2023-05-07"},{"pubdate":"2023-05-06"},{"pubdate":"2023-05-05"},{"pubdate":"2023-05-04"},{"pubdate":"2023-05-03"},{"pubdate":"2023-05-02"},{"pubdate":"2023-05-01"},{"pubdate":"2023-04-30"},{"pubdate":"2023-04-29"},{"pubdate":"2023-04-28"},{"pubdate":"2023-04-27"},{"pubdate":"2023-04-26"},{"pubdate":"2023-04-25"},{"pubdate":"2023-04-24"},{"pubdate":"2023-04-23"},{"pubdate":"2023-04-22"},{"pubdate":"2023-04-21"},{"pubdate":"2023-04-20"},{"pubdate":"2023-04-19"},{"pubdate":"2023-04-18"},{"pubdate":"2023-04-17"},{"pubdate":"2023-04-16"},{"pubdate":"2023-04-15"},{"pubdate":"2023-04-13"},{"pubdate":"2023-04-12"},{"pubdate":"2023-04-11"},{"pubdate":"2023-04-10"},{"pubdate":"2023-04-09"},{"pubdate":"2023-04-08"},{"pubdate":"2023-04-07"},{"pubdate":"2023-04-06"},{"pubdate":"2023-04-05"},{"pubdate":"2023-04-04"},{"pubdate":"2023-04-02"},{"pubdate":"2023-04-01"},{"pubdate":"2023-03-31"},{"pubdate":"2023-03-30"},{"pubdate":"2023-03-29"},{"pubdate":"2023-03-28"},{"pubdate":"2023-03-27"},{"pubdate":"2023-03-26"},{"pubdate":"2023-03-25"},{"pubdate":"2023-03-24"},{"pubdate":"2023-03-23"},{"pubdate":"2023-03-22"},{"pubdate":"2023-03-21"},{"pubdate":"2023-03-20"},{"pubdate":"2023-03-19"},{"pubdate":"2023-03-18"},{"pubdate":"2023-03-17"},{"pubdate":"2023-03-16"},{"pubdate":"2023-03-15"},{"pubdate":"2023-03-14"},{"pubdate":"2023-03-13"},{"pubdate":"2023-03-12"},{"pubdate":"2023-03-11"},{"pubdate":"2023-03-10"},{"pubdate":"2023-03-09"},{"pubdate":"2023-03-08"},{"pubdate":"2023-03-06"},{"pubdate":"2023-03-05"},{"pubdate":"2023-03-04"},{"pubdate":"2023-03-03"},{"pubdate":"2023-03-02"},{"pubdate":"2023-03-01"},{"pubdate":"2023-02-28"},{"pubdate":"2023-02-27"},{"pubdate":"2023-02-26"},{"pubdate":"2023-02-25"},{"pubdate":"2023-02-24"},{"pubdate":"2023-02-23"},{"pubdate":"2023-02-22"},{"pubdate":"2023-02-21"},{"pubdate":"2023-02-20"},{"pubdate":"2023-02-19"},{"pubdate":"2023-02-18"},{"pubdate":"2023-02-17"},{"pubdate":"2023-02-16"},{"pubdate":"2023-02-15"},{"pubdate":"2023-02-14"},{"pubdate":"2023-02-13"},{"pubdate":"2023-02-11"},{"pubdate":"2023-02-10"},{"pubdate":"2023-02-09"},{"pubdate":"2023-02-08"},{"pubdate":"2023-02-07"},{"pubdate":"2023-02-05"},{"pubdate":"2023-02-04"},{"pubdate":"2023-02-03"},{"pubdate":"2023-02-02"},{"pubdate":"2023-02-01"},{"pubdate":"2023-01-31"},{"pubdate":"2023-01-30"},{"pubdate":"2023-01-29"},{"pubdate":"2023-01-28"},{"pubdate":"2023-01-26"},{"pubdate":"2023-01-25"},{"pubdate":"2023-01-24"},{"pubdate":"2023-01-23"},{"pubdate":"2023-01-22"},{"pubdate":"2023-01-21"},{"pubdate":"2023-01-20"},{"pubdate":"2023-01-19"},{"pubdate":"2023-01-18"},{"pubdate":"2023-01-17"},{"pubdate":"2023-01-16"},{"pubdate":"2023-01-15"},{"pubdate":"2023-01-14"},{"pubdate":"2023-01-13"},{"pubdate":"2023-01-12"},{"pubdate":"2023-01-11"},{"pubdate":"2023-01-10"},{"pubdate":"2023-01-09"},{"pubdate":"2023-01-08"},{"pubdate":"2023-01-07"},{"pubdate":"2023-01-06"},{"pubdate":"2023-01-05"},{"pubdate":"2023-01-04"},{"pubdate":"2023-01-03"},{"pubdate":"2023-01-02"},{"pubdate":"2023-01-01"},{"pubdate":"2022-12-31"},{"pubdate":"2022-12-30"},{"pubdate":"2022-12-29"},{"pubdate":"2022-12-28"},{"pubdate":"2022-12-27"},{"pubdate":"2022-12-26"},{"pubdate":"2022-12-25"},{"pubdate":"2022-12-24"},{"pubdate":"2022-12-23"},{"pubdate":"2022-12-22"},{"pubdate":"2022-12-21"},{"pubdate":"2022-12-20"},{"pubdate":"2022-12-19"},{"pubdate":"2022-12-18"},{"pubdate":"2022-12-17"},{"pubdate":"2022-12-16"},{"pubdate":"2022-12-15"},{"pubdate":"2022-12-14"},{"pubdate":"2022-12-13"},{"pubdate":"2022-12-12"},{"pubdate":"2022-12-11"},{"pubdate":"2022-12-10"},{"pubdate":"2022-12-09"},{"pubdate":"2022-12-08"},{"pubdate":"2022-12-07"},{"pubdate":"2022-12-06"},{"pubdate":"2022-12-05"},{"pubdate":"2022-12-04"},{"pubdate":"2022-12-03"},{"pubdate":"2022-12-02"},{"pubdate":"2022-12-01"},{"pubdate":"2022-11-30"},{"pubdate":"2022-11-29"},{"pubdate":"2022-11-28"},{"pubdate":"2022-11-27"},{"pubdate":"2022-11-26"},{"pubdate":"2022-11-25"},{"pubdate":"2022-11-24"},{"pubdate":"2022-11-23"},{"pubdate":"2022-11-22"},{"pubdate":"2022-11-21"},{"pubdate":"2022-11-20"},{"pubdate":"2022-11-19"},{"pubdate":"2022-11-18"},{"pubdate":"2022-11-17"},{"pubdate":"2022-11-16"},{"pubdate":"2022-11-15"},{"pubdate":"2022-11-14"},{"pubdate":"2022-11-13"},{"pubdate":"2022-11-12"},{"pubdate":"2022-11-11"},{"pubdate":"2022-11-10"},{"pubdate":"2022-11-09"},{"pubdate":"2022-11-08"},{"pubdate":"2022-11-07"},{"pubdate":"2022-11-06"},{"pubdate":"2022-11-05"},{"pubdate":"2022-11-04"},{"pubdate":"2022-11-03"},{"pubdate":"2022-11-02"},{"pubdate":"2022-11-01"},{"pubdate":"2022-10-31"},{"pubdate":"2022-10-30"},{"pubdate":"2022-10-29"},{"pubdate":"2022-10-28"},{"pubdate":"2022-10-26"},{"pubdate":"2022-10-25"},{"pubdate":"2022-10-24"},{"pubdate":"2022-10-23"},{"pubdate":"2022-10-22"},{"pubdate":"2022-10-21"},{"pubdate":"2022-10-20"},{"pubdate":"2022-10-19"},{"pubdate":"2022-10-18"},{"pubdate":"2022-10-17"},{"pubdate":"2022-10-16"},{"pubdate":"2022-10-15"},{"pubdate":"2022-10-14"},{"pubdate":"2022-10-13"},{"pubdate":"2022-10-12"},{"pubdate":"2022-10-11"},{"pubdate":"2022-10-10"},{"pubdate":"2022-10-09"},{"pubdate":"2022-10-08"},{"pubdate":"2022-10-07"},{"pubdate":"2022-10-05"},{"pubdate":"2022-10-04"},{"pubdate":"2022-10-03"},{"pubdate":"2022-10-02"},{"pubdate":"2022-10-01"},{"pubdate":"2022-09-30"},{"pubdate":"2022-09-29"},{"pubdate":"2022-09-28"},{"pubdate":"2022-09-27"},{"pubdate":"2022-09-26"},{"pubdate":"2022-09-25"},{"pubdate":"2022-09-24"},{"pubdate":"2022-09-23"},{"pubdate":"2022-09-22"},{"pubdate":"2022-09-21"},{"pubdate":"2022-09-20"},{"pubdate":"2022-09-19"},{"pubdate":"2022-09-18"},{"pubdate":"2022-09-17"},{"pubdate":"2022-09-16"},{"pubdate":"2022-09-15"},{"pubdate":"2022-09-14"},{"pubdate":"2022-09-13"},{"pubdate":"2022-09-12"},{"pubdate":"2022-09-11"},{"pubdate":"2022-09-09"},{"pubdate":"2022-09-08"},{"pubdate":"2022-09-07"},{"pubdate":"2022-09-06"},{"pubdate":"2022-09-05"},{"pubdate":"2022-09-04"},{"pubdate":"2022-09-03"},{"pubdate":"2022-09-02"},{"pubdate":"2022-08-31"},{"pubdate":"2022-08-30"},{"pubdate":"2022-08-29"},{"pubdate":"2022-08-28"},{"pubdate":"2022-08-27"},{"pubdate":"2022-08-26"},{"pubdate":"2022-08-25"},{"pubdate":"2022-08-24"},{"pubdate":"2022-08-23"},{"pubdate":"2022-08-22"},{"pubdate":"2022-08-21"},{"pubdate":"2022-08-20"},{"pubdate":"2022-08-19"},{"pubdate":"2022-08-18"},{"pubdate":"2022-08-17"},{"pubdate":"2022-08-16"},{"pubdate":"2022-08-15"},{"pubdate":"2022-08-14"},{"pubdate":"2022-08-13"},{"pubdate":"2022-08-12"},{"pubdate":"2022-08-11"},{"pubdate":"2022-08-10"},{"pubdate":"2022-08-09"},{"pubdate":"2022-08-08"},{"pubdate":"2022-08-07"},{"pubdate":"2022-08-06"},{"pubdate":"2022-08-05"},{"pubdate":"2022-08-04"},{"pubdate":"2022-08-03"},{"pubdate":"2022-08-02"},{"pubdate":"2022-08-01"},{"pubdate":"2022-07-31"},{"pubdate":"2022-07-30"},{"pubdate":"2022-07-29"},{"pubdate":"2022-07-28"},{"pubdate":"2022-07-27"},{"pubdate":"2022-07-26"},{"pubdate":"2022-07-25"},{"pubdate":"2022-07-24"},{"pubdate":"2022-07-23"},{"pubdate":"2022-07-22"},{"pubdate":"2022-07-21"},{"pubdate":"2022-07-20"},{"pubdate":"2022-07-19"},{"pubdate":"2022-07-18"},{"pubdate":"2022-07-17"},{"pubdate":"2022-07-16"},{"pubdate":"2022-07-15"},{"pubdate":"2022-07-14"},{"pubdate":"2022-07-13"},{"pubdate":"2022-07-12"},{"pubdate":"2022-07-11"},{"pubdate":"2022-07-10"},{"pubdate":"2022-07-09"},{"pubdate":"2022-07-08"},{"pubdate":"2022-07-07"},{"pubdate":"2022-07-06"},{"pubdate":"2022-07-05"},{"pubdate":"2022-07-04"},{"pubdate":"2022-07-03"},{"pubdate":"2022-07-02"},{"pubdate":"2022-07-01"},{"pubdate":"2022-06-30"},{"pubdate":"2022-06-29"},{"pubdate":"2022-06-17"},{"pubdate":"2022-06-15"},{"pubdate":"2022-04-04"},{"pubdate":"2022-01-06"}];
-var archivedate = '2023-05-12';
+    if (screen.width > 1019) {
+        let main_content = document.getElementById("main_content");
+        main_content.classList.add("container");
 
-	availableDates = [];
-	for (var index = 0; index < availableIssues.length; index++) {
-		availableDates.push(availableIssues[index].pubdate);
-	}
-	var splitavdate = availableDates[0].split("-");
-					var Year = splitavdate[0];
-					var month = splitavdate[1];
-					var date = splitavdate[2];
-					var newDate = new Date(Year + '/' + month + '/' + date);
-			        var monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec" ]; 
-			        var changedDate = monthNames[newDate.getMonth()] + ' '  + newDate.getDate() +  ' ' + newDate.getFullYear();
-	$("#selectedDate").html(changedDate);
-		$(document).ready(function() {
+        let social = document.getElementsByClassName("social-icons1");
+        for (var i = 0; i < social.length > 0; i++) {
+            social[i].classList.add("w-950");
+        }
+    }
 
-                $("#datepicker").datepicker({
-                    showOn: 'button',
-                    buttonText: 'Show Date',
-                    buttonImageOnly: true,
-                    buttonImage: 'http://cjss.enewspapr.com/KarnatakaMalla/includes/images/cal.png',
-                    dateFormat: 'yy-mm-dd',
-					beforeShowDay: enableAllTheseDays,
-                    defaultDate: availableDates[0],
-					 onSelect: function (dateText, inst) {
-                var date = $(this).val();
-				
-				var rmspace = date.split("-");
-				var datenew = rmspace[0]+rmspace[1]+rmspace[2];
-				var isid = edid+"_"+datenew;
-				/* if(date < archivedate){
-				window.location.href= 'archive/viewpage.php?edid='+edid+'&date='+date+'&pn=1';
-				}
-				else {
-					window.location.href= 'viewpage.php?edid='+edid+'&date='+date+'&pn=1';
-				} */
-				
-               window.location.href='viewpage.php?edid='+edid+'&date='+date+'&pn=1';
+    let edition_id = $("#edition_id").val();
+    let edition_name = $("#edition_name").val();
+
+    /** Get All Image Details **/
+    $("#pg-list").empty();
+    $("#sidebar-pg").empty();
+    $.ajax({
+        type: 'GET',
+        dataType: "json",
+        url: master_path + '/get-image-details?image_id=&edition_id=' + edition_id + '&customer_id=' + customer_id + '&category=' + edition_name,
+        success: function(data, status, xhr) {
+            let image_list = data.body.map(dt => JSON.parse(dt));
+            if (data.code == "success") {
+                let dtls = '';
+                let sidebar = '';
+                for (var i = 0; i < image_list.length > 0; i++) {
+                    var c = i + 1;
+                    image_list[i].index = c
+                    dtls = dtls + '<option value=' + i + '>Page No - ' + image_list[i].file_name + '</option>';
+
+                    sidebar = sidebar + '<div class="page-holder" onclick=goToPage('+i+')><div class="pages">' +
+                        '<p>Page No - ' + image_list[i].file_name + '</p></div></div>';
+                }
+                
+                $("#startDate").val(image_list[0].edition_date);
+                edition_date = image_list[0].edition_date;
+                let edition_new_date = '';
+                if (edition_date) {
+                    $("#startDate").val(edition_date)
+                    let d = new Date(edition_date);
+                    edition_new_date = monthNames[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+                    $("#edition-head").text(edition_new_date);
+                }
+                let maxdate = new Date().toISOString().split("T")[0];
+                $("#startDate").attr("max",maxdate)
+                
+                full_array = image_list;
+                
+                $("#pg-list").append(dtls);
+                $("#sidebar-pg").append(sidebar);
+
+                if (screen.width < 380) {
+                    let head_id = document.getElementById("head-id");
+                    head_id.classList.add("is_fold");
+
+                    let fil_cont = document.getElementById("fil-cont");
+                    fil_cont.classList.add("is_fold");
+
+                    let page_box = document.getElementById("page-cont");
+                    page_box.style.width = "100%";
+                }
+                
+                if(screen.width > 379 && screen.width < 576) {
+                	$("#fc-1").removeClass("col-12").addClass("col-6");
+                	$("#fc-2").removeClass("col-12").addClass("col-6");
+                }
+                
+                $("#prev-btn").attr("disabled","disabled");
+                $("#prev-btn").addClass("btn-disabled");
+
+                if (image_list.length > 0) {
+                	image_url = image_list[0].image_url;
+                	goToPage(0);
+                }
             }
-                });
-
-				
-				function enableAllTheseDays(date) {
-				var sdate = $.datepicker.formatDate('yy-mm-dd', date)
-				//console.log(sdate);
-				if ($.inArray(sdate, availableDates) != -1) {
-				return [true];
-				}
-				return [false];
-				}
-		});
-		
-				</script>
-<style>
-.footer {
-    width: 100%;
-    float: left;
-	 background: #2c5c8a;
-}
-#footer-top {
-    background: #2c5c8a;
-    font-size: 14px;
-    padding: 0px;
-    color: #fff;
-    font: 14px/16px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-top: 10px;
-   
-}
-  </style>
-  
+        },
+        error: function(e) {
+            console.log(e)
+        }
+    });
     
-  
-  <style>
-.button {
-  background-color: #337ab7; /* Green */
-  border: none;
-  color: white;
-  padding: 10px 10px;  
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  margin: 4px 2px;
-  cursor: pointer;
+    $("#pg-list").change(() => {
+    	let i = $("#pg-list").find(':selected').val();
+    	goToPage(parseInt(i));
+    })
+    
+    $("#prev-btn").click(() => {
+    	goToPage(index-1);
+    })
+    
+    $("#next-btn").click(() => {
+    	goToPage(index+1);
+    })
+    
+    $("#startDate").change(() => {
+    	
+    	let date = $("#startDate").val();
+    	
+    	$.ajax({
+      		type: 'GET',
+        	dataType:"json",
+      		url: master_path+'/get-header-edition?customer_id='+customer_id+'&edate='+date+'&catname='+edition_name,
+      		success: function (data, status, xhr) {
+    	  		let header = data.body.map(dt => JSON.parse(dt));
+    	  		if(data.code == "success") {
+    	    		window.location.href = header[0].category_url;
+    	  		} else {
+    	  			location.reload();
+    	  		}
+      		}, error: function(e) {
+      			location.reload();
+    	  		console.log(e)
+      		}
+    	});
+    })
+    
+    handleSwipe();
+    //go();
+})
+
+/* window.addEventListener('resize', go);
+
+function go(){
+	alert(document.documentElement.clientWidth+" "+document.documentElement.clientHeight)
+} */
+
+let touchstartX = 0;
+let touchendX = 0;
+let SWPIE_THRESHOLD = 50;
+let px = 0;
+
+function handleSwipe() {
+    let wrapper = document.getElementById('imagemap');
+    let touchLength = 0;
+    var myVar = setInterval(()=>{
+    	wrapper.addEventListener('touchstart', (e) => {
+    		console.log('Start===',e.touches.length)
+    		touchLength = e.touches.length;
+    		if(touchLength == 1) {
+    			touchstartX = 0
+    			touchendX = 0
+    			touchstartX = e.changedTouches[0].screenX
+    		}
+    	});
+    }, 1000);
+	
+	wrapper.addEventListener('touchend', (e) => {
+		console.log('End===',e.touches.length)
+		if(touchLength == 1 && e.touches.length == 0) {
+		  	touchendX = e.changedTouches[0].screenX
+		  	checkDirection()
+		  	clearInterval(myVar);
+		}
+	});
 }
 
-.button2 {background-color: #337ab7;} /* Blue */
-
-</style>
-  
-  
-  
-  
-<div class="footer" style="text-align:center;">
-       <script type="text/javascript" src="http://cjss.enewspapr.com/footercontect/footer.js?v=1.3"></script>
-		             <p style="padding-top:5px;"> <script>document.write(footer1)</script> </p> 
-	        <p style="padding-top:5px;"><script>document.write(footer2)</script></p>
-            <p style="padding-bottom:10px;">Copyright © <script language="JavaScript" type="text/javascript">
-    now = new Date
-    theYear=now.getYear()
-    if (theYear < 1900)
-    theYear=theYear+1900
-    document.write(theYear)
-</script> All replicas reserved.</p>
-
+checkDirection = () => {
 	
+    let horizontalDifference = touchendX - touchstartX;
+    var midpoint = Math.floor(screen.width/2);
+    if (touchendX < touchstartX && Math.abs(horizontalDifference) > SWPIE_THRESHOLD) {
+    	if(index != (full_array.length - 1)) {
+    		goToPage(index+1);
+    	}
+    }
+    if (touchendX > touchstartX && Math.abs(horizontalDifference) > SWPIE_THRESHOLD) {
+    	if(index != 0) {
+    		goToPage(index-1);
+    	}
+    }
+  }
+function goToPage(i) {
+	
+	
+	let edition_name = $("#edition_name").val();
+	
+	index = i;
+	
+	let c = i + 1;
+	let pgno = "Page No - " + (c.toString().length > 1 ? c : '0'+c);
+	
+	$("#pg-head").text(pgno);
+	
+	if(index != 0) {
+		$("#prev-btn").removeAttr("disabled");
+        $("#prev-btn").removeClass("btn-disabled");
+	} else {
+		$("#prev-btn").attr("disabled","disabled");
+        $("#prev-btn").addClass("btn-disabled");
+	}
+	
+	if(index != (full_array.length - 1)) {
+		$("#next-btn").removeAttr("disabled");
+        $("#next-btn").removeClass("btn-disabled");
+	} else {
+		$("#next-btn").attr("disabled","disabled");
+        $("#next-btn").addClass("btn-disabled");
+	}
+	
+	let image_list = full_array;
+	
+	$("#pg-list").val(i);
+	
+	let screen_width = '';
+	
+	var epaper = document.getElementById("epaper");
 
+    var img = document.createElement('img');
+    img.id = 'map_area_img'
+    img.src = image_list[i].image_url;
+    
+    $("#mt-title").attr("content","Prameya Title");
+	$("#mt-image").attr("content",image_list[i].image_url);
+	var url = document.getElementById("url");
+	$("#mt-url").attr("content",url.value);
+	
+    if (image_list[i].page_type === '0') {
+        img.height = 1479;
+        img.width = 963;
+        img.style.height = "1479px";
+        img.style.width = "963px";
+        let w = screen.width;
+        if (w > 1269 && w < 1291)
+            screen_width = Math.round((screen.width * 68.8) / 100)
+        else if (w > 1357 && w < 1379)
+            screen_width = Math.round((screen.width * 64.3) / 100)
+        else if (w > 1429 && w < 1451)
+            screen_width = Math.round((screen.width * 61.2) / 100)
+        else if (w > 1524 && w < 1547)
+            screen_width = Math.round((screen.width * 57.3) / 100)
+        else if (w > 1669 && w < 1691)
+            screen_width = Math.round((screen.width * 52.4) / 100)
+        else if (w > 1909 && w < 1931)
+            screen_width = Math.round((screen.width * 45.7) / 100)
+        else
+            screen_width = Math.round((screen.width * 34) / 100)
+    } else {
+        img.height = 1479;
+        img.width = 963;
+        img.style.height = "1479px";
+        img.style.width = "963px";
+        let w = screen.width;
+        if (w > 1269 && w < 1291)
+            screen_width = Math.round((screen.width * 68.8) / 100)
+        else if (w > 1357 && w < 1379)
+            screen_width = Math.round((screen.width * 64.3) / 100)
+        else if (w > 1429 && w < 1451)
+            screen_width = Math.round((screen.width * 61.2) / 100)
+        else if (w > 1524 && w < 1547)
+            screen_width = Math.round((screen.width * 57.3) / 100)
+        else if (w > 1669 && w < 1691)
+            screen_width = Math.round((screen.width * 52.4) / 100)
+        else if (w > 1909 && w < 1931)
+            screen_width = Math.round((screen.width * 45.7) / 100)
+        else
+            screen_width = Math.round((screen.width * 34) / 100)
+    }
+    var split_arr = image_list[i].file_name.split("-");
+    if (split_arr.length > 1) {
+        img.height = 700;
+        img.width = 963;
+        img.style.height = "700px";
+        img.style.width = "963px";
+        let w = screen.width;
+        if (w > 1269 && w < 1291)
+            screen_width = Math.round((screen.width * 68.8) / 100)
+        else if (w > 1357 && w < 1379)
+            screen_width = Math.round((screen.width * 64.3) / 100)
+        else if (w > 1429 && w < 1451)
+            screen_width = Math.round((screen.width * 61.2) / 100)
+        else if (w > 1524 && w < 1547)
+            screen_width = Math.round((screen.width * 57.3) / 100)
+        else if (w > 1669 && w < 1691)
+            screen_width = Math.round((screen.width * 52.4) / 100)
+        else if (w > 1909 && w < 1931)
+            screen_width = Math.round((screen.width * 45.7) / 100)
+        else
+            screen_width = Math.round((screen.width * 34) / 100)
+    }
+    if (screen.width > 574 && screen.width < 651) {
+        let w = screen.width;
+        img.width = screen.width;
+        img.height = 1000;
+
+        img.style.width = screen.width + "px";
+        if (split_arr.length > 1) {
+            img.height = 500;
+            img.style.height = "500px";
+        } else {
+            img.style.height = "1000px";
+        }
+        if (w > 574 && w < 586)
+            screen_width = Math.round((screen.width * 166) / 100)
+        else if (w > 585 && w < 596)
+            screen_width = Math.round((screen.width * 162) / 100)
+        else if (w > 595 && w < 606)
+            screen_width = Math.round((screen.width * 158) / 100)
+        else if (w > 605 && w < 616)
+            screen_width = Math.round((screen.width * 157) / 100)
+        else if (w > 615 && w < 631)
+            screen_width = Math.round((screen.width * 154) / 100)
+        else if (w > 630 && w < 641)
+            screen_width = Math.round((screen.width * 150) / 100)
+        else
+            screen_width = Math.round((screen.width * 148) / 100)
+    }
+    if (screen.width > 650 && screen.width < 768) {
+        img.width = screen.width;
+        img.height = 1100;
+
+        img.style.width = screen.width + "px";
+        if (split_arr.length > 1) {
+            img.height = 550;
+            img.style.height = "550px";
+        } else {
+            img.style.height = "1100px";
+        }
+        let w = screen.width;
+        if (w > 650 && w < 666)
+            screen_width = Math.round((screen.width * 146) / 100)
+        else if (w > 665 && w < 681)
+            screen_width = Math.round((screen.width * 142) / 100)
+        else if (w > 680 && w < 696)
+            screen_width = Math.round((screen.width * 140) / 100)
+        else if (w > 695 && w < 711)
+            screen_width = Math.round((screen.width * 137) / 100)
+        else if (w > 710 && w < 726)
+            screen_width = Math.round((screen.width * 134) / 100)
+        else if (w > 725 && w < 741)
+            screen_width = Math.round((screen.width * 131) / 100)
+        else
+            screen_width = Math.round((screen.width * 126) / 100)
+    }
+    if (screen.width > 309 && screen.width < 575) {
+        img.width = screen.width;
+        img.height = 600;
+        img.style.width = screen.width + "px";
+        if (split_arr.length > 1) {
+            img.height = 300;
+            img.style.height = "300px";
+        } else {
+            img.style.height = "600px";
+        }
+        let x = Math.floor(screen.width / 10);
+        let z = (x - 31);
+        let s = (31 - z) * 10;
+        if (z == 5 || z == 6) {
+            s = 266;
+        } else if (z == 7 || z == 8) {
+            s = 244;
+        } else if (z == 9 || z == 10 || z == 11) {
+            s = 232;
+        } else if (z == 12 || z == 13) {
+            s = 230;
+        } else if (z == 14 || z == 15) {
+            s = 220;
+        }
+        screen_width = Math.round((screen.width * s) / 100)
+    }
+    if (screen.width > 270 && screen.width < 308) {
+        img.width = screen.width;
+        img.height = 450;
+        img.style.width = screen.width + "px";
+        if (split_arr.length > 1) {
+            img.height = 225;
+            img.style.height = "225px";
+        } else {
+            img.style.height = "450px";
+        }
+        screen_width = Math.round((screen.width * 340) / 100)
+    }
+
+    var wrapper = document.getElementById('imagemap');
+    wrapper.innerHTML = ""
+    wrapper.appendChild(img);
+    if (image_list[i].area_details) {
+        var dtarr = "";
+        var dt = "";
+        if(edition_date) {
+        	dtarr = edition_date.split("-");
+            dt = dtarr[0] + '' + dtarr[1] + '' + dtarr[2]
+        }
+        
+        image_list[i].area_details.forEach(function(data) {
+            var coords = data.coordinates.split(',');
+            var xcoords = [parseInt(coords[0]), parseInt(coords[2])];
+            var ycoords = [parseInt(coords[1]), parseInt(coords[3])];
+            xcoords = xcoords.sort(function(a, b) {
+                return a - b
+            });
+            ycoords = ycoords.sort(function(a, b) {
+                return a - b
+            });
+            var desc = 'height=' + (parseInt(data.height) + 50) + ',width=' + (parseInt(data.width) + 50) + ',modal=yes,alwaysRaised=yes,scrollbars=1';
+            wrapper.innerHTML += "<a href='javascript:void(0)' onclick=openNewSection(" + image_list[i].image_id + "," + data.map_id + "," + image_list[i].index + ",'" + edition_name + "','" + dt + "','" + desc + "') class='area' style='left: " + ((xcoords[0] / screen_width) * 100).toFixed(2) + "%; top: " + ((ycoords[0] / parseInt(data.img_height)) * 100).toFixed(2) + "%; width: " + (((xcoords[1] - xcoords[0]) / screen_width) * 100).toFixed(2) + "%; height: " + (((ycoords[1] - ycoords[0]) / parseInt(data.img_height)) * 100).toFixed(2) + "%;'></a>";
+        });
+    }
+}
+
+function printImg() {
+	let url = document.getElementById("map_area_img");
+	var win = window.open('');
+	let text = '<html><head><style>.separator {position: relative;background: #fff;display: grid;width: 100%;} .prv-img {margin:auto; max-width: 100%; max-height: 300vh; } </style></head>'+
+			   '<div class="separator" id="separator">'+
+			   '<img src="' + url.src + '" onload="window.print();window.close()" id="preview-img" class="prv-img"></div></html>';
+	win.document.write(text);
+	win.focus();
+}
+
+function shareOnFacebook(){
+	/* var link_url = $("#url").val();
+	const navUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + link_url;
+	window.open(navUrl , '_blank'); */
+	var link_url = $("#url").val();
+	// Define the parameters for the share dialog
+	var options = {
+	  method: 'share',
+	  href: link_url,
+	  quote: 'Check out this post on Example.com!',
+	  attachment: {
+	    media: [{ type: 'image', src: image_url }],
+	    href: link_url,
+	    description: 'This is the description of the attachment.'
+	  }
+	};
+
+	// Call the share dialog API
+	FB.ui(options, function(response) {
+	  if (response && !response.error_message) {
+	    console.log('Post shared successfully!');
+	  } else {
+	    console.error('Error sharing post: ' + response.error_message);
+	  }
+	});
+
+}
+
+/* function shareOnFacebook(){
+	
+	window.fbAsyncInit = function() {
+		  FB.init({
+		    appId      : FB_ID,
+		    xfbml      : true,
+		    version    : 'v2.4'
+		  });
+		};
+	
+	let url = "https://prameyaepaper.com/edition/812/BHUBANESWAR";
+	let img = document.getElementById("map_area_img");
+	
+	FB.ui({
+        method: 'share_open_graph',
+        action_type: 'og.shares',
+        action_properties: JSON.stringify({
+            object : {
+               'og:url': url,
+               'og:title': 'Title',
+               'og:description': 'Desc',
+               'og:og:image:width': '2560',
+               'og:image:height': '960',
+               'og:image': img.src
+            }
+        })
+    }); 
+} */
+</script>
+<script src="https://connect.facebook.net/en_US/all.js"></script>
+<script>
+window.fbAsyncInit = function() {
+FB.init({appId: '705827463885843', status: true, cookie: true,
+xfbml: true});
+};
+/* (function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+alert("Here")
+console.log(e)
+console.log(document.getElementById('fb-root'))
+document.getElementById('fb-root').appendChild(e);
+}()); */
+</script>
+<style>
+.epaper-container {
+	border: none !important;
+}
+</style>
+</head>
+<body>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<style>
+.navbar-toggler-icon {
+    background-image: url(/assets/img/menuicon.png) !important;
+}
+
+.navbar-toggler {
+	border: 1px solid #fff !important;
+}
+</style>
+</head>
+<body>
+<div class="marg-bot">
+<img class="prameya-header-logo" src="/assets/img/prameyaHeader.png" />
 </div>
+<div class="blue-line"></div>
+<nav class="navbar navbar-expand-lg navbar-light navbar-bg">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNavDropdown">
+<ul class="navbar-nav" id="header-append">
+</ul>
 </div>
-
-
-
-
-<script type="text/javascript" src="//cdn.ergadx.com/js/2603/ads.js"></script>
+</nav>
 </body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+</head>
+<body>
+<div class="home-ad-container">
+<div id="carouselExampleControls3" class="carousel slide carousel-fade" data-ride="carousel">
+<div class="carousel-inner" id="carousel-append">
+</div>
+</div>
+</div>
+</body>
+</html>
+<div>
+<input type="hidden" value="2140" id="edition_id">
+<input type="hidden" value="BHUBANESWAR" id="edition_name">
+<input type="hidden" value="https://prameyaepaper.com/2140/BHUBANESWAR" id="url">
+<div class="heading" id="head-id">
+<h1 class="mr-10" id="category_value">BHUBANESWAR</h1>
+<strong id="pg-head"></strong> <small class="ml-10" id="edition-head"></small>
+</div>
+<div class="filter-container">
+<div class="d-flex" id="fil-cont">
+<div class="col-md-2 col-sm-4 col-12 form-field" id="fc-1">
+<input id="startDate" type="date" class="form-control" required>
+</div>
+<div class="col-md-10 col-sm-8 col-12" id="fc-2">
+<div class="pagination-container">
+<div class="d-flex align-items-center" id="page-cont">
+<select class="form-control" id="pg-list">
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="height: auto !important;" id="main_content">
+<div class="epaper-container" style="height: auto !important;">
+<div id="for_mobile" class="d-flex flx-wrp" style="height: auto !important;">
+<div class="col-lg-2 col-md-4 col-sm-12 col-12" id="sidebar-pg">
+</div>
+<div id="main-cntn" class="col-lg-10 col-md-8 col-sm-12 col-12" style="height: auto !important;">
+
+<div id="epaper">
+<div class="epaper">
+<div id="imagemap" class="imagemap"></div>
+</div>
+<div class="arrow-controler">
+<div class="d-flex justify-content-between">
+<button id="prev-btn" class="page-control before left-arrow mat-mini-fab slide-button">
+<i class="fas fa-angle-double-left"></i></button>
+<button id="next-btn" class="page-control next mat-mini-fab slide-button">
+<i class="fas fa-angle-double-right"></i></button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<body>
+<div class="footer-container">
+<div class="row">
+<div class="col-md-2 col-sm-4 col-12">
+<div class="ft-logo">
+<img src="/assets/img/news7.jpg" class="img-fluid">
+</div>
+</div>
+<div class="col-md-5 col-sm-4 col-12">
+<div>
+<h1 class="footer-heading">About e-paper Prameya</h1>
+<hr class="separator">
+<p class="footer-text">The Prameya ePaper: Read digital edition
+of The Prameya daily newspaper published by Summa real Media
+Pvt.Ltd.. Explore the advantages of The Prameya epaper</p>
+</div>
+</div>
+<div class="col-md-5 col-sm-4 col-12">
+<div>
+<h1 class="footer-heading">Connect With Us</h1>
+<hr class="separator">
+<div class="d-flex">
+<a class="grow" target="_blank" href="https://facebook.com/prameyaodia"> <img class="social-icons" src="/assets/img/facebook-logo.png" alt="facebook">
+</a> <a class="grow" target="_blank" href="https://facebook.com/prameyaodia"> <img class="social-icons" src="/assets/img/twitter-logo.png" alt="facebook">
+</a> <a class="grow" target="_blank" href="https://facebook.com/prameyaodia"> <img class="social-icons" src="/assets/img/youtube-logo.png" alt="facebook">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="credits-container">
+<p>
+Powered By <a href="https://nirmalyalabs.com/" target="_blank">Nirmalya
+</a>
+</p>
+</div>
+</body>
+<script src="/assets/js/demo.js"></script>
+<script src="/assets/js/epaper.js"></script>
+<script src="/assets/js/preview.js"></script>
+<script src="/assets/js/lightbox-plus-jquery.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139423842-1"></script>
+<script>
+		$(document).ready(function(){
+		})
+	</script>
+</body>
+</html>

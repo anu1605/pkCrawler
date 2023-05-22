@@ -4,13 +4,13 @@ HT (eng) - hindustan times
 KM (kan) - karnataka malla (D)
 LH (hin) - live hindustan
 MC (mar) - mumbai chaufer (D)
-MM (kan) - Mysuru Mithra (only html content)
+MM (kan) - Mysuru Mithra (incomplete html content)
 NBT (hin) - nav bharat times (D)
 NGS (guj) - nav gujrat samay(section images)
-NHT (eng) - nav hind times(time consuming)
-NT (tel) - namaste telangana(get request failed)
+NHT (eng) - nav hind times(section images)
+NT (tel) - namaste telangana(incomplete html content)
 OHO (eng) - o herald o(section images)
-PAP (hin) - purvanchal purhari(no full page pic)
+PAP (hin) - purvanchal prahari(no full page pic)
 PBK (hin) - prabhat khabar(pic and text seperate pic)
 PRM (ori) - premaya(same as hb)
 PRJ (kan) - Prajavani
@@ -23,7 +23,7 @@ SMJ (ori) - Samaja( authentication error)
 SOM (kan) - Star of Mysore(D)
 SY (kan) - Samyuktha(section images)
 TB (eng) - the tribune
-TH (eng) - the hindu(require issues code like hari bhumi)
+TH (eng) - the hindu(incomplete html content)
 UV (kan) - Udayavani
 VV (kan) - Vijayavani(sections images)
 YB (hin) - yasho bhumi(D)

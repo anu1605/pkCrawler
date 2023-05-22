@@ -1,40 +1,39 @@
 <?php
 
-// $content = file_get_contents("https://www.mumbaichoufer.com/view/83/mc");
-// $idArray = explode('"mp_id":"', $content);
-// echo count($idArray);
-// file_put_contents(dirname(__FILE__) . "/test.txt", $content);
 
-
-// file_put_contents(dirname(__FILE__) . "/test.txt", $content);
-
-// $cityArray = array("mumbai" => "PM", "pune" => "PU", "nashik" => "NS", "aurangabad" => "AUR", "nagpur" => "NAG", "kolhapur" => "KOL", "satara" => "STR", "nanded" => "NDD", "latur" => "LTR", "ahmednagar" => "AH", "jalgaon" => "JAL");
-
-// for ($page = 1; $page < 20; $page++) {
-//     $link = "http://epunyanagari.com/articlepage.php?articleid=PNAGARI_NS_20230519_";
-//     for ($section = 1; $section < 30; $section++) {
-
-//         $content = file_get_contents($link . sprintf('%02d', $page) . "_" . $section);
-//         if ($content) {
-//             $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
-//             $imageInfo = getimagesize($imagelink);
-//             if (!$imageInfo)
-//                 break;
-
-//             $width = $imageInfo[0];
-//             $height = $imageInfo[1];
-//             if ($width >= $height)
-//                 $minHeight = $width + intdiv((3 * $width), 4);
-//             else
-//                 $minHeight =  $width - intdiv((2 * $width), 5);
-//             if ($height >= $minHeight || $height >= $width + 10 || $height >= $width - 100) {
-//                 echo $imagelink . PHP_EOL;
-//             }
+// $ch = curl_init();
+// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+// curl_setopt($ch, CURLOPT_URL, "https://www.prameyaepaper.com/edition/2143/BHUBANESWAR");
+// curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+// curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+// $data = curl_exec($ch);
+// curl_close($ch);
+// error_reporting(E_ERROR);
+// $array = explode(",", file_get_contents(dirname(__FILE__) . '/prm.txt'));
+// $newCodesArr = array();
+// $filenamedate = date('Y-m-d', time());
+// $linkdate =  date('Ymd', time());
+// for ($i = 0; $i < count($array); $i++) {
+//     $issues = explode('=>', $array[$i]);
+//     $city = $issues[0];
+//     $code = $issues[1];
+//     $newCodesArr[$city] = $code;
+//     for ($count = 1; $count < 70; $count++) {
+//         $newCode = $code + $count;
+//         if (file_get_contents("https://moapi.prameyanews.com/prameya/document/pdf/3_102_" . $newCode . "_" . $linkdate . "_01.jpg")) {
+//             $newCodesArr[$city] = $newCode;
+//             break;
 //         }
-//     }php
+//     }
 // }
 
-$content = file_get_contents("http://karnatakamalla.com/");
-$getdate = explode('&pn', explode('KARMAL_MAI&date=', $content)[1])[0];
-$time = strtotime($getdate);
-echo date('Y-m-d', $time);
+// $txt = '';
+// foreach ($newCodesArr as $city => $code) {
+//     $txt .= $city . '=>' . $code . ' ';
+// }
+
+// $txt = implode(',', explode(' ', trim($txt)));
+// echo $txt;
+
+// echo count(explode('map_area_img', file_get_contents("https://www.prameyaepaper.com/edition/2143/BHUBANESWAR")));
+file_put_contents(dirname(__FILE__) . "/test.txt", file_get_contents("https://www.prameyaepaper.com/edition/2140/BHUBANESWAR"));
