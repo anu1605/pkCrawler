@@ -32,6 +32,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
     $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityLink[$edition] . "/";
 
     if (!file_get_contents($link . $code)) {
+
         for ($i = 40; $i < 200; $i++) {
             $code = $cityCode[$edition] + $i;
             if ($cityArray[$edition] == "raipur") {
@@ -57,6 +58,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
             $link = $link2;
         }
     }
+
 
     $content = file_get_contents($link . $code);
     $section1 = explode('id="slider-epaper" class="imageGalleryWrapper"><li data-index="0" ', $content)[1];
@@ -84,7 +86,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
 
 
 }
-if (count($newCodes) != 0) {
+if (count($newCodes) > 2) {
     $file = fopen(dirname(__FILE__, 1) . "/hb.txt", 'w');
     $txt =  "raipur=>" . $newCodes[0] . ",bilaspur=>" . $newCodes[1] . ",bhopal=>" . $newCodes[2] . "";
     fwrite($file, $txt);

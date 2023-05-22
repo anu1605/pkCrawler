@@ -1,8 +1,8 @@
 DC (eng) - deccan chronicles (time consuming)
 HB (hin) - hari bhumi (D)
-HT (eng) - hindustan times
+HT (eng) - hindustan times(no html content)
 KM (kan) - karnataka malla (D)
-LH (hin) - live hindustan
+LH (hin) - live hindustan(incomplete html content)
 MC (mar) - mumbai chaufer (D)
 MM (kan) - Mysuru Mithra (incomplete html content)
 NBT (hin) - nav bharat times (D)
@@ -14,16 +14,36 @@ PAP (hin) - purvanchal prahari(no full page pic)
 PBK (hin) - prabhat khabar(pic and text seperate pic)
 PRM (ori) - premaya(same as hb)
 PRJ (kan) - Prajavani
-PUD (mar) - pudhari(same as karnataka malla)
-SAK (tel) - sakshi(failed request)
+PUD (mar) - pudhari(section images)
+SAK (tel) - sakshi(incomplete html content)
 SBP (ben) - sangbad pratidin
 SKE(eng) - sikkim express
-SKL(mar) - sakal(only pune content)
-SMJ (ori) - Samaja( authentication error)
-SOM (kan) - Star of Mysore(D)
+SKL(mar) - sakal(https://epaper-sakal-application.s3.ap-south-1.amazonaws.com/EpaperData/Sakal/Akola/2023/05/22/Main/Sakal_Akola_2023_05_22_Main_DA_002/S/0.jpg) 403(forbidden)
+SMJ (ori) - Samaja(D)
+SOM (kan) - Star of Mysore
 SY (kan) - Samyuktha(section images)
 TB (eng) - the tribune
 TH (eng) - the hindu(incomplete html content)
 UV (kan) - Udayavani
 VV (kan) - Vijayavani(sections images)
 YB (hin) - yasho bhumi(D)
+NYB - niyomiya barta(403 request status)
+Kannada Prabha - (seperate pic and text images) 
+Kerala Kaumudi - (single esition, no ads)
+lokmat - (section images)
+loksatta - (incomplete html content)
+midday- (no html content)
+Nava Bharat - (section images)
+Nava rashtra - (section images)
+Orissa Bhaskar - (no ads)
+Rajasthan Patrika - ( diff pageid per page and edition)
+Rashtriya Sahara - (incomplete html content)
+sandesh - (incomplete html content)
+sanmarg- (incomplete html content)
+Siasat Daily(urd) - (incomplete html content , blank images)
+Statesman(mostly obituary ads) - seperate pic and text images , incomplete html content
+Suryaa - no ads
+Telangana Today - (incomplete html content)
+Telegraph - single edition
+Tripura Observer - (incomplete html content)
+The Pioneer - pdf epaper

@@ -151,7 +151,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_smj_folder()" class='btn btn-primary' style="float:right;">Clear nai dunia Folder</a>
+        <a href="javascript:void(0)" onclick="clear_smj_folder()" class='btn btn-primary' style="float:right;">Clear smj Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -164,10 +164,9 @@ $num_images = count($images);
 
             $image = $images[$i];
             $filename = $imageNameToSave[$i];
-            if ($image[$i] != '' && $image[$i] != null) {
 
-                echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
-            }
+
+            echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
         }
         ?>
     </div>

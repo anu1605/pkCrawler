@@ -16,6 +16,7 @@ for ($pageNumber = 1; $pageNumber <= 20; $pageNumber++) {
     if ($pageNumber == 1)
         $page = "index.php";
     else $page = "page" . $pageNumber . ".php";
+
     $content = file_get_contents("https://niyomiyabarta.com/epaper/" . $linkdate . "/" . $page);
     if ($content) {
         $section1 = explode('<map name="Map2"', $content)[1];
@@ -28,7 +29,7 @@ for ($pageNumber = 1; $pageNumber <= 20; $pageNumber++) {
             // echo "https://niyomiyabarta.com/epaper/17052023/images/p" . $pageNumber . "/" . $pageName . PHP_EOL;
             $imageLink =  "https://niyomiyabarta.com/epaper/" . $linkdate . "/images/p" . $pageNumber . "/" . $pageName;
             array_push($images, $imageLink);
-            $filepath = "Nyb_" . "Guwahati" . "_" . $date . "_" . $number . "_hin.jpg";
+            $filepath = "NYB_" . "Guwahati" . "_" . $date . "_" . $number . "_hin.jpg";
             array_push($imageNameToSave, $filepath);
             $number++;
         }
@@ -156,10 +157,9 @@ $num_images = count($images);
 
             $image = $images[$i];
             $filename = $imageNameToSave[$i];
-            if ($image[$i] != '' && $image[$i] != null) {
 
-                echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
-            }
+
+            echo '<div class="image" id="' . $filename . '"><img class="thumbnail" referrerpolicy="no-referrer" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
         }
         ?>
     </div>
@@ -170,6 +170,7 @@ $num_images = count($images);
         <input type="hidden" name="images" value="<?php echo implode(',', $images); ?>">
         <input type="hidden" name="imageNameToSave" value="<?php echo implode(',', $imageNameToSave); ?>">
         <input type="hidden" name="action" id="action">
+        <input type="hidden" name="paper" id="paper" value="nyb">
         <button type="submit" style="display:none;"></button>
     </form>
     <div id="loader"></div>
@@ -216,7 +217,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'ajax.php',
+                url: 'paper_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -239,7 +240,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'ajax.php',
+                url: 'paper_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -268,7 +269,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'ajax.php',
+                url: 'paper_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -291,7 +292,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'ajax.php',
+                url: 'paper_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
