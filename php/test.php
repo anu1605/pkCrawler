@@ -34,5 +34,5 @@
 //     }php
 // }
 
-$content = file_get_contents("https://epaper.starofmysore.com/epaper/edition/2272/star-mysore/page/2");
+$content = file_get_contents("https://epaper.thehindu.com/reader");
 file_put_contents(dirname(__FILE__) . "/test.txt", $content);

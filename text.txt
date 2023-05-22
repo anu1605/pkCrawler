@@ -1,29 +1,29 @@
-DC (eng) - deccan chronicles
-HB (hin) - hari bhumi
+DC (eng) - deccan chronicles (time consuming)
+HB (hin) - hari bhumi (D)
 HT (eng) - hindustan times
-KM (kan) - karnataka malla
+KM (kan) - karnataka malla (D)
 LH (hin) - live hindustan
-MC (mar) - mumbai chaufer(combined)
-MM (kan) - Mysuru Mithra(only html content)
-NBT (hin) - nav bharat times(D)
+MC (mar) - mumbai chaufer (D)
+MM (kan) - Mysuru Mithra (only html content)
+NBT (hin) - nav bharat times (D)
 NGS (guj) - nav gujrat samay(section images)
 NHT (eng) - nav hind times(time consuming)
 NT (tel) - namaste telangana(get request failed)
-OHO (eng) - o herald o()
-PAP (hin) - purvanchal purhari
-PBK (hin) - prabhat khabar
-PRM (ori) - premaya
+OHO (eng) - o herald o(section images)
+PAP (hin) - purvanchal purhari(no full page pic)
+PBK (hin) - prabhat khabar(pic and text seperate pic)
+PRM (ori) - premaya(same as hb)
 PRJ (kan) - Prajavani
-PUD (mar) - pudhari
-SAK (tel) - sakshi
+PUD (mar) - pudhari(same as karnataka malla)
+SAK (tel) - sakshi(failed request)
 SBP (ben) - sangbad pratidin
 SKE(eng) - sikkim express
-SKL(mar) - sakal
-SMJ (ori) - Samaja
-SOM (kan) - Star of Mysore
-SY (kan) - Samyuktha
+SKL(mar) - sakal(only pune content)
+SMJ (ori) - Samaja(D)
+SOM (kan) - Star of Mysore(D)
+SY (kan) - Samyuktha(section images)
 TB (eng) - the tribune
-TH (eng) - the hindu
+TH (eng) - the hindu(require issues code like hari bhumi)
 UV (kan) - Udayavani
-VV (kan) - Vijayavani
-YB (hin) - yasho bhumi
+VV (kan) - Vijayavani(sections images)
+YB (hin) - yasho bhumi(D)
