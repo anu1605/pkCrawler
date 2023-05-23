@@ -29,7 +29,7 @@ VV (kan) - Vijayavani(sections images)
 YB (hin) - yasho bhumi(D)
 NYB - niyomiya barta(403 request status)
 Kannada Prabha - (seperate pic and text images) 
-Kerala Kaumudi - (single esition, no ads)
+Kerala Kaumudi - (single edition, no ads)
 lokmat - (section images)
 loksatta - (incomplete html content)
 midday- (no html content)
@@ -47,3 +47,4 @@ Telangana Today - (incomplete html content)
 Telegraph - single edition
 Tripura Observer - (incomplete html content)
 The Pioneer - pdf epaper
+vaartha - (incomplete html content)

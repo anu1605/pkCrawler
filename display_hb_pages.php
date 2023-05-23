@@ -31,9 +31,14 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
     $code = $cityCode[$edition];
     $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityLink[$edition] . "/";
 
+    if ($cityArray[$edition] == "raipur") {
+        $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
+        if (file_get_contents($link2 . $code)) {
+            $link = $link2;
+        }
+    }
     if (!file_get_contents($link . $code)) {
-
-        for ($i = 40; $i < 200; $i++) {
+        for ($i = 40; $i < 300; $i++) {
             $code = $cityCode[$edition] + $i;
             if ($cityArray[$edition] == "raipur") {
                 $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
@@ -47,15 +52,6 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                 array_push($newCodes, strval($code));
                 break;
             }
-        }
-        array_push($newCodes, $cityCode[$edition]);
-    }
-
-
-    if ($cityArray[$edition] == "raipur") {
-        $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
-        if (file_get_contents($link2 . $code)) {
-            $link = $link2;
         }
     }
 
@@ -75,18 +71,13 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
         }
     }
 
-
-
-
-
-
     //echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
     //ob_flush();
     //flush();
 
 
 }
-if (count($newCodes) > 2) {
+if (count($newCodes) == 3) {
     $file = fopen(dirname(__FILE__, 1) . "/hb.txt", 'w');
     $txt =  "raipur=>" . $newCodes[0] . ",bilaspur=>" . $newCodes[1] . ",bhopal=>" . $newCodes[2] . "";
     fwrite($file, $txt);

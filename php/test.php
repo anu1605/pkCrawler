@@ -1,13 +1,29 @@
 <?php
+error_reporting(E_ERROR);
+$images = array();
+$imageNameToSave = array();
 
+$filenamedate = date('Y-m-d', time());
+$dateForLinks1 = date('Y/m/d', time());
+$dateForLinks2 = date('Y_m_d', time());
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_URL, "https://epaper.vaartha.com/Home/FullPage?eid=27&edate=22/05/2023&pgid=259463");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
-$data = curl_exec($ch);
-curl_close($ch);
+$cityarray = array("Akola", "Belgaum", "jalgaon", "Kolhapur", "Mumbai", "Nagpur", "Nanded", "Nashik", "Ratnagiri", "Satara", "Sindhudurg");
 
-
-file_put_contents(dirname(__FILE__) . "/test.txt", $data);
+for ($edition = 0; $edition < 1; $edition++) {
+    $number = 1;
+    for ($page = 3; $page < 9; $page++) {
+        $pageno = sprintf("%03d", $page);
+        $link = "https://epaper-sakal-application.s3.ap-south-1.amazonaws.com/EpaperData/Sakal/" . $cityarray[$edition] . "/" . $dateForLinks1 . "/Main/Sakal_" . $cityarray[$edition] . "_" . $dateForLinks2 . "_Main_DA_" . $pageno . "/S/";
+        if (file_get_contents($link . "0.jpg")) {
+            for ($section = 3; $section < 9; $section++) {
+                $imagelink = $link . $section . ".jpg";
+                if (file_get_contents($imagelink)) {
+                    array_push($images, $imagelink);
+                    $filepath = "SKL_" . $cityarray[$edition] . "_" . $filenamedate . "_" . $number . "_mar.jpg";
+                    array_push($imageNameToSave, $filepath);
+                    $number++;
+                }
+            }
+        } else break;
+    }
+}

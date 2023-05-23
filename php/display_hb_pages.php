@@ -5,105 +5,100 @@ error_reporting(E_ERROR);
 
 $images = array();
 $imageNameToSave = array();
-$date = date('Ymd', time());
-$filenamedate = date('Y-m-d', time());
+
+// $date = date('Y-m-d', time());
+// $linkDate = date('Y/m/d', time());
+$date = date('Y-m-d', time());
+$linkDate = date('Y/m/d', time());
+
+
+$array = explode(',', file_get_contents(dirname(__FILE__) . "/hb.txt"));
+$cityCode = array();
+$newCodes = array();
+foreach ($array as $val) {
+    $codeFromString = explode('=>', $val)[1];
+    array_push($cityCode, $codeFromString);
+}
 
 
 
-$newspapers = ["MC", "KM", "YB"];
-for ($edition = 0; $edition < 3; $edition++) {
+$cityArray = ["raipur", "bilaspur", "bhopal"];
+$cityLink = ["raipur-raipur-main", "bilaspur-main", "bhopal-main"];
 
-    if ($edition == 0) {
-        $number = 1;
-        $datecode = file_get_contents(dirname(__FILE__) . "/mc.txt");
+echo '<div id="crawlinfo"></div>';
 
+for ($edition = 0; $edition < count($cityArray); $edition++) {
+    $code = $cityCode[$edition];
+    $link = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityLink[$edition] . "/";
 
-
-        $code = $datecode + 1;
-        if (file_get_contents("https://www.mumbaichoufer.com/view/" . $code . "/mc")) {
-            $file = fopen(dirname(__FILE__) . "/mc.txt", "w+");
-            $datecode = $code;
-            $txt = $$code;
-            fwrite($file, $txt);
-            fclose($file);
+    if ($cityArray[$edition] == "raipur") {
+        $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
+        if (file_get_contents($link2 . $code)) {
+            $link = $link2;
+            array_push($newCodes, strval($code));
+            break;
+        }
+    }
+    if (!file_get_contents($link . $code)) {
+        if ($cityArray[$edition] == "raipur") {
+            $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
+            if (file_get_contents($link2 . $code)) {
+                $link = $link2;
+                array_push($newCodes, strval($code));
+                break;
+            }
         }
 
+        for ($i = 40; $i < 200; $i++) {
+            $code = $cityCode[$edition] + $i;
+            if (file_get_contents($link . $code)) {
+                array_push($newCodes, strval($code));
+                break;
+            }
+        }
+        array_push($newCodes, $cityCode[$edition]);
+    }
 
 
-        $content =   file_get_contents("https://www.mumbaichoufer.com/view/" . $datecode . "/mc");
-        $getmcdate = trim(explode('-', explode('<title>Mumbaichoufer -', $content)[1])[0]);
-        $mcdate = date("Y-m-d", strtotime($getmcdate));
-        $firstId = explode('"', explode('{"mp_id":"', $content)[1])[0];
-        $section1 = explode($firstId, $content)[1];
-        $idarray = explode('{"mp_id":"', $section1);
-        for ($id = 1; $id < count($idarray) - 1; $id++) {
-            $imageId = explode('"', $idarray[$id])[0];
-            $imagelink = "https://www.mumbaichoufer.com/map-image/" . $imageId . ".jpg";
-            array_push($images, $imagelink);
-            $filepath = "MC_" . "Mumbai" . "_" . $mcdate . "_" . $number . "_mar.jpg";
+    if ($cityArray[$edition] == "raipur") {
+        $link2 = "https://www.haribhoomi.com/full-page-pdf/epaper/pdf/" . $cityArray[$edition] . "-full-edition/" . $linkDate . "/" . $cityArray[$edition] . "-main/";
+        if (file_get_contents($link2 . $code)) {
+            $link = $link2;
+        }
+    }
+
+
+    $content = file_get_contents($link . $code);
+    $section1 = explode('id="slider-epaper" class="imageGalleryWrapper"><li data-index="0" ', $content)[1];
+    $section2 = explode('class="page-toolbar"><div id="page-level-nav"', $section1)[0];
+    $linkArray = explode('data-big="', trim($section2));
+    $number = 1;
+    foreach ($linkArray as $links) {
+        if (trim($links) != '') {
+            $imageLink =  explode('"', $links)[0];
+            array_push($images, $imageLink);
+            $filepath = "HB_" . ucwords($cityArray[$edition]) . "_" . $date . "_" . $number . "_hin.jpg";
             array_push($imageNameToSave, $filepath);
             $number++;
         }
     }
 
 
-    if ($edition == 1) {
-        $number = 1;
-        $content = file_get_contents("http://karnatakamalla.com/");
-        $getdate = explode('&pn', explode('KARMAL_MAI&date=', $content)[1])[0];
-        $time = strtotime($getdate);
-        $kmdate = date('Ymd', $time);
-        $kmfilenamedate = date('Y-m-d', $time);
-        for ($page = 1; $page < 20; $page++) {
-            for ($section = 1; $section < 30; $section++) {
-                $content = file_get_contents("http://karnatakamalla.com/articlepage.php?articleid=KARMAL_MAI_" . $kmdate . "_" .  $page . "_" . $section);
-                if ($content) {
-                    $imagelink = explode('"', explode('id="artimg"  src="', $content)[1])[0];
-                    $imageInfo = getimagesize($imagelink);
-                    if (!$imageInfo)
-                        break;
-
-                    $width = $imageInfo[0];
-                    $height = $imageInfo[1];
-
-                    if ($height >= $width) {
-                        array_push($images, $imagelink);
-                        $filepath = "KM_" . "Karnataka" . "_" . $kmfilenamedate . "_" . $number . "_kan.jpg";
-                        array_push($imageNameToSave, $filepath);
-                        $number++;
-                    }
-                }
-            }
-        }
-    }
-
-    if ($edition == 2) {
-        $number = 1;
-        for ($page = 1; $page < 20; $page++) {
 
 
-            for ($section = 1; $section < 30; $section++) {
-                $content = file_get_contents("http://yeshobhumi.com/articlepage.php?articleid=YBHUMI_MAI_" . $date . "_" .  $page . "_" . $section);
-                if ($content) {
-                    $imagelink = explode('"', explode('id="artimg"  src="', $content)[1])[0];
-                    $imageInfo = getimagesize($imagelink);
-                    if (!$imageInfo)
-                        break;
 
-                    $width = $imageInfo[0];
-                    $height = $imageInfo[1];
-                    $minHeight = $width + intdiv(($width), 2);
 
-                    if ($height >= $width) {
-                        array_push($images, $imagelink);
-                        $filepath = "YB_" . "Mumbai" . "_" . $filenamedate . "_" . $number . "_hin.jpg";
-                        array_push($imageNameToSave, $filepath);
-                        $number++;
-                    }
-                }
-            }
-        }
-    }
+    //echo '<script>document.getElementById("crawlinfo").innerHTML = "Crawling through: '.$paperArray[$edition].' Page '.$number.'"</script>';
+    //ob_flush();
+    //flush();
+
+
+}
+if (count($newCodes) > 2) {
+    $file = fopen(dirname(__FILE__, 1) . "/hb.txt", 'w');
+    $txt =  "raipur=>" . $newCodes[0] . ",bilaspur=>" . $newCodes[1] . ",bhopal=>" . $newCodes[2] . "";
+    fwrite($file, $txt);
+    fclose($file);
 }
 
 $num_images = count($images);
@@ -201,7 +196,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_me_folder()" class='btn btn-primary' style="float:right;">Clear me Folder</a>
+        <a href="javascript:void(0)" onclick="clear_hb_folder()" class='btn btn-primary' style="float:right;">Clear hb Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -214,20 +209,20 @@ $num_images = count($images);
 
             $image = $images[$i];
             $filename = $imageNameToSave[$i];
+            if ($image[$i] != '' && $image[$i] != null) {
 
-
-            echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
+                echo '<div class="image" id="' . $filename . '"><img class="thumbnail" src="' . $image . '" alt="' . $filename . '" onclick = initCropper("' . $image . '","' . $filename . '")><div class="filename">' . $filename . '&nbsp;&nbsp;<a onclick=saveFullPage("' . $image . '","' . $filename . '") style="margin-left: 100px;border: 2px solid green;padding: 5px;border-radius: 5px;cursor: pointer;">Save Full Page</a></div></div>';
+            }
         }
         ?>
     </div>
-    <form method="POST" action="display_me_pages.php" id="submit_form">
+    <form method="POST" action="display_hb_pages.php" id="submit_form">
         <input type="hidden" name="image_url" id="image_url">
         <input type="hidden" name="file_name" id="file_name">
         <input type="hidden" name="after_edit_cropped_imge" id="after_edit_cropped_imge">
         <input type="hidden" name="images" value="<?php echo implode(',', $images); ?>">
         <input type="hidden" name="imageNameToSave" value="<?php echo implode(',', $imageNameToSave); ?>">
         <input type="hidden" name="action" id="action">
-        <input type="hidden" name="paper" id="paper" value="me">
         <button type="submit" style="display:none;"></button>
     </form>
     <div id="loader"></div>
@@ -269,12 +264,12 @@ $num_images = count($images);
         });
 
         // claer jargan image folder
-        function clear_me_folder() {
-            $("#action").val('Clear_me_image_folder');
+        function clear_hb_folder() {
+            $("#action").val('Clear_hb_image_folder');
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'paper_ajax.php',
+                url: 'hb_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -297,7 +292,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'paper_ajax.php',
+                url: 'hb_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -326,7 +321,7 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'paper_ajax.php',
+                url: 'hb_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
@@ -349,14 +344,14 @@ $num_images = count($images);
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
-                url: 'paper_ajax.php',
+                url: 'hb_ajax.php',
                 data: formData,
                 beforeSend: function() {
                     $("#loader").fadeIn();
                 },
                 success: function(response) {
                     $("#loader").fadeOut();
-                    var image_url = './me_images/' + filename;
+                    var image_url = './hb_images/' + filename;
                     var file_name = filename;
                     cropped_images(image_url, file_name);
                 },
