@@ -1,1046 +1,2423 @@
-	
-  
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html xmlns="http://www.w3.org/1999/xhtml">
-    <meta http-equiv="X-UA-Compatible" content="IE=IE9,chrome=1">
- <head> 
-	<meta name="google-site-verification" content="TC-XH4AbcZiFLOjLgb92ai3kvvoPbyL-GvBa3Rr9XyM" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="description" content="Lokmat   Marathi Newspaper: Get Latest  ePaper in Marathi with one of the most popular Marathi newspaper Lokmat. Click here to read Today's Lokmat  ePaper in Marathi." />
-	<meta name="keywords" content="lokmat , lokmat  epaper,  news paper,  epaper,  epaper in marathi,  newspaper in marathi,  marathi newspaper online, daily  marathi paper,  news epaper, daily " />
-    </script>
-
-    <link rel="shortcut icon" href="http://epaperlokmat.in/images/favicon.ico" type="image/x-icon">
-	 <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"> 
-    <link href="http://epaperlokmat.in/css/home.css?v=1.0.2" rel="stylesheet" type="text/css">
-    <link href="http://epaperlokmat.in/css/common/articlepagenew.css?v=2.1" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://epaperlokmat.in/css/jquery-ui.css">      
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/articlestyle.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/CustomStyle.css?v=1.2">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0,user-scalable=yes" />
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
-	 <link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/common_stage1.css">  
-	
-  
-
-<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//delivery.adrecover.com/44556/adRecover.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script>
 
 
 
-  
-<script> window.ga=window.ga||function()
-{(ga.q=ga.q||[]).push(arguments)};
-ga.l=+new Date; ga("create", "UA-51033392-1", "lokmat.com"); 
-ga('create', 'UA-61361690-1', 'auto', 'newTracker');
-ga("send", "pageview"); 
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
 
-<script>var _comscore = _comscore || []; _comscore.push({ c1: "2", c2: "22995154" });
-(function() 
-{ var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; 
-s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-el.parentNode.insertBefore(s, el); })(); 
-</script>
-<noscript>
-<img src="https://b.scorecardresearch.com/p?c1=2&c2=22995154&cv=2.0&cj=1" />
-</noscript>
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script> 
-<script src="http://www.lokmat.com/ribbons.js?v=1.3" type="application/javascript"></script>      
-<script src="http://epaperlokmat.in/js/clipboard.min.js"></script>     
-    </head>
-  <body style="margin-top:0px;padding:0px;width:100%;">
-    <input type="hidden" id ="pageid2" name="pageid2">
-    <div class="row" id='newspaperHeading' style='display:none;'>
-      <select id="issue" class = 'newspaper-toc' style='visibility:hidden;width:150px !important;' onchange="showpage(this.value)">
-      </select>
-      <select id="pageno" class = 'newspaper-toc' style='visibility:hidden;display:none;margin:5px;width:24px;height:24px; !important;-webkit-appearance: none;-moz-appearance: none;appearance: none;margin-left:0px;margin-right:0px;margin-top:8px;' onblur="showimageinframe()" onchange="showimageinframe()">
-      </select>
-      <div class="btn-group dropup" style="margin-top:8px;">
-      <button class="newspaper-grid dropdown-toggle" style="margin-bottom:3px;padding:2px 0px 0px 0px !important;font-size:13px;height:24px;width:24px;-webkit-appearance: none;-moz-appearance: none;appearance: none;margin-left:0px;margin-right:0px;" id="page-no-display" data-toggle="dropdown" aria-expanded="true">1
-        </button>
-      </div>   
-    </div>	     
 
-    <link href="http://epaperlokmat.in/css/reset.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="http://epaperlokmat.in/newpage/homenew.css">
-    <link href="http://epaperlokmat.in/css/EpaperStyle.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="http://epaperlokmat.in/css/home-new.css?v=1.0.1" type="text/css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/popup_new.css?v=1.0.4">
 
-		<div class="blocker1"></div>
-		<input id="article-id" name="artid" type="hidden" value="LOK_MULK_20230524_1_1" />
-		<input id="article-width" name="width" type="hidden" value="230" />
-		<input id="articleimage" name="width" type="hidden" value="http://epaperlokmat.in/eNewspaper/News/LOK/MULK/2023/05/24/ArticleImages/646d3a2466eb0.jpg" />
-		<input id="width" name="width" type="hidden" value="230" />
-		<input id="height" name="width" type="hidden" value="316" />
-		
-		  <div class="row" id ="desktoptopadd">
-             <div class="col-md-12" id="topadd">
-			  <div id='div-gpt-ad-1663908642508-0'>
-			  </div> 
-			</div>  
-		  </div>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<link rel="shortcut icon" href="http://epaperlokmat.in/images/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/home-new.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/responsive.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/menu.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/tabs1.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/demo.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/jquery-ui1.css"> 
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/common/header.css">
-	<link rel="stylesheet" type="text/css" href="http://epaperlokmat.in/css/CustomStyle.css?v=1.00">
-	<script type="text/javascript" src="http://epaperlokmat.in/js/jquery-2.1.1.js"></script>
-	<script type="text/javascript" src="http://epaperlokmat.in/js/jquery-ui1.js"></script>
-	<script type="text/javascript" src="http://epaperlokmat.in/js/ttmenu.js"></script>
-	<script type="text/javascript" src="http://epaperlokmat.in/js/bootstrap.min.js"></script>
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script src="http://www.lokmat.com/epaper.js?v=0.1" type="application/javascript"></script>
-	<script type="text/javascript">
-	var width = window.innerWidth || document.documentElement.clientWidth;  
-	</script>
-	<script src="http://epaperlokmat.in/js/footer1.js"></script>     
-	<script> window.ga=window.ga||function()
-{(ga.q=ga.q||[]).push(arguments)};
-ga.l=+new Date; ga("create", "UA-51033392-1", "lokmat.com"); 
-ga('create', 'UA-61361690-1', 'auto', 'newTracker');
-ga("send", "pageview"); 
-</script>
-<script async src="https://www.google-analytics.com/analytics.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Niyomiya Barta - The Assamese Daily</title>
+<meta http-equiv="Content-Type" content="text/html; " />
+<title>Niyomiya Barta: The Assamese Daily</title>
+<meta name="description" content>
+<meta name="keywords" content="North east news, assam news, national news, epaper, enewspaper, onlinenews, online news ">
+<meta name="author" content="Niyomiya Barta">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
-<script>var _comscore = _comscore || []; _comscore.push({ c1: "2", c2: "22995154" });
-(function() 
-{ var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; 
-s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-el.parentNode.insertBefore(s, el); })(); 
-</script>
-<noscript>
-<img src="https://b.scorecardresearch.com/p?c1=2&c2=22995154&cv=2.0&cj=1" />
-</noscript>
-	<script>
-		function triggerDatepicker(){
-			$('.ui-datepicker-trigger').click(); 
+<script language="javascript" type="ee900c463af652019073b7d7-text/javascript" src="../js/jquery.js"></script>
+<link href="../css/awesome_font.css" type="text/css" rel="stylesheet" />
+<script type="ee900c463af652019073b7d7-text/javascript" src="../scripts/scrolltopcontrol.js"></script>
+<script type="ee900c463af652019073b7d7-text/javascript" src="../js/jquery.min.js"></script>
+<script type="ee900c463af652019073b7d7-text/javascript" src="../js/jquery.maphilight.min.js"></script>
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<script src="../scripts/jquery-1.9.1.html" type="ee900c463af652019073b7d7-text/javascript"></script>
+<script src="../scripts/jquery-ui.js" type="ee900c463af652019073b7d7-text/javascript"></script>
+<script type="ee900c463af652019073b7d7-text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $(function () {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            $('.map').maphilight();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		function redirectme(image,dt,pg,id)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			var url='details.php?date='+dt+'&page='+pg+'&article='+image+'&cid='+id;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var width = 800;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var height = 500;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var left = parseInt((screen.availWidth/2) - (width/2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var top = parseInt((screen.availHeight/2) - (height/2));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    var windowFeatures = "width=" + width + ",height=" + height +   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ",status,resizable,left=" + left + ",top=" + top + 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        "screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			newwindow=window.open(url, "subWind", windowFeatures, "POS");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	if (window.focus) {newwindow.focus()}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	return false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		}
-	</script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-8618678329245343",
-          enable_page_level_ads: true
-     });
-</script>
-</script>
- 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+<script type="ee900c463af652019073b7d7-text/javascript">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  $(function() {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $( document ).tooltip({
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      track: true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
 </head>
 <body>
-	<div class="row" id ="desktoptopadd">
-		<div class="col-md-12" style="text-align: center;background:none !important;box-shadow: none !important;">
-			<div id='div-gpt-ad-1571083753984-0'> 
-				<div id='div-gpt-ad-1587040445501-0'>			  
-				</div>
-			</div>
-		</div> 
-	</div> 
-	<div id="headerpart"></div>	
-	<ul class="nav nav-tabs" id="header_new">
-		<li class="active text-center">
-			<a href="http://epaper.lokmat.com/" class="loksamlogo">
-				<img src="http://epaperlokmat.in/images/lokmat_logonew.png" class="img-responsive lokmatlogo logoMr" />
-			</a>
-		</li>
-		<li class=" text-center">
-		  <a  href="http://epaper.lokmat.com/lokmatsamachar" class="loksamlogo">
-			<img src="http://epaperlokmat.in/images/lokmat-samacharnew.png" class="img-responsive lokmatlogo logoHi" />
-		  </a>
-		</li>
-		<li class=" text-center">
-		  <a href="http://epaper.lokmat.com/lokmattimes" class="loksamlogo" style="background-color: white;">
-			<img src="http://epaperlokmat.in/images/newlokmat-times1.png" class="img-responsive lokmatlogo logoEn" /> 
-		  </a>  
-		</li>   
-	</ul>
-	<div class="hero" id="headr_hero_desktop">
-		<div class="hovermenu ttmenu dark-style menu-red-gradient">
-			<div class="navbar navbar-default" role="navigation">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div> 
-				<div class="navbar-collapse collapse">
-				  
-					<ul class="nav navbar-nav" style="margin-top:4px;">
-					<li><a style="padding:0 5px;" href="http://lokmat.com" target="_blank"><img src="http://epaperlokmat.in/images/home-icon.png" id="globe" /></a></li>
-					</ul>
-					<ul class="nav navbar-nav" style="margin-top:6px;">
-					  <li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: uppercase!important;">Lokmat
-						  <span class="dropme">
-						  </span>
-						</a>
-						<ul class="dropdown-menu" role="menu">
-						  <li class="dropdown-submenu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mumbai Main
-							  <span class="dropme-left">
-							  </span>
-							</a> 
-							 <ul class="dropdown-menu">					
-							  <li>
-							  <a href="http://epaper.lokmat.com/main-editions/Mumbai Main/-1/1" target="_blank">Main Edition</a>
-							 </li>
-							 </ul>
-						</li>
-						 <li class="dropdown-submenu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mumbai_Main
-							  <span class="dropme-left">
-							  </span>
-							</a> 
-							 <ul class="dropdown-menu">					
-							  <li>
-							  <a href="http://epaper.lokmat.com/main-editions/Mumbai_Main/-1/1" target="_blank">Main_Edition</a>
-							 </li>
-							 </ul>
-						</li>		
-						<li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pune Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Pune Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 	<li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pune_Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Pune_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chhatrapati Sambhajinagar <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Aurangabad Main/-1/1" target="_blank">Main Edition</a>  
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chhatrapati Sambhajinagar_Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Aurangabad_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>   
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nagpur Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Nagpur Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nagpur_Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Nagpur_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">New Delhi<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/New Delhi/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kolhapur Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Kolhapur Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kolhapur_Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Kolhapur_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nashik Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Nashik Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nashik-Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Nashik_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Jalgaon Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Jalgaon Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Jalgaon_Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Jalgaon_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Akola Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="./main-editions/Akola Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Akola_Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="./main-editions/Akola_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Solapur Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Solapur Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Solapur_Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Solapur_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ahmednagar Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Ahmednagar Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ahmednagar-Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Ahmednagar_Main/-1/1" target="_blank">Main_Edition</a>
-								</li>
-							</ul>
-						 </li>
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Goa Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Goa Main/-1/1" target="_blank">Main Edition</a>  
-								</li>
-							</ul>
-						 </li>
-						   <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Goa_Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Goa_Main/-1/1" target="_blank">Main Edition</a>  
-								</li>
-							</ul>
-						 </li>
-					</ul>
-					</li>
-					</ul>
-     <ul class="nav navbar-nav" id="dropdown_ul">
-     <li class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: uppercase!important; ">Hellos
-      <span class="dropme">
-      </span>
-    </a>
-    <ul class="dropdown-menu" role="menu">
-	<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mumbai Hello  
-          <span class="dropme-left">
-          </span>
-        </a> 
-        <ul class="dropdown-menu">    
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Mumbai/-1/1" target="_blank">Hello Mumbai</a></li>
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Navi Mumbai/-1/1" target="_blank">Hello Navi Mumbai</a></li>
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Raigad/-1/1" target="_blank">Hello Raigad</a></li>
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Thane/-1/1" target="_blank">Hello Thane</a></li>
-            <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Kalyan Dombivali/-1/1" target="_blank">Hello Kalyan Dombivali</a></li> 
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Vasai/-1/1" target="_blank">Hello Vasai</a></li>	
-    </ul>
-    </li>
-	<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pune Hello  
-          <span class="dropme-left"> 
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Pimpri Chinchwad/-1/1" target="_blank">Hello Pimpri Chinchwad</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Pune Gramin/-1/1" target="_blank">Hello Pune Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Pune/-1/1" target="_blank">Hello Pune</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Pune/-1/1" target="_blank">CNX Pune</a></li>
-    </ul>
-    </li>
-	<li class="dropdown-submenu">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chhatrapati Sambhajinagar
-<span class="dropme-left">
-</span>        
-</a>     
- <ul class="dropdown-menu">  
- <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Aurangabad/-1/1" target="_blank">Hello Chhatrapati Sambhajinagar</a></li>
- <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Aurangabad Gramin/-1/1" target="_blank">Hello Chhatrapati Sambhajinagar Gramin</a></li> 
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Beed/-1/1" target="_blank">Hello Beed</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Hingoli/-1/1" target="_blank">Hello Hingoli</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Jalna/-1/1" target="_blank">Hello Jalna</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Latur/-1/1" target="_blank">Hello Latur</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nanded/-1/1" target="_blank">Hello Nanded</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nanded Gramin/-1/1" target="_blank">Hello Nanded Gramin</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Osmanabad/-1/1" target="_blank">Hello Dharashiv</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Parbhani/-1/1" target="_blank">Hello Parbhani</a></li>
-</ul>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148926121-2" type="ee900c463af652019073b7d7-text/javascript"></script>
+<script type="ee900c463af652019073b7d7-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148926121-2');
+</script>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td style="background-image:url(images/top_bk.jpg)"><table width="1161" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="315" style="width:300px;"><a href="https://niyomiyabarta.com/epaper/"><img src="https://niyomiyabarta.com/epaper/images/name1.jpg" width="270" height="84" border="0" /></a></td>
+<td width="287" style="width:160px;"><a href="https://niyomiyabarta.com/home/" target="_blank"><img src="../images/web_portal.gif" style="border:1">&nbsp;</a></td>
+<td width="287" style="width:160px;">&nbsp;</td>
+<td width="338" style="width:160px;">&nbsp;</td>
+<td width="72" valign="top">
+<table width="20%" border="0" align="right" cellpadding="0" cellspacing="0">
+<tr>
+<td><div align="center"><a href="https://www.facebook.com/info.niyomiyabarta" target="_blank"><img src="https://niyomiyabarta.com/epaper/images/face.jpg" width="24" height="25" /></a></td>
+<td><div align="center"><a href="https://www.twitter.com/niyomiyab" target="_blank"><img src="https://niyomiyabarta.com/epaper/images/twitter.jpg" width="24" height="25" /></a></td>
+<td width="24" style="width:0px;">&nbsp;</td>
+</tr>
+<tr>
+<td colspan="3">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td><img src="https://niyomiyabarta.com/epaper/images/spacer.png" width="1" height="59" /></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/archive/index.php" style="font-family:Arial, Helvetica, sans-serif; font-size:17px; text-decoration:none; color:#FF0000; font-weight:bold;">Archives</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://niyomiyabarta.com/epaper/images/spacer.png" width="1" height="5" /></td>
+</tr>
+<tr bgcolor="#FFFFFF">
+<td colspan="4"><div align="center"><a href="http://prideeast.com/" target="_blank"><img src="https://niyomiyabarta.com/epaper/images/pr.jpg" width="525" height="41" /></div></td>
+<tr bgcolor="#FFFFFF">
+<td colspan="4">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+
+<td><div align="center"><a href="https://www.niyomiyabarta.com/category/sukanya/" target="_blank"><img src="../images/sukanya.png" width="132" height="64" /></a></div></td>
+<td><div align="center"><a href="https://www.niyomiyabarta.com/category/swasthya-barta/" target="_blank"><img src="../images/swastyabarta1.png" width="164" height="84" /></a></div></td>
+<td><div align="center"><a href="https://www.niyomiyabarta.com/category/niyog-barta" target="_blank"><img src="../images/neogbarta.png" width="164" height="84" /></a></div></td>
+<td><div align="center"><a href="https://www.niyomiyabarta.com/category/shiksha-barta/" target="_blank"><img src="../images/sikhabarta.png" width="164" height="84" /></a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr><td><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="ee900c463af652019073b7d7-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8373883083284761" data-ad-slot="5491030751"></ins>
+<script type="ee900c463af652019073b7d7-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></td>
+<td colspan="2">
+<img src="../images/header-ad-right-min.jpg" alt="Bandhan Bank">
+</td>
+</tr>
+<tr>
+<td colspan="4"><img src="https://niyomiyabarta.com/epaper/images/spacer.png" width="1" height="5" /></td>
+</tr>
+</table></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td><table width="1161" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td><img src="../images/spacer.png" width="1" height="3" /></td>
+</tr>
+<tr>
+<td><img src="../images/bar1.jpg" width="1161" height="20" /></td>
+</tr>
+<tr>
+<td><img src="https://niyomiyabarta.com/epaper/images/catogry.png" width="1161" height="40" border="0" usemap="#Map" />
+<map name="Map">
+<area shape="rect" coords="147,16,188,32" href="https://niyomiyabarta.com/epaper/25052023/index.php">
+<area shape="rect" coords="201,15,270,32" href="https://niyomiyabarta.com/epaper/25052023/page2.php">
+<area shape="rect" coords="288,13,328,34" href="https://niyomiyabarta.com/epaper/25052023/page3.php">
+<area shape="rect" coords="338,12,396,35" href="https://niyomiyabarta.com/epaper/25052023/page4.php">
+<area shape="rect" coords="415,11,475,33" href="https://niyomiyabarta.com/epaper/25052023/page7.php">
+<area shape="rect" coords="486,12,640,32" href="https://niyomiyabarta.com/epaper/25052023/page8.php">
+<area shape="rect" coords="653,11,779,34" href="https://niyomiyabarta.com/epaper/25052023/page2.php">
+<area shape="rect" coords="798,14,857,33" href="https://niyomiyabarta.com/epaper/25052023/page13.php">
+<area shape="rect" coords="885,12,932,34" href="https://niyomiyabarta.com/epaper/25052023/page15.php">
+<area shape="rect" coords="940,13,996,35" href="https://niyomiyabarta.com/epaper/25052023/page14.php">
+<area shape="rect" coords="1004,12,1043,34" href="https://niyomiyabarta.com/epaper/25052023/page16.php">
+<area shape="rect" coords="1051,14,1105,33" href="https://epaper.niyomiyabarta.org/webmail" target="_blank" />
+</map>
+</td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF"><img src="../images/spacer.png" width="1" height="10" /></td>
+</tr>
+<tr>
+<td height="113" bgcolor="#FFFFFF"><table width="1161" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td height="113" style="background-image:url(../images/sub_pages.png)"><div align="center">
+<link type="text/css" rel="stylesheet" href="../owlcarousal/owl.carousel.min.css">
+<link type="text/css" rel="stylesheet" href="../owlcarousal/owl.theme.default.min.css">
+<link href="../include/scrool/css/style.css" rel="stylesheet" type="text/css" />
+<script type="ee900c463af652019073b7d7-text/javascript" src="../include/scrool/js/jquery.flexisel.js"></script>
+<script type="ee900c463af652019073b7d7-text/javascript" src="../owlcarousal/owl.carousel.min.js"> </script>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<ul id="flexiselDemo3">
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/index.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/1.gif" width="63" height="76" 0 /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/index.php" class="papers">Page 1</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 </li>
-<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nagpur Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Amravati/-1/1" target="_blank">Hello Amravati</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Bhandara/-1/1" target="_blank">Hello Bhandara</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Chandrapur/-1/1" target="_blank">Hello Chandrapur</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Gadchiroli/-1/1" target="_blank">Hello Gadchiroli</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Gondia/-1/1" target="_blank">Hello Gondia</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nagpur Gramin/-1/1" target="_blank">Hello Nagpur Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nagpur/-1/1" target="_blank">Hello Nagpur</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Wardha/-1/1" target="_blank">Hello Wardha</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Yavatmal/-1/1" target="_blank">Hello Yavatmal</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Nagpur/-1/1" target="_blank">CNX Nagpur</a></li> 
-    </ul>
-    </li>
-<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kolhapur Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Kolhapur Gramin/-1/1" target="_blank">Hello Kolhapur Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Kolhapur/-1/1" target="_blank">Hello Kolhapur</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Ratnagiri/-1/1" target="_blank">Hello Ratnagiri</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Sindhudurg/-1/1" target="_blank">Hello Sindhudurg</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Sangli/-1/1" target="_blank">Hello Hello Sangli</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Satara/-1/1" target="_blank">Hello Satara</a></li>
-			
-    </ul>   
-    </li>
-	 <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jalgaon Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Bhusaval/-1/1" target="_blank">Hello Bhusaval</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Jalgaon/-1/1" target="_blank">Hello Jalgaon</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Dhule/-1/1" target="_blank">Hello Dhule</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Jalgaon Gramin/-1/1" target="_blank">Hello Jalgaon Gramin</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nandurbar/-1/1" target="_blank">Hello Nandurbar</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Jalgaon/-1/1" target="_blank">CNX Jalgaon</a></li>	 
-       </ul>
-       </li>
-	 <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akola Hello  
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Akola Gramin/-1/1" target="_blank">Hello Akola Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Akola/-1/1" target="_blank">Hello Akola</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Buldhana/-1/1" target="_blank">Hello Buldhana</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Khamgaon/-1/1" target="_blank">Hello Khamgaon</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Khamgaon/-1/1" target="_blank">Hello Khamgaon</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Washim/-1/1" target="_blank">Hello Washim</a></li>	 
-       </ul>
-       </li>
-	<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solapur Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Solapur Gramin/-1/1" target="_blank">Hello Solapur Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Solapur/-1/1" target="_blank">Hello Solapur</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Solapur/-1/1" target="_blank">CNX Solapur</a></li> 
-       </ul>
-      </li>
-	   <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ahmednagar Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Ahmednagar/-1/1" target="_blank">Hello Ahmednagar</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Ahmednagar Gramin/-1/1" target="_blank">Hello Ahmednagar Gramin</a></li> 
-       </ul>
-      </li>
-	  <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nashik Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nashik Gramin/-1/1" target="_blank">Hello Nashik Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nashik/-1/1" target="_blank">Hello Nashik</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Nashik/-1/1" target="_blank">CNX Nashik</a></li>
-			 
-    </ul>
-    </li>
-									
-</ul>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page2.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/2.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page2.php" class="papers">Page 2</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 </li>
-</ul>
-<ul class="nav navbar-nav" style="margin-top:6px;">
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding:3px 11px;">Supplements
-      <span class="dropme">
-      </span>
-    </a>
-    <ul class="dropdown-menu" role="menu">
-      <li class="dropdown-submenu">
-        <a href="special-supplements/Manthan/-1/1" target="_blank">Manthan
-        </a>  
-	  </li>		
-	  <li class="dropdown-submenu">
-        <a href="special-supplements/Oxygen/-1/1" target="_blank">Oxygen
-        </a>  
-	  </li>
-      <li class="dropdown-submenu">	  
-        <a href="special-supplements/Sakhi/-1/1" target="_blank">Sakhi
-        </a>  
-      </li>
-    </ul>
-  </li>   
-</ul>
-
-<ul class="nav navbar-nav" style="margin-top:6px;">
-  <li class="dropdown" onclick="triggerDatepicker();" style="cursor:pointer;">
-  <a style="padding:3px 11px;"> <input type="input" id="datepicker" class="datepicker" style="display:none;"/><span id="textdate"  style="cursor:pointer;padding:5px;">May 24, 2023</span></a></li> 
-</ul>	
-<ul class="nav navbar-nav facebook-page" style="cursor:pointer;padding:3px;" id="socilamedias">
-	<li class="circle">
-	<a href="https://www.facebook.com/lokmat" target="_blank" title="Facebook">   <i style="color:#3b599b;margin-left:0px;margin-top:7px;" class="fa fa-facebook fontawesome-18size" id="facebook"></i></a>
-	</li>
-</ul>
-
-<ul class="nav navbar-nav facebook-page" style="cursor:pointer;padding:3px;"  id="socilamedias">
-	<li class="circle">
-		<a href="https://twitter.com/milokmat" target="_blank" title="Twitter">  <i style="color:#4099ff;margin-left:0px;margin-top:7px;" class="fa fa-twitter fontawesome-18size" id="twitter"></i></a>
-	</li>
-</ul>
-<ul class="nav navbar-nav facebook-page" style="cursor:pointer;padding:3px;"  id="socilamedias">
-	<li class="circle">
-		<a href="https://www.youtube.com/user/LokmatNews" target="_blank" title="Youtube">  <i style="color: #da1c1c;font-size: 18px;margin-top: 4px;margin-left: -4px;" class="fa fa-youtube-play fontawesome-18size" id="youtube"></i>
-		</a>
-	</li>
-</ul>
-
-                  
-				</div>
-			</div>
-		</div>
-	</div>
- <div class="hero" id="headr_hero_mobile">
-		<div class="hovermenu ttmenu dark-style menu-red-gradient">
-			<div class="navbar navbar-default" role="navigation" id="navmobile">
-				  
-<ul class="nav navbar-nav" style="margin-top:4px;">
-<li><a style="padding:0 5px;" href="http://lokmat.com" target="_blank"><img src="http://epaperlokmat.in/images/home-icon.png" id="globe" /></a></li>
-</ul>
-
-<ul class="nav navbar-nav" style="margin-top:6px;">
-					  <li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: uppercase!important;">Lokmat
-						  <span class="dropme">
-						  </span>
-						</a>
-						
-						
-						<ul class="dropdown-menu" role="menu">
-					
-						  <li class="dropdown-submenu">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mumbai Main
-							  <span class="dropme-left">
-							  </span>
-							</a> 
-							
-							 <ul class="dropdown-menu">					
-							  <li>
-							  <a href="http://epaper.lokmat.com/main-editions/Mumbai Main/-1/1" target="_blank">Main Edition</a>
-							 </li>
-							 </ul>
-						</li>
-									 
-									
-						<li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Pune Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Pune Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						 
-						 <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chhatrapati Sambhajinagar Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Aurangabad Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						 
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nagpur Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Nagpur Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">New Delhi<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/New Delhi/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Kolhapur Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Kolhapur Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						 <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nashik Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Nashik Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Jalgaon Main <span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Jalgaon Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						 <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Akola Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="./main-editions/Akola Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Solapur Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Solapur Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						 
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Ahmednagar Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Ahmednagar Main/-1/1" target="_blank">Main Edition</a>
-								</li>
-							</ul>
-						 </li>
-						 
-						  <li class="dropdown-submenu">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Goa Main<span class="dropme-left">  </span></a> 
-						    <ul class="dropdown-menu">					
-							 <li>
-								<a href="http://epaper.lokmat.com/main-editions/Goa Main/-1/1" target="_blank">Main Edition</a>  
-								</li>
-							</ul>
-						 </li>
-					</ul>
-					</li>
-					</ul>
-   
-<ul class="nav navbar-nav" id="dropdown_ul">
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: uppercase!important; ">Hellos
-      <span class="dropme">
-      </span>
-    </a>
-    <ul class="dropdown-menu" role="menu">
-  	<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mumbai Hello  
-          <span class="dropme-left">
-          </span>
-        </a> 
-        <ul class="dropdown-menu">    
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Mumbai/-1/1" target="_blank">Hello Mumbai</a></li>
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Navi Mumbai/-1/1" target="_blank">Hello Navi Mumbai</a></li>
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Raigad/-1/1" target="_blank">Hello Raigad</a></li>
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Thane/-1/1" target="_blank">Hello Thane</a></li>
-			<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Vasai/-1/1" target="_blank">Hello Vasai</a></li>
-			
-    </ul>
-    </li>
-	<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pune Hello  
-          <span class="dropme-left"> 
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Pimpri Chinchwad/-1/1" target="_blank">Hello Pimpri Chinchwad</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Pune Gramin/-1/1" target="_blank">Hello Pune Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Pune/-1/1" target="_blank">Hello Pune</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Pune/-1/1" target="_blank">CNX Pune</a></li>
-    </ul>
-    </li>
-	<li class="dropdown-submenu">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chhatrapati Sambhajinagar
-<span class="dropme-left">
-</span>  
-</a>  
- <ul class="dropdown-menu">    
- <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Aurangabad/-1/1" target="_blank">Hello Chhatrapati Sambhajinagar</a></li>
- <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Aurangabad Gramin/-1/1" target="_blank">Hello Chhatrapati Sambhajinagar Gramin</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Beed/-1/1" target="_blank">Hello Beed</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Hingoli/-1/1" target="_blank">Hello Hingoli</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Jalna/-1/1" target="_blank">Hello Jalna</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Latur/-1/1" target="_blank">Hello Latur</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nanded/-1/1" target="_blank">Hello Nanded</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nanded Gramin/-1/1" target="_blank">Hello Nanded Gramin</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Osmanabad/-1/1" target="_blank">Hello Dharashiv</a></li>
-<li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Parbhani/-1/1" target="_blank">Hello Parbhani</a></li>
-</ul>       
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page3.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/3.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page3.php" class="papers">Page 3</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 </li>
-	
-<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nagpur Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Bhandara/-1/1" target="_blank">Hello Bhandara</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Chandrapur/-1/1" target="_blank">Hello Chandrapur</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Gadchiroli/-1/1" target="_blank">Hello Gadchiroli</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Gondia/-1/1" target="_blank">Hello Gondia</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nagpur Gramin/-1/1" target="_blank">Hello Nagpur Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nagpur/-1/1" target="_blank">Hello Nagpur</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Wardha/-1/1" target="_blank">Hello Wardha</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Yavatmal/-1/1" target="_blank">Hello Yavatmal</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Nagpur/-1/1" target="_blank">CNX Nagpur</a></li> 
-    </ul>
-    </li>
-
-<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Kolhapur Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Kolhapur Gramin/-1/1" target="_blank">Hello Kolhapur Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Kolhapur/-1/1" target="_blank">Hello Kolhapur</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Ratnagiri/-1/1" target="_blank">Hello Ratnagiri</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Sindhudurg/-1/1" target="_blank">Hello Sindhudurg</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Sangli/-1/1" target="_blank">Hello Hello Sangli</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Satara/-1/1" target="_blank">Hello Satara</a></li>
-			
-    </li>
-
-	<li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jalgaon Hello
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Bhusaval/-1/1" target="_blank">Hello Bhusaval</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Jalgaon/-1/1" target="_blank">Hello Jalgaon</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Dhule/-1/1" target="_blank">Hello Dhule</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Jalgaon Gramin/-1/1" target="_blank">Hello Jalgaon Gramin</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nandurbar/-1/1" target="_blank">Hello Nandurbar</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Jalgaon/-1/1" target="_blank">CNX Jalgaon</a></li>	 
-    </ul>
-    </li>
-	
-	 <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akola Hello  
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Akola Gramin/-1/1" target="_blank">Hello Akola Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Akola/-1/1" target="_blank">Hello Akola</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Buldhana/-1/1" target="_blank">Hello Buldhana</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Khamgaon/-1/1" target="_blank">Hello Khamgaon</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Khamgaon/-1/1" target="_blank">Hello Khamgaon</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Washim/-1/1" target="_blank">Hello Washim</a></li>	 
-       </ul>
-       </li>
-	   
-         <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solapur Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Solapur Gramin/-1/1" target="_blank">Hello Solapur Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Solapur/-1/1" target="_blank">Hello Solapur</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Solapur/-1/1" target="_blank">CNX Solapur</a></li> 
-       </ul>
-      </li>
-	  
-	   <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ahmednagar Hello
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/ANagar Anniv Spl/-1/1" target="_blank">ANagar Anniv Spl</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Ahmednagar/-1/1" target="_blank">Hello Ahmednagar</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Ahmednagar Gramin/-1/1" target="_blank">Hello Ahmednagar Gramin</a></li> 
-       </ul>
-      </li>
-	  
-	  <li class="dropdown-submenu">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Nashik Hello
-          <span class="dropme-left">
-          </span>
-        </a> 
-             <ul class="dropdown-menu">  
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nashik Gramin/-1/1" target="_blank">Hello Nashik Gramin</a></li>
-			 <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/Hello Nashik/-1/1" target="_blank">Hello Nashik</a></li>
-			  <li class="dropdown-submenu"><a href="http://epaper.lokmat.com/sub-editions/CNX Nashik/-1/1" target="_blank">CNX Nashik</a></li> 
-    </ul>
-    </li>
-    						
-</ul>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page4.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/4.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page4.php" class="papers">Page 4</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page5.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/5.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page5.php" class="papers">Page 5</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page6.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/6.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page6.php" class="papers">Page 6</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page7.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/7.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page7.php" class="papers">Page 7</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page8.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/8.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page8.php" class="papers">Page 8</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page9.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/9.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page9.php" class="papers">Page 9</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page10.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/10.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page10.php" class="papers">Page 10</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page11.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/11.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page11.php" class="papers">Page 11</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page12.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/12.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page12.php" class="papers">Page 12</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page13.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/13.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page13.php" class="papers">Page 13</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page14.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/14.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page14.php" class="papers">Page 14</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page15.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/15.gif" width="63" height="74" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page15.php" class="papers">Page 15</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page16.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/16.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page16.php" class="papers">Page 16</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page17.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/17.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page17.php" class="papers">Page 17</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page18.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/18.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page18.php" class="papers">Page 18</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page19.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/19.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page19.php" class="papers">Page 19</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page20.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/20.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page20.php" class="papers">Page 20</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
 </li>
 </ul>
-<ul class="nav navbar-nav" style="margin-top:6px;">
-  <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="text-transform: uppercase!important;">Supplements
-      <span class="dropme">
-      </span>
-    </a>
-    <ul class="dropdown-menu" role="menu">
-      <li class="dropdown-submenu">
-        <a href="special-supplements/Manthan/-1/1" target="_blank">Manthan
-        </a>  
-	  </li>		
-	  <li class="dropdown-submenu">
-        <a href="special-supplements/Oxygen/-1/1" target="_blank">Oxygen
-        </a>  
-	  </li>
-      <li class="dropdown-submenu">	  
-        <a href="special-supplements/Sakhi/-1/1" target="_blank">Sakhi
-        </a>  
-      </li>  
-    </ul>
-  </li>   
-</ul>  
-
-<ul class="nav navbar-nav facebook-page" style="cursor:pointer;padding:3px;" id="socilamedias">
-	<li class="circle">
-
-<a href="https://www.facebook.com/lokmat" target="_blank" title="Facebook">   <i style="color:#3b599b;margin-left:0px;margin-top:7px;" class="fa fa-facebook fontawesome-18size" id="facebook"></i></a>
-</li>
-</ul>
-  
-<ul class="nav navbar-nav facebook-page" style="cursor:pointer;padding:3px;"  id="socilamedias">
-	<li class="circle">
-
-<a href="https://twitter.com/milokmat" target="_blank" title="Twitter">  <i style="color:#4099ff;margin-left:0px;margin-top:7px;" class="fa fa-twitter fontawesome-18size" id="twitter"></i></a>
- </li> 
-</ul>
-  <ul class="nav navbar-nav facebook-page" style="cursor:pointer;padding:3px;"  id="socilamedias">
-                            <li class="circle">
-						
-						<a href="https://www.youtube.com/user/LokmatNews" target="_blank" title="Youtube">  <i style="color: #da1c1c;font-size: 18px;margin-top: 4px;margin-left: -4px;" class="fa fa-youtube-play fontawesome-18size" id="youtube"></i></a>
-	   
-	
-						
-						 </li>
-                        </ul>
-                
-			</div>
-		</div>
-	</div> <script async type="text/javascript" src="http://epaperlokmat.in/js/links.js?v=1.24"></script>                           
-<div class="article-popup-view articlePopupView"  id="Article_Main" style="cursor:pointer;z-index:999;">
-	<div class="article-main-container" style="overflow:auto;"> 
-		<div class="article-header" style="background-color:white;border-bottom: 2px dashed rgb(221, 221, 221);">
-	      <div class="btn-group btn-group-justified" >
-			<div class="btn-group" id="PrintImg">
-                <button style="background:white;" type="button" class="btn btn-nav" onclick="printImage();" title="Print Article">
-                    <span class="fa fa-print fa-btn-size" style="color:#3b599b;"></span>   			   
-                </button>
-            </div>
-            <div class="btn-group">
-                 <button style="background:white;" type="button" class="btn btn-nav" onclick="downloadImage()"  title="Downoad Article"> 
-			      <a>   <span class="fa fa-download fa-btn-size" style="color:#3b599b;"></span></a>	    
-                </button>
-            </div>
-			 <div class="btn-group">
-                <button style="background:white;" type="button" class="btn btn-nav" onclick="shareFacebookLike();"  title="Share Article">
-                    <span class="fa fa-facebook fa-btn-size" style="color:#3b599b;"></span>   			   
-                </button>
-             </div>
-			 <div class="btn-group">
-                <button style="background:white;" type="button" class="btn btn-nav" onclick="shareTwitter();" title="Share Article">
-                    <span class="fa fa-twitter fa-btn-size" style="color:#4099ff;"></span>   			   
-                </button>
-             </div>
-		   <div class="btn-group" id="share_whtsup">
-                <button style="background:white;" type="button" class="btn btn-nav whatsapp" title="Share Article">
-                   <img src="https://img.icons8.com/color/48/000000/whatsapp.png" style="width:24px;"/>   			   
-                </button> 
-            </div>  
-			<div class="btn-group">
-                <button style="background:white;" type="button" class="btn btn-nav" onclick="shareEmail();" title="Share Article">
-                    <span class="fa fa-envelope fa-btn-size" style="color:#d34836;"></span>   			   
-                </button>
-            </div>
-			<div class="btn-group">
-                <button style="background:white;" type="button" class="btn btn-nav" onclick="feedbackform();" title="Write Your Feedback">
-                     <span class="fa fa-comments fa-btn-size" style="color:#020b50;"></span>      			   
-                </button>
-            </div>
-			 <div class="btn-group" onclick="shareLink();"  id="share_link" data-clipboard-demo  data-clipboard-action="copy" data-clipboard-text="">
-                <button style="background:white;" type="button" class="btn btn-nav link" title="Share Article Link" >
-                    <span class="fa fa-link fa-btn-size" style="color:#3b599b;"></span>   			   
-                </button>
-            </div> 
-			<script>	 
-			function shareLink() 
-			{   
-				 var papername = 'Lokmat ePaper';      
-					var Heading = '';
-					 var edition = $("#defaulteditionid").val();
-					 var date = $("#selectedDate").val();
-					 var artid1 = $("#article-id").val();
-					 var artwidth1 = $("#article-width").val();
-					//var arturl = 'http://epaperlokmat.in/articlepage.php?articleid='+artid1+'&width='+artwidth1;  
-					var arturl = 'http://epaper.lokmat.com/articlepage.php?articleid='+artid1;    
-				$("#share_link").attr("data-clipboard-text",arturl);   
-				
-				var btn = document.getElementById('share_link');
-				var clipboard = new Clipboard(btn);
-				clipboard.on('success', function(e) {
-				alert('Weblink Copied to Clipboard');
-				}); 
-				 clipboard.on('error', function(e) {
-						//console.log(e);
-					});  
-			}
-			 </script>
-			 <div  class="btn-group">
-                <button onclick="window.close();"  style="background:white;" type="button" class="btn btn-nav popupcls" title="Close">
-                    <span class="fa  fa-btn-size" style="color:#3b599b;">&#10006;</span>	   
-                </button>
-            </div>
-        </div>   
-	</div>
-	   <div class="hidden-lg hidden-md">
-        <div id='div-gpt-ad-1672898438926-0'>
-        </div>  
-	  </div>
-	<div class="article-content">
-	   <div class="headertop">
-	   </div>	
-        <div id="status" ></div>
-        <div id="mydata1">
-		   		 
-		<div id='img' style='overflow:auto;'><img  id='ImageArticle'  src='http://epaperlokmat.in/eNewspaper/News/LOK/MULK/2023/05/24/ArticleImages/646d3a2466eb0.jpg' /></div>
-		  
-
-	  <div class="mobile-view-bottom">	  
-		<div id="mobile-bottom">
-			<div id='div-gpt-ad-1663922838794-0'>
-			</div>
-		</div>	
-	</div>
-   </div>
-  </div>    
-
-	    <div class="sidebar-ads" id="sidebarads">
-		  
-		 <div class="article-sidebar-desktop-ads">
-		  <div id='div-gpt-ad-1663908755597-0'>
-		  </div>
-		</div>	
-			
-		<div class="article-sidebar-desktop-ads">	
-		  <div id='div-gpt-ad-1663908818032-0'>
-	      </div>
-		</div>	
-	</div>
-</div>     
-	
-	  <script async id="AV6408617ff5869078020032d4" type="text/javascript" src="https://tg1.ergadx.com/api/adserver/spt?AV_TAGID=6408617ff5869078020032d4&AV_PUBLISHERID=5fd9c7d93f2f4c6ef13a1ec7"></script>
-
-
-<script> 
-	function feedbackform() 
-	{ 
-		window.location = "feedbackmail.php?articleurl=" + window.location.href;
- 
-    }
-	  
+</td>
+</tr>
+<tr>
+<td><img src="../images/spacer.png" width="1" height="20" /></td>
+</tr>
+<tr>
+<td>
+<table width="1171" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="557"><a href="#"><img src="../images/space-advt.jpg" width="557" height="224" /></a></td>
+<td valign="top">
+<div class="brand-slider-wrapper">
+<div class="brand-header-wrapper">
+<h2 class="brand-header">Our Brands</h2>
+</div>
+<div class="owl-carousel owl-theme">
+<div class="item">
+<a target="_blank" href="https://www.newslivetv.com/"><img src="../brandimages/news-live.PNG"></a>
+</div>
+<div class="item">
+<a target="_blank" href="https://niyomiyabarta.org/epaper/"><img src="../brandimages/niyamia-barta.jpg"></a>
+</div>
+<div class="item">
+<a target="_blank" href="http://www.rangtv.org/"><img src="../brandimages/rang.png"></a>
+</div>
+<div class="item">
+<a target="_blank" href="http://www.ramdhenutv.org/"><img src="../brandimages/ramdhenu.PNG"></a>
+</div>
+<div class="item">
+<a target="_blank" href="https://northeastlivetv.org/"><img src="../brandimages/ne-live.PNG"></a>
+</div>
+<div class="item">
+<a target="_blank" href="http://indradhanutv.org/"><img src="../brandimages/indradhanu.PNG"></a>
+</div>
+<div class="item">
+<a target="_blank" href="http://aainajibonor.com/"><img src="../brandimages/aina-jibonor.jpg"></a>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<script type="ee900c463af652019073b7d7-text/javascript">
+		$(window).load(function() {
+		$("#flexiselDemo1").flexisel();
+		$("#flexiselDemo2").flexisel({
+		enableResponsiveBreakpoints: true,
+		responsiveBreakpoints: { 
+		portrait: { 
+		changePoint:300,
+		visibleItems: 1
+		}, 
+		landscape: { 
+		changePoint:500,
+		visibleItems: 2
+		},
+		tablet: { 
+		changePoint:1000,
+		visibleItems: 3
+		}
+		}
+		});
+		
+		$("#flexiselDemo3").flexisel({
+		visibleItems: 5,
+		animationSpeed: 1000,
+		autoPlay: true,
+		autoPlaySpeed: 3000,            
+		pauseOnHover: true,
+		enableResponsiveBreakpoints: true,
+		responsiveBreakpoints: { 
+		portrait: { 
+		changePoint:300,
+		visibleItems: 1
+		}, 
+		landscape: { 
+		changePoint:500,
+		visibleItems: 2
+		},
+		tablet: { 
+		changePoint:800,
+		visibleItems: 3
+		}
+		}
+		});
+		$("#flexiselDemo4").flexisel({
+		clone:false
+		});
+		});
 	</script>
- 
-  <script src="//cdn.ergadx.com/js/35/lokmat-ads.js"></script>  
+<script type="ee900c463af652019073b7d7-text/javascript">
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:10,
+      nav:true,
+      dots: true,
+      margin: 10,
+      autoplay : true,
+      autoplayTimeout: 2500,
+      autoplaySpeed : 1000,
+      autoplayHoverPause: true,
+      responsive:{
+          0:{
+              items:3
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:3
+          }
+      }
+  })
+</script>
+<map name="Map" id="Map">
+<area shape="rect" coords="704,124,855,193" href="https://northeastlivetv.org" target="_blank" />
+<area shape="rect" coords="579,117,686,208" href="http://ramdhenutv.org/" target="_blank" />
+<area shape="rect" coords="991,34,1159,103" href="http://www.rangtv.org/" target="_blank" />
+<area shape="rect" coords="738,50,970,103" href="https://epaper.niyomiyabarta.org/" target="_blank" />
+<area shape="rect" coords="574,13,729,109" href="https://www.newslivetv.com/" target="_blank" />
+</map></DIV></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF"><img src="../images/spacer.png" width="1" height="10" /></td>
+</tr>
+<tr>
+<td bgcolor="#FFFFFF"><div style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;" class="bxsz"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><img src="images/p16/main.gif" width="1161" height="1780" border="0" usemap="#Map2" class="map" style="width:1161px" href="#" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+<map name="Map2" id="Map2">
+/
+<area shape="rect" coords="35,73,1134,1742" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('1.gif','25052023','16','1')" data-cf-modified-ee900c463af652019073b7d7- />
+</map>
+</div></td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><div align="center"><style type="text/css">
+
+<!--
+
+.style1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 10px;
+
+}
+
+-->
+
+</style>
+<div align="center" class="style1">
+<p>&copy; Niyomiya Barta, 2022 | Maintenance by Pride East Entertainments (p) Ltd.</p>
+</div>
+</div></td>
+</tr>
+</table>
+<blockquote>&nbsp;</blockquote>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ee900c463af652019073b7d7-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cce189a8be839c4","version":"2023.4.0","r":1,"b":1,"token":"e7d314c2f1aa48389af15d506ecfbb0d","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>

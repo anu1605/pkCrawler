@@ -27,7 +27,7 @@ for ($page = 1; $page < 20; $page++) {
 
             $width = $imageInfo[0];
             $height = $imageInfo[1];
-            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp/images/KM_Karnataka" . "_" . $kmfilenamedate . "_" . $number . "_admin_kan.jpg";
+            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/KM_Karnataka" . "_" . $kmfilenamedate . "_" . $number . "_admin_kan.jpg";
 
             // $filepath = dirname(__FILE__) . "/images/KM_Karnataka" . "_" . $kmfilenamedate . "_" . $number . "_admin_kan.jpg";
             $number++;
@@ -50,7 +50,7 @@ for ($page = 1; $page < 20; $page++) {
                     echo 'Does not seem to be a classifieds page..... deleting<br>';
                     unlink($filepath);
                 } else {
-                    echo 'Identified as a classifieds page..... check it out here: <a href = "https://marketing.buzzgully.com/' . str_replace("/var/www/d78236gbe27823/", "", $filepath) . '" target="_blank">' . str_replace("/var/www/d78236gbe27823/marketing/Whatsapp/images/", "", $filepath) . '</a><br>';
+                    echo 'Identified as a classifieds page..... check it out here: <a href = "https://marketing.buzzgully.com/' . str_replace("/var/www/d78236gbe27823/", "", $filepath) . '" target="_blank">' . str_replace("/var/www/d78236gbe27823/marketing/Whatsapp2/images/", "", $filepath) . '</a><br>';
                     // echo 'Identified as a classifieds page..... <br>';
                 }
             } catch (Exception $e) {

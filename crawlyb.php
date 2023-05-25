@@ -24,7 +24,7 @@ for ($page = 1; $page < 20; $page++) {
                 break;
 
 
-            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp/images/YB_Mumbai" . "_" . $filenamedate . "_" . $number . "_admin_hin.jpg";
+            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/YB_Mumbai" . "_" . $filenamedate . "_" . $number . "_admin_hin.jpg";
 
             // $filepath = dirname(__FILE__) . "/images/YB_Mumbai" . "_" . $filenamedate . "_" . $number . "_admin_hin.jpg";
             $number++;
@@ -48,7 +48,7 @@ for ($page = 1; $page < 20; $page++) {
                     echo 'Does not seem to be a classifieds page..... deleting<br>' . PHP_EOL;
                     unlink($filepath);
                 } else {
-                    echo 'Identified as a classifieds page..... check it out here: <a href = "https://marketing.buzzgully.com/' . str_replace("/var/www/d78236gbe27823/", "", $filepath) . '" target="_blank">' . str_replace("/var/www/d78236gbe27823/marketing/Whatsapp/images/", "", $filepath) . '</a><br>';
+                    echo 'Identified as a classifieds page..... check it out here: <a href = "https://marketing.buzzgully.com/' . str_replace("/var/www/d78236gbe27823/", "", $filepath) . '" target="_blank">' . str_replace("/var/www/d78236gbe27823/marketing/Whatsapp2/images/", "", $filepath) . '</a><br>';
                     // echo 'Identified as a classifieds page..... <br>';
                 }
             } catch (Exception $e) {

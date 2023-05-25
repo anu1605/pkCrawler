@@ -27,7 +27,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                     break;
 
 
-                $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp/images/VV_" . str_replace($cityArray[0], "Bangalore", $cityArray[$edition]) . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
+                $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/VV_" . str_replace($cityArray[0], "Bangalore", $cityArray[$edition]) . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
 
                 // $filepath = dirname(__FILE__) . "/images/VV_" . str_replace($cityArray[0], "Bangalore", $cityArray[$edition]) . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
                 $number++;
@@ -49,7 +49,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                         echo 'Does not seem to be a classifieds page..... deleting<br>' . PHP_EOL;
                         unlink($filepath);
                     } else {
-                        echo 'Identified as a classifieds page..... check it out here: <a href = "https://marketing.buzzgully.com/' . str_replace("/var/www/d78236gbe27823/", "", $filepath) . '" target="_blank">' . str_replace("/var/www/d78236gbe27823/marketing/Whatsapp/images/", "", $filepath) . '</a><br>';
+                        echo 'Identified as a classifieds page..... check it out here: <a href = "https://marketing.buzzgully.com/' . str_replace("/var/www/d78236gbe27823/", "", $filepath) . '" target="_blank">' . str_replace("/var/www/d78236gbe27823/marketing/Whatsapp2/images/", "", $filepath) . '</a><br>';
                         // echo 'Identified as a classifieds page..... <br>';
                     }
                 } catch (Exception $e) {

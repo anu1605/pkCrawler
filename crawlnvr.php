@@ -15,6 +15,8 @@ $date = date('d-M-Y', time());
 $filenamedate = date('Y-m-d', time());
 $cityArray  =  array("mumbai", "nagpur", "nashik", "pune");
 
+
+
 for ($edition = 0; $edition < count($cityArray); $edition++) {
     for ($page = 1; $page < 20; $page++) {
 
@@ -42,7 +44,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
 
             try {
 
-                $text = (new TesseractOCR($filepath))->lang('hin')->run();
+                $text = (new TesseractOCR($filepath))->run();
 
 
                 $matches = array();
@@ -52,7 +54,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                 $n = count($matches);
 
                 if ($n < 3) {
-                    echo 'Does not seem to be a classifieds page..... deleting<br>' . PHP_EOL;
+                    echo 'Does not seem to be a classifieds page..... deleting<br>';
                     unlink($filepath);
                 } else {
                     echo 'Identified as a classifieds page..... check it out here: <a href = "https://marketing.buzzgully.com/' . str_replace("/var/www/d78236gbe27823/", "", $filepath) . '" target="_blank">' . str_replace("/var/www/d78236gbe27823/marketing/Whatsapp2/images/", "", $filepath) . '</a><br>';
