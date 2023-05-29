@@ -14,9 +14,6 @@ $dateForLinks = date('dmy', time());
 echo '<div id="crawlinfo"></div>';
 
 
-$code = $paperString[$edition];
-$city = $paperArray[$edition];
-
 
 
 
@@ -28,7 +25,7 @@ for ($page = 1; $page <= 50; $page++) {
     $pgImageURL = "https://www.janpathsamachar.com/epaper/janpath/" . $dateForLinks . "/page" . $page . ".jpg";
     if (file_get_contents($pgImageURL)) {
         array_push($images, $pgImageURL);
-        $filepath = "jps_Siliguri" . "_" . $filenamedate . "_" . $number . "_hin.jpg";
+        $filepath = dirname(__FILE__) . "/images/jps_Siliguri" . "_" . $filenamedate . "_" . $number . "_hin.jpg";
 
         $number++;
         array_push($imageNameToSave, $filepath);

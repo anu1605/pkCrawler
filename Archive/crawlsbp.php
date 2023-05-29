@@ -1,7 +1,5 @@
 <?php
 
-
-
 error_reporting(E_ERROR);
 set_time_limit(1800);
 
@@ -10,41 +8,46 @@ require  "vendor/autoload.php";
 
 use thiagoalessio\TesseractOCR\TesseractOCR;
 
-
 $filenamedate = date('Y-m-d', time());
 
-$data = file_get_contents("https://epaper.mysurumithra.com/");
-
-$datecode = explode('/', explode('href="/epaper/edition/', $data)[1])[0];
-
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_URL, "https://epaper.sangbadpratidin.in/");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+$data = curl_exec($ch);
+curl_close($ch);
+$contentArray = explode('<div class="item">', $data);
 
 
 $number = 1;
-$content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra/page/1");
-$imagelinks =   explode('"><img src="', $content);
+
+
+
 $t1 = time();
-for ($link = 1; $link < count($imagelinks); $link++) {
-    $imagelink = explode('"', explode('"><img src="', $content)[$link])[0];
+for ($i = 1; $i < count($contentArray); $i++) {
 
+    $imagelink = str_replace('&', '&amp;', explode('"', explode('src="', $contentArray[$i])[1])[0]);
 
-    // $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/MM_Mysore" . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
-    $filepath = dirname(__FILE__) . "/images/MM_Mysore" . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
+    // $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/SBP_Kolkata" . "_" . $filenamedate . "_" . $number . "_admin_ben.jpg";
+    $filepath = dirname(__FILE__) . "/images/SBP_Kolkata" . "_" . $filenamedate . "_" . $number . "_admin_ben.jpg";
+
     $number++;
-
     $t2 = time();
     $image = file_get_contents($imagelink);
-    echo "fetching time =" . (time() - $t2) . "sec";
-    echo "<br>";
-
+    echo "fetching time = " . (time() - $t2) . "sec";
+    echo  "<br>";
 
     $handle = fopen($filepath, "w");
     fwrite($handle, $image);
     fclose($handle);
+
+
     $t3 = time();
     try {
         $text = (new TesseractOCR($filepath))->run();
-        echo "processing time =" . (time() - $t3) . "sec";
-        echo "<br>";
+        echo "processing time = " . (time() - $t3) . "sec";
+        echo  "<br>";
 
         $matches = array();
         preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
@@ -60,7 +63,7 @@ for ($link = 1; $link < count($imagelinks); $link++) {
             echo 'Identified as a classifieds page..... <br>';
         }
     } catch (Exception $e) {
-        echo "processing time =" . (time() - $t3) . "sec";
+        echo "processing time = " . (time() - $t3);
         echo "<br>";
         echo "Does not seem to be a classifieds page..... deleting";
         echo "<br>";
@@ -70,5 +73,6 @@ for ($link = 1; $link < count($imagelinks); $link++) {
     ob_flush();
     flush();
 }
+
 echo "<br>";
-echo "time taken = " . ((time() - $t1) / 60) . "min";
+echo "total time = " . ((time() - $t1) / 60) . "min";

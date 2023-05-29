@@ -11,24 +11,28 @@ require  "vendor/autoload.php";
 use thiagoalessio\TesseractOCR\TesseractOCR;
 
 
-$filenamedate = date('Y-m-d', time());
+$date = date('Y-m-d', time());
 
-$data = file_get_contents("https://epaper.mysurumithra.com/");
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_URL, "https://e2india.com/pratidin/");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+$data = curl_exec($ch);
+curl_close($ch);
 
-$datecode = explode('/', explode('href="/epaper/edition/', $data)[1])[0];
+
+
+$contentArray = explode('</div><img class="" src="', $data);
 
 
 
 $number = 1;
-$content = file_get_contents("https://epaper.mysurumithra.com/epaper/edition/" . $datecode . "/mysuru-mithra/page/1");
-$imagelinks =   explode('"><img src="', $content);
-$t1 = time();
-for ($link = 1; $link < count($imagelinks); $link++) {
-    $imagelink = explode('"', explode('"><img src="', $content)[$link])[0];
-
-
-    // $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/MM_Mysore" . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
-    $filepath = dirname(__FILE__) . "/images/MM_Mysore" . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
+$t1  = time();
+for ($i = 1; $i < count($contentArray); $i++) {
+    $imagelink =  str_replace("&", "&amp;", explode('"',  $contentArray[$i])[0]);
+    // $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2//images/POD_Bhubaneswar" . "_" . $date . "_" . $number . "_ori.jpg"";
+    $filepath = dirname(__FILE__) . "/images/POD_Bhubaneswar" . "_" . $date . "_" . $number . "_ori.jpg";
     $number++;
 
     $t2 = time();
@@ -52,7 +56,7 @@ for ($link = 1; $link < count($imagelinks); $link++) {
         foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
         $n = count($matches);
 
-        if ($n < 3) {
+        if ($n < 2) {
             echo 'Does not seem to be a classifieds page..... deleting<br>';
             unlink($filepath);
         } else {
@@ -66,6 +70,7 @@ for ($link = 1; $link < count($imagelinks); $link++) {
         echo "<br>";
         unlink($filepath);
     }
+
     echo "<br>";
     ob_flush();
     flush();
