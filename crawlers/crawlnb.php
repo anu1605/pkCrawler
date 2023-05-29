@@ -18,9 +18,20 @@ $citycode = array("mum", "nag", "pun", "akol", "nas", "amr", "cha");
 
 
 
+$t1 = time();
 
 for ($edition = 0; $edition < count($cityArray); $edition++) {
     for ($page = 1; $page < 20; $page++) {
+
+        $testcontent = file_get_contents("https://epaper.enavabharat.com/article-" . $date . "-" . $cityArray[$edition] . "-edition-navabharat-" . $citycode[$edition] . "/" . $page . "-1/");
+
+        $testimagelink = explode('"', explode("id='ImageArticle'  src=", $testcontent)[1])[1];
+
+        $testimageInfo = getimagesize($testimagelink);
+
+        if (!$testimageInfo)
+            break;
+
 
         for ($section = 1; $section < 100; $section++) {
             $link =   "https://epaper.enavabharat.com/article-" . $date . "-" . $cityArray[$edition] . "-edition-navabharat-" . $citycode[$edition] . "/" . $page . "-" . $section . "/";
@@ -43,15 +54,21 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
 
             // $filepath = dirname(__FILE__) . "/images/NB_" . ucwords($cityArray[$edition]) . "_" . $filenamedate . "_" . $number . "_admin_hin.jpg";
             $number++;
+
+            $t2 = time();
             $image = file_get_contents($imagelink);
+            echo "fetching time = " . (time() - $t2) . "sec";
+            echo "<br>";
+
             $handle = fopen($filepath, "w");
             fwrite($handle, $image);
             fclose($handle);
 
+            $t3 = time();
             try {
-
                 $text = (new TesseractOCR($filepath))->run();
-
+                echo "processing time = " . (time() - $t3) . "sec";
+                echo "<br>";
 
                 $matches = array();
                 preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
@@ -59,7 +76,7 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                 foreach ($matches as $match => $val) $matches[$match] = ltrim($val, "0");
                 $n = count($matches);
 
-                if ($n < 3) {
+                if ($n < 2) {
                     echo 'Does not seem to be a classifieds page..... deleting<br>';
                     unlink($filepath);
                 } else {
@@ -67,6 +84,8 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                     // echo 'Identified as a classifieds page..... <br>';
                 }
             } catch (Exception $e) {
+                echo "processing time = " . (time() - $t3) . "sec";
+                echo "<br>";
                 echo "Does not seem to be a classifieds page..... deleting";
                 echo "<br>";
                 unlink($filepath);
@@ -76,3 +95,6 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
         }
     }
 }
+
+echo "<br>";
+echo "total time = " . ((time() - $t1) / 60) . "min";

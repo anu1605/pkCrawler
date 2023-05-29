@@ -3,6 +3,7 @@ error_reporting(E_ERROR);
 set_time_limit(1800);
 
 require  "/var/www/d78236gbe27823/vendor/autoload.php";
+// require  "vendor/autoload.php";
 
 use thiagoalessio\TesseractOCR\TesseractOCR;
 
@@ -13,19 +14,18 @@ $filenamedate = date('Y-m-d', time());
 
 $paperString = ["HYD", "VIJ", "KRM", "NEL", "ATP"];
 
-$pageNumber = 30;
-$sectionNumber = 30;
 
 $t1 = time();
 for ($edition = 0; $edition < count($paperArray); $edition++) {
     $code = $paperString[$edition];
     $city = $paperArray[$edition];
     $number = 1;
-    for ($i = 1; $i <= 50; $i++) {
-        if ((file_get_contents("http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $i . "_1.jpg"))) {
-            for ($j = 1; $j < 50; $j++) {
+    for ($page = 1; $page <= 50; $page++) {
+        if ((file_get_contents("http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $page . "_1.jpg"))) {
+            for ($section = 1; $section < 50; $section++) {
 
-                $link = "http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $i . "_" . $j . ".jpg";
+                $link = "http://103.241.136.50/epaper/DC/" . $code . "/510X798/" . $filenamedate . "/b_images/" . $code . "_" . $filenamedate . "_maip" . $page . "_" . $section . ".jpg";
+
 
                 if (!file_get_contents($link)) {
                     break;
@@ -34,16 +34,25 @@ for ($edition = 0; $edition < count($paperArray); $edition++) {
 
                     // $filepath = dirname(__FILE__) . "/images/DC_" . $city . "_" . $filenamedate . "_" . $number . "_admin_eng.jpg";
                     $number++;
+
+                    $t2 = time();
                     $image = file_get_contents($link);
+                    echo "fetching time = " . (time() - $t2) . "sec";
+                    echo "<br>";
+
+
 
                     $handle = fopen($filepath, "w");
                     fwrite($handle, $image);
                     fclose($handle);
 
+                    $t3 = time();
                     try {
 
-                        echo $link . "<br>";
                         $text = (new TesseractOCR($filepath))->run();
+                        echo "processing time = " . (time() - $t3) . "sec";
+                        echo "<br>";
+
                         $matches = array();
                         preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
                         $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
@@ -58,6 +67,8 @@ for ($edition = 0; $edition < count($paperArray); $edition++) {
                             // echo 'Identified as a classifieds page..... <br>';
                         }
                     } catch (Exception $e) {
+                        echo "processing time = " . (time() - $t3) . "sec";
+                        echo "<br>";
                         unlink($filepath);
                         echo "Does not seem to be a classifieds page..... deleting";
                         echo "<br>";
@@ -70,6 +81,5 @@ for ($edition = 0; $edition < count($paperArray); $edition++) {
         } else break;
     }
 }
-
 echo "<br>";
-echo ($t1 - time()) / 60 . " min";
+echo "total time = " . ((time() - $t1) / 60) . "min";

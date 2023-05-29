@@ -1,69 +1,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -73,1759 +10,59 @@
 <title>Niyomiya Barta: The Assamese Daily</title>
 <meta name="description" content>
 <meta name="keywords" content="North east news, assam news, national news, epaper, enewspaper, onlinenews, online news ">
-<meta name="author" content="Niyomiya Barta">
+<meta name="author" content="Niyamiya Barta">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
-<script language="javascript" type="ee900c463af652019073b7d7-text/javascript" src="../js/jquery.js"></script>
+<script language="javascript" type="89f28ba1d7022bfe88f80f35-text/javascript" src="../js/jquery.js"></script>
 <link href="../css/awesome_font.css" type="text/css" rel="stylesheet" />
-<script type="ee900c463af652019073b7d7-text/javascript" src="../scripts/scrolltopcontrol.js"></script>
-<script type="ee900c463af652019073b7d7-text/javascript" src="../js/jquery.min.js"></script>
-<script type="ee900c463af652019073b7d7-text/javascript" src="../js/jquery.maphilight.min.js"></script>
+<script type="89f28ba1d7022bfe88f80f35-text/javascript" src="../scripts/scrolltopcontrol.js"></script>
+<script type="89f28ba1d7022bfe88f80f35-text/javascript" src="../js/jquery.min.js"></script>
+<script type="89f28ba1d7022bfe88f80f35-text/javascript" src="../js/jquery.maphilight.min.js"></script>
 <link rel="stylesheet" href="../css/jquery-ui.css" />
-<script src="../scripts/jquery-1.9.1.html" type="ee900c463af652019073b7d7-text/javascript"></script>
-<script src="../scripts/jquery-ui.js" type="ee900c463af652019073b7d7-text/javascript"></script>
-<script type="ee900c463af652019073b7d7-text/javascript">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="../scripts/jquery-1.9.1.html" type="89f28ba1d7022bfe88f80f35-text/javascript"></script>
+<script src="../scripts/jquery-ui.js" type="89f28ba1d7022bfe88f80f35-text/javascript"></script>
+<script type="89f28ba1d7022bfe88f80f35-text/javascript">
         $(function () {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            $('.map').maphilight();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        $('.map').maphilight();
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		function redirectme(image,dt,pg,id)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			var url='details.php?date='+dt+'&page='+pg+'&article='+image+'&cid='+id;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	function redirectme(image,dt,pg,id)
+	{
+	var url='details.php?date='+dt+'&page='+pg+'&article='+image+'&cid='+id;
     var width = 800;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var height = 500;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var left = parseInt((screen.availWidth/2) - (width/2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var top = parseInt((screen.availHeight/2) - (height/2));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     var windowFeatures = "width=" + width + ",height=" + height +   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         ",status,resizable,left=" + left + ",top=" + top + 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         "screenX=" + left + ",screenY=" + top + ",scrollbars=yes";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			newwindow=window.open(url, "subWind", windowFeatures, "POS");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		newwindow=window.open(url, "subWind", windowFeatures, "POS");
 	if (window.focus) {newwindow.focus()}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	return false;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	}
     </script>
-<script type="ee900c463af652019073b7d7-text/javascript">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script type="89f28ba1d7022bfe88f80f35-text/javascript">
   $(function() {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     $( document ).tooltip({
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       track: true
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </script>
+<style type="text/css">
+<!--
+.style1 {color: #F0F0F0}
+-->
+ </style>
 </head>
 <body>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148926121-2" type="ee900c463af652019073b7d7-text/javascript"></script>
-<script type="ee900c463af652019073b7d7-text/javascript">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148926121-2" type="89f28ba1d7022bfe88f80f35-text/javascript"></script>
+<script type="89f28ba1d7022bfe88f80f35-text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-148926121-2');
-</script>
-<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+</script><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
 <td style="background-image:url(images/top_bk.jpg)"><table width="1161" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
@@ -1874,10 +111,10 @@
 </table>
 </td>
 </tr>
-<tr><td><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="ee900c463af652019073b7d7-text/javascript"></script>
+<tr><td><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="89f28ba1d7022bfe88f80f35-text/javascript"></script>
 
 <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-8373883083284761" data-ad-slot="5491030751"></ins>
-<script type="ee900c463af652019073b7d7-text/javascript">
+<script type="89f28ba1d7022bfe88f80f35-text/javascript">
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script></td>
 <td colspan="2">
@@ -1900,19 +137,19 @@
 <td><img src="../images/bar1.jpg" width="1161" height="20" /></td>
 </tr>
 <tr>
-<td><img src="https://niyomiyabarta.com/epaper/images/catogry.png" width="1161" height="40" border="0" usemap="#Map" />
+<td height="40"><img src="https://niyomiyabarta.com/epaper/images/catogry.png" width="1161" height="40" border="0" usemap="#Map" />
 <map name="Map">
-<area shape="rect" coords="147,16,188,32" href="https://niyomiyabarta.com/epaper/25052023/index.php">
-<area shape="rect" coords="201,15,270,32" href="https://niyomiyabarta.com/epaper/25052023/page2.php">
-<area shape="rect" coords="288,13,328,34" href="https://niyomiyabarta.com/epaper/25052023/page3.php">
-<area shape="rect" coords="338,12,396,35" href="https://niyomiyabarta.com/epaper/25052023/page4.php">
-<area shape="rect" coords="415,11,475,33" href="https://niyomiyabarta.com/epaper/25052023/page7.php">
-<area shape="rect" coords="486,12,640,32" href="https://niyomiyabarta.com/epaper/25052023/page8.php">
-<area shape="rect" coords="653,11,779,34" href="https://niyomiyabarta.com/epaper/25052023/page2.php">
-<area shape="rect" coords="798,14,857,33" href="https://niyomiyabarta.com/epaper/25052023/page13.php">
-<area shape="rect" coords="885,12,932,34" href="https://niyomiyabarta.com/epaper/25052023/page15.php">
-<area shape="rect" coords="940,13,996,35" href="https://niyomiyabarta.com/epaper/25052023/page14.php">
-<area shape="rect" coords="1004,12,1043,34" href="https://niyomiyabarta.com/epaper/25052023/page16.php">
+<area shape="rect" coords="147,16,188,32" href="https://niyomiyabarta.com/epaper/26052023/index.php">
+<area shape="rect" coords="201,15,270,32" href="https://niyomiyabarta.com/epaper/26052023/page2.php">
+<area shape="rect" coords="288,13,328,34" href="https://niyomiyabarta.com/epaper/26052023/page3.php">
+<area shape="rect" coords="338,12,396,35" href="https://niyomiyabarta.com/epaper/26052023/page4.php">
+<area shape="rect" coords="415,11,475,33" href="https://niyomiyabarta.com/epaper/26052023/page7.php">
+<area shape="rect" coords="486,12,640,32" href="https://niyomiyabarta.com/epaper/26052023/page8.php">
+<area shape="rect" coords="653,11,779,34" href="https://niyomiyabarta.com/epaper/26052023/page2.php">
+<area shape="rect" coords="798,14,857,33" href="https://niyomiyabarta.com/epaper/26052023/page13.php">
+<area shape="rect" coords="885,12,932,34" href="https://niyomiyabarta.com/epaper/26052023/page15.php">
+<area shape="rect" coords="940,13,996,35" href="https://niyomiyabarta.com/epaper/26052023/page14.php">
+<area shape="rect" coords="1004,12,1043,34" href="https://niyomiyabarta.com/epaper/26052023/page16.php">
 <area shape="rect" coords="1051,14,1105,33" href="https://epaper.niyomiyabarta.org/webmail" target="_blank" />
 </map>
 </td>
@@ -1927,8 +164,8 @@
 <link type="text/css" rel="stylesheet" href="../owlcarousal/owl.carousel.min.css">
 <link type="text/css" rel="stylesheet" href="../owlcarousal/owl.theme.default.min.css">
 <link href="../include/scrool/css/style.css" rel="stylesheet" type="text/css" />
-<script type="ee900c463af652019073b7d7-text/javascript" src="../include/scrool/js/jquery.flexisel.js"></script>
-<script type="ee900c463af652019073b7d7-text/javascript" src="../owlcarousal/owl.carousel.min.js"> </script>
+<script type="89f28ba1d7022bfe88f80f35-text/javascript" src="../include/scrool/js/jquery.flexisel.js"></script>
+<script type="89f28ba1d7022bfe88f80f35-text/javascript" src="../owlcarousal/owl.carousel.min.js"> </script>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
 <tr>
 <td>
@@ -1939,26 +176,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/index.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/1.gif" width="63" height="76" 0 /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/index.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/1.gif" width="63" height="76" 0 /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/index.php" class="papers">Page 1</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page2.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/2.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page2.php" class="papers">Page 2</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/index.php" class="papers">Page 1</a></div></td>
 </tr>
 </table>
 </td>
@@ -1971,26 +192,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page3.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/3.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page2.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/2.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page3.php" class="papers">Page 3</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page4.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/4.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page4.php" class="papers">Page 4</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page2.php" class="papers">Page 2</a></div></td>
 </tr>
 </table>
 </td>
@@ -2003,26 +208,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page5.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/5.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page3.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/3.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page5.php" class="papers">Page 5</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page6.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/6.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page6.php" class="papers">Page 6</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page3.php" class="papers">Page 3</a></div></td>
 </tr>
 </table>
 </td>
@@ -2035,26 +224,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page7.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/7.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page4.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/4.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page7.php" class="papers">Page 7</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page8.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/8.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page8.php" class="papers">Page 8</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page4.php" class="papers">Page 4</a></div></td>
 </tr>
 </table>
 </td>
@@ -2067,26 +240,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page9.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/9.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page5.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/5.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page9.php" class="papers">Page 9</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page10.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/10.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page10.php" class="papers">Page 10</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page5.php" class="papers">Page 5</a></div></td>
 </tr>
 </table>
 </td>
@@ -2099,26 +256,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page11.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/11.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page6.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/6.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page11.php" class="papers">Page 11</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page12.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/12.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page12.php" class="papers">Page 12</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page6.php" class="papers">Page 6</a></div></td>
 </tr>
 </table>
 </td>
@@ -2131,26 +272,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page13.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/13.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page7.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/7.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page13.php" class="papers">Page 13</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page14.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/14.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page14.php" class="papers">Page 14</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page7.php" class="papers">Page 7</a></div></td>
 </tr>
 </table>
 </td>
@@ -2163,26 +288,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page15.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/15.gif" width="63" height="74" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page8.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/8.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page15.php" class="papers">Page 15</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page16.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/16.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page16.php" class="papers">Page 16</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page8.php" class="papers">Page 8</a></div></td>
 </tr>
 </table>
 </td>
@@ -2195,26 +304,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page17.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/17.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page9.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/9.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page17.php" class="papers">Page 17</a></div></td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-</li>
-<li>
-<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
-<tr>
-<td height="103" valign="top" background="images/bk.png">
-<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page18.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/18.gif" width="63" height="76" /></a></td>
-</tr>
-<tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page18.php" class="papers">Page 18</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page9.php" class="papers">Page 9</a></div></td>
 </tr>
 </table>
 </td>
@@ -2227,10 +320,10 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page19.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/19.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page10.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/10.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page19.php" class="papers">Page 19</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page10.php" class="papers">Page 10</a></div></td>
 </tr>
 </table>
 </td>
@@ -2243,10 +336,154 @@
 <td height="103" valign="top" background="images/bk.png">
 <table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
 <tr>
-<td height="19"><a href="https://niyomiyabarta.com/epaper/25052023/page20.php" class="papers"><img src="https://niyomiyabarta.com/epaper/25052023/images/pages/20.gif" width="63" height="76" /></a></td>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page11.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/11.gif" width="63" height="76" /></a></td>
 </tr>
 <tr>
-<td><div align="center"><a href="https://niyomiyabarta.com/epaper/25052023/page20.php" class="papers">Page 20</a></div></td>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page11.php" class="papers">Page 11</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page12.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/12.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page12.php" class="papers">Page 12</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page13.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/13.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page13.php" class="papers">Page 13</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page14.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/14.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page14.php" class="papers">Page 14</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page15.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/15.gif" width="63" height="74" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page15.php" class="papers">Page 15</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page16.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/16.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page16.php" class="papers">Page 16</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page17.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/17.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page17.php" class="papers">Page 17</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page18.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/18.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page18.php" class="papers">Page 18</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page19.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/19.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page19.php" class="papers">Page 19</a></div></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</li>
+<li>
+<table width="70" border="0" cellspacing="0" cellpadding="0" valign="top">
+<tr>
+<td height="103" valign="top" background="images/bk.png">
+<table width="63" height="77" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td height="19"><a href="https://niyomiyabarta.com/epaper/26052023/page20.php" class="papers"><img src="https://niyomiyabarta.com/epaper/26052023/images/pages/20.gif" width="63" height="76" /></a></td>
+</tr>
+<tr>
+<td><div align="center"><a href="https://niyomiyabarta.com/epaper/26052023/page20.php" class="papers">Page 20</a></div></td>
 </tr>
 </table>
 </td>
@@ -2299,7 +536,7 @@
 </td>
 </tr>
 </table>
-<script type="ee900c463af652019073b7d7-text/javascript">
+<script type="89f28ba1d7022bfe88f80f35-text/javascript">
 		$(window).load(function() {
 		$("#flexiselDemo1").flexisel();
 		$("#flexiselDemo2").flexisel({
@@ -2347,7 +584,7 @@
 		});
 		});
 	</script>
-<script type="ee900c463af652019073b7d7-text/javascript">
+<script type="89f28ba1d7022bfe88f80f35-text/javascript">
   $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
@@ -2383,10 +620,25 @@
 <td bgcolor="#FFFFFF"><img src="../images/spacer.png" width="1" height="10" /></td>
 </tr>
 <tr>
-<td bgcolor="#FFFFFF"><div style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;" class="bxsz"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><span class="bxsz" style="float:left; width:1161px; border:1px solid #ddd; min-height:1537px;  padding:0px; margin-left:0px;"><img src="images/p16/main.gif" width="1161" height="1780" border="0" usemap="#Map2" class="map" style="width:1161px" href="#" /></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
-<map name="Map2" id="Map2">
-/
-<area shape="rect" coords="35,73,1134,1742" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('1.gif','25052023','16','1')" data-cf-modified-ee900c463af652019073b7d7- />
+<td bordercolor="#000000" bgcolor="#FFFFFF"><div class="style1" style="float:left; width:1161px; border:1px solid #ddd; padding:0px; margin-left:0px;"><span class="style1" style="float:left; width:1161px; border:1px solid #ddd; padding:0px; margin-left:0px;"><img src="images/p1/main.gif" width="1161" height="1774" border="0" usemap="#Map2" class="map" style="width:1161px" href="#" /></span>
+<map name="Map2" id="Map222222">
+<area shape="rect" coords="31,1235,439,1738" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('11.gif','26052023','1','11')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="447,1569,578,1736" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('13.gif','26052023','1','13')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="719,1071,1135,1740" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('11.gif','26052023','1','11')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="442,1194,718,1440" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('10.gif','26052023','1-17','10')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="442,1442,716,1741" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('12.gif','26052023','1-17','12')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="444,841,716,1192" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('6.gif','26052023','1-17','6')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="29,915,437,1233" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('8.gif','26052023','1-17','8')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="718,884,1133,1068" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('7.gif','26052023','1-17','7')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="27,710,441,912" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('5.gif','26052023','1-17','5')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="448,619,950,884" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('3.gif','26052023','1-17','3')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="953,463,1132,881" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('4.gif','26052023','1-17',4')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="27,229,1132,706" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('2.gif','26052023','1-17','2')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="28,25,1137,225" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('1.gif','26052023','1','1')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+</map>
+<map name="Map2" id="Map22222">
+<area shape="rect" coords="27,229,176,533" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('2.gif','26052023','1-13','2')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
+<area shape="rect" coords="28,25,1137,225" title="Click to read this article" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectme('1.gif','26052023','1','1')" data-cf-modified-89f28ba1d7022bfe88f80f35- />
 </map>
 </div></td>
 </tr>
@@ -2395,7 +647,6 @@
 <tr>
 <td>&nbsp;</td>
 </tr>
-<tr>
 <td><div align="center"><style type="text/css">
 
 <!--
@@ -2417,7 +668,6 @@
 </div></td>
 </tr>
 </table>
-<blockquote>&nbsp;</blockquote>
-<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="ee900c463af652019073b7d7-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cce189a8be839c4","version":"2023.4.0","r":1,"b":1,"token":"e7d314c2f1aa48389af15d506ecfbb0d","si":100}' crossorigin="anonymous"></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="89f28ba1d7022bfe88f80f35-|49" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7cd510a94c209277","version":"2023.4.0","r":1,"b":1,"token":"e7d314c2f1aa48389af15d506ecfbb0d","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>

@@ -11,39 +11,27 @@ $date = date('Y-m-d', time());
 $linkDate = date('dmY', time());
 
 
-
-
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_URL, "https://epaper.sangbadpratidin.in/");
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/525.13 (KHTML, like Gecko) Chrome/0.A.B.C Safari/525.13");
+$data = curl_exec($ch);
+curl_close($ch);
 
 
 echo '<div id="crawlinfo"></div>';
 $date = date('Y-m-d', time());
-
-
-$content = file_get_contents("https://samajaepaper.in/epaper/1/73/" . $date . "/1");
-$pageArray = explode("class='map", $content);
-
-
-
+$contentArray = explode('<div class="item">', $data);
 
 $number = 1;
-for ($page = 1; $page < count($pageArray); $page++) {
-    $sections = explode("show_pop('", $pageArray[$page]);
-    for ($sec = 1; $sec < count($sections); $sec++) {
-        $name = explode("','", $sections[$sec])[1];
-        $link = "https://samajaepaper.in/epaperimages/" . $linkDate . "/" . $linkDate . "-md-bh-" . $page . "/" . $name . ".jpg";
-        array_push($images, $link);
-        $filepath = "SMJ_Bhubaneswar"  . "_" . $date . "_" . $number . "_ori.jpg";
-        array_push($imageNameToSave, $filepath);
-        $number++;
-    }
+for ($i = 1; $i < count($contentArray); $i++) {
+    $imagelink = str_replace('&', '&amp;', explode('"', explode('src="', $contentArray[$i])[1])[0]);
+    array_push($images, $imagelink);
+    $filepath = "SBP_Kolkata"  . "_" . $date . "_" . $number . "_ben.jpg";
+    array_push($imageNameToSave, $filepath);
+    $number++;
 }
-
-
-
-
-
-
-
 
 
 
@@ -150,7 +138,7 @@ $num_images = count($images);
     </div>
     <div>
         <input type="text" id="filter" name="filter" class="filter-input">
-        <a href="javascript:void(0)" onclick="clear_smj_folder()" class='btn btn-primary' style="float:right;">Clear smj Folder</a>
+        <a href="javascript:void(0)" onclick="clear_sbp_folder()" class='btn btn-primary' style="float:right;">Clear sbp Folder</a>
     </div>
     <div style="margin-bottom: 20px;"></div>
 
@@ -169,14 +157,14 @@ $num_images = count($images);
         }
         ?>
     </div>
-    <form method="POST" action="display_smj_pages.php" id="submit_form">
+    <form method="POST" action="display_sbp_pages.php" id="submit_form">
         <input type="hidden" name="image_url" id="image_url">
         <input type="hidden" name="file_name" id="file_name">
         <input type="hidden" name="after_edit_cropped_imge" id="after_edit_cropped_imge">
         <input type="hidden" name="images" value="<?php echo implode(',', $images); ?>">
         <input type="hidden" name="imageNameToSave" value="<?php echo implode(',', $imageNameToSave); ?>">
         <input type="hidden" name="action" id="action">
-        <input type="hidden" name="paper" id="paper" value='smj'>
+        <input type="hidden" name="paper" id="paper" value='sbp'>
         <button type="submit" style="display:none;"></button>
     </form>
     <div id="loader"></div>
@@ -218,8 +206,8 @@ $num_images = count($images);
         });
 
         // claer jargan image folder
-        function clear_smj_folder() {
-            $("#action").val('Clear_smj_image_folder');
+        function clear_sbp_folder() {
+            $("#action").val('Clear_sbp_image_folder');
             var formData = $("#submit_form").serialize();
             $.ajax({
                 type: 'POST',
@@ -305,7 +293,7 @@ $num_images = count($images);
                 },
                 success: function(response) {
                     $("#loader").fadeOut();
-                    var image_url = './smj_images/' + filename;
+                    var image_url = './sbp_images/' + filename;
                     var file_name = filename;
                     cropped_images(image_url, file_name);
                 },

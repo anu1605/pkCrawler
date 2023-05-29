@@ -14,6 +14,9 @@ $date = date('Ymd', time());
 $filenamedate = date('Y-m-d', time());
 $cityArray  =  array("Mumbai", "Ahmednagar", "Akola", "Aurangabad", "Goa", "Jalgaon", "Kolhapur", "Nagpur", "Nashik", "Pune", "solapur");
 $citycode = array("MULK", "ANLK", "AKLK", "AULK", "GALK", "JLLK", "KOLK", "NPLK", "NSLK", "PULK", "SOLK");
+
+
+$t1 = time();
 for ($edition = 0; $edition < count($cityArray); $edition++) {
     for ($page = 1; $page < 20; $page++) {
         $t1 = time();
@@ -30,15 +33,22 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
             $number++;
             if (empty($imagelink))
                 break;
+
+            $t2 = time();
             $image = file_get_contents($imagelink);
+            echo "fetching time = " . (time() - $t2) . "sec";
+            echo "<br>";
+
             $handle = fopen($filepath, "w");
             fwrite($handle, $image);
             fclose($handle);
 
+            $t3 = time();
+
             try {
-
-
                 $text = (new TesseractOCR($filepath))->run();
+                echo "processing time = " . (time() - $t3) . "sec";
+                echo "<br>";
 
 
 
@@ -56,14 +66,16 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                     // echo 'Identified as a classifieds page.....<br>';
                 }
             } catch (Exception $e) {
+                echo "processing time = " . (time() - $t3) . "sec";
+                echo "<br>";
                 echo "Does not seem to be a classifieds page..... deleting";
                 echo "<br>";
                 unlink($filepath);
             }
-            $timetaken = time() - $t1;
-            echo round($timetaken, 2) . "sec <br>";
             ob_flush();
             flush();
         }
     }
 }
+echo "<br>";
+echo "total time" . ((time() - $t1) / 60) . "min";

@@ -27,7 +27,7 @@ for ($pageNumber = 1; $pageNumber <= 20; $pageNumber++) {
         file_put_contents(dirname(__FILE__, 1) . "/test.txt", $content);
         for ($page = 1; $page < count($linkArray); $page++) {
             $pageName = explode("',", $linkArray[$page])[0];
-            // echo "https://niyomiyabarta.com/epaper/17052023/images/p" . $pageNumber . "/" . $pageName . PHP_EOL;
+            // echo "https://niyomiyabarta.com/epaper/17052023/images/p" . $pageNumber . "/" . $pageName . "<br>";
             $imageLink =  "https://niyomiyabarta.com/epaper/" . $linkdate . "/images/p" . $pageNumber . "/" . $pageName;
 
 
@@ -35,15 +35,23 @@ for ($pageNumber = 1; $pageNumber <= 20; $pageNumber++) {
 
             // $filepath = dirname(__FILE__) . "/images/NYB_Guwahati_" . $date . "_" . $number . "_admin_hin.jpg";
             $number++;
+
+            $t2 = time();
             $image = file_get_contents($imageLink);
+            echo "fetching time= " . (time() - $t2) . "sec";
+            echo "<br>";
 
             $handle = fopen($filepath, "w");
             fwrite($handle, $image);
             fclose($handle);
 
+            $t3 = time();
             try {
 
                 $text = (new TesseractOCR($filepath))->run();
+                echo "processing time= " . (time() - $t3) . "sec";
+                echo "<br>";
+
                 $matches = array();
                 preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
                 $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
@@ -58,6 +66,8 @@ for ($pageNumber = 1; $pageNumber <= 20; $pageNumber++) {
                     // echo 'Identified as a classifieds page..... <br>';
                 }
             } catch (Exception $e) {
+                echo "processing time= " . (time() - $t3) . "sec";
+                echo "<br>";
                 unlink($filepath);
                 echo "Does not seem to be a classifieds page..... deleting";
                 echo "<br>";
@@ -69,5 +79,5 @@ for ($pageNumber = 1; $pageNumber <= 20; $pageNumber++) {
     } else break;
 }
 
-echo PHP_EOL;
-echo (time() - $t1) / 60 . " min<br>";
+echo "<br>";
+echo ((time() - $t1) / 60) . " min<br>";

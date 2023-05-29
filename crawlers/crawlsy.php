@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -10,41 +11,61 @@ require  "/var/www/d78236gbe27823/vendor/autoload.php";
 use thiagoalessio\TesseractOCR\TesseractOCR;
 
 
-$number = 1;
-$date = date('d-M-Y', time());
+
+$date = date('Ymd', time());
 $filenamedate = date('Y-m-d', time());
-$cityArray  =  array("mumbai", "nagpur", "nashik", "pune");
+$cityArray  =  array("Mangalore", "Davangere", "Kalaburgi", "Hubli", "Bangalore");
+$citycode = array("MANG", "DAVN", "KALB", "HUB",  "BANG",);
 
-
-
+$t1 = time();
 for ($edition = 0; $edition < count($cityArray); $edition++) {
+    $number = 1;
     for ($page = 1; $page < 20; $page++) {
+        $testcontent  = file_get_contents("http://epaper.samyukthakarnataka.com/articlepage.php?articleid=SMYK_" . $citycode[$edition] . "_" . $date . "_" . sprintf("%02d", $page) . "_1");
+        $testimagelink = explode('"', explode('id="artimg" src="', $testcontent)[1])[0];
+
+        $testimageInfo = getimagesize($testimagelink);
+
+
+        if (!$testimageInfo)
+            break;
 
         for ($section = 1; $section < 100; $section++) {
-            $link =   "https://epaper.navarashtra.com/article-" . $date . "-" . $cityArray[$edition] . "-edition/" . $page . "-" . $section . "/";
+            $link =   "http://epaper.samyukthakarnataka.com/articlepage.php?articleid=SMYK_" . $citycode[$edition] . "_" . $date . "_" . sprintf("%02d", $page) . "_" . $section;
             $content = file_get_contents($link);
 
-            $imagelink = explode('"', explode("id='ImageArticle'  src=", $content)[1])[1];
+
+            $imagelink = explode('"', explode('id="artimg" src="', $content)[1])[0];
 
             $imageInfo = getimagesize($imagelink);
+
 
             if (!$imageInfo)
                 break;
 
 
-            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/NVR_" .  ucwords($cityArray[$edition]) . "_" . $filenamedate . "_" . $number . "_admin_mar.jpg";
+            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/SY_" .  $cityArray[$edition] . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
 
 
-            // $filepath = dirname(__FILE__) . "/images/NVR_" . ucwords($cityArray[$edition]) . "_" . $filenamedate . "_" . $number . "_admin_mar.jpg";
+            // $filepath = dirname(__FILE__) . "/images/SY_" . $cityArray[$edition] . "_" . $filenamedate . "_" . $number . "_admin_kan.jpg";
             $number++;
+
+            $t2 = time();
             $image = file_get_contents($imagelink);
+            echo "fetching time=" . (time() - $t2) . "sec";
+            echo "<br>";
+
+
             $handle = fopen($filepath, "w");
             fwrite($handle, $image);
             fclose($handle);
 
+            $t3 = time();
             try {
 
                 $text = (new TesseractOCR($filepath))->run();
+                echo "processing time=" . (time() - $t3) . "sec";
+                echo "<br>";
 
 
                 $matches = array();
@@ -61,6 +82,8 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
                     // echo 'Identified as a classifieds page..... <br>';
                 }
             } catch (Exception $e) {
+                echo "processing time=" . (time() - $t3) . "sec";
+                echo "<br>";
                 echo "Does not seem to be a classifieds page..... deleting";
                 echo "<br>";
                 unlink($filepath);
@@ -70,3 +93,6 @@ for ($edition = 0; $edition < count($cityArray); $edition++) {
         }
     }
 }
+
+echo "<br>";
+echo "total time= " . ((time() - $t1) / 60) . "min";

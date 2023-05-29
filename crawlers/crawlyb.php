@@ -10,36 +10,43 @@ use thiagoalessio\TesseractOCR\TesseractOCR;
 
 
 $number = 1;
-$content = file_get_contents("http://karnatakamalla.com/");
-$getdate = explode('&pn', explode('KARMAL_MAI&date=', $content)[1])[0];
-$time = strtotime($getdate);
-$kmdate = date('Ymd', $time);
-$kmfilenamedate = date('Y-m-d', $time);
+$date = date('Ymd', time());
+$filenamedate = date('Y-m-d', time());
 
+$t1 = time();
 for ($page = 1; $page < 20; $page++) {
+
     for ($section = 1; $section < 30; $section++) {
-        $content = file_get_contents("http://karnatakamalla.com/articlepage.php?articleid=KARMAL_MAI_" . $kmdate . "_" .  $page . "_" . $section);
+        $content = file_get_contents("http://yeshobhumi.com/articlepage.php?articleid=YBHUMI_MAI_" . $date . "_" .  $page . "_" . $section);
         if ($content) {
             $imagelink = explode('"', explode('id="artimg"  src="', $content)[1])[0];
             $imageInfo = getimagesize($imagelink);
             if (!$imageInfo)
                 break;
 
-            $width = $imageInfo[0];
-            $height = $imageInfo[1];
-            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/KM_Karnataka" . "_" . $kmfilenamedate . "_" . $number . "_admin_kan.jpg";
 
-            // $filepath = dirname(__FILE__) . "/images/KM_Karnataka" . "_" . $kmfilenamedate . "_" . $number . "_admin_kan.jpg";
+            $filepath = "/var/www/d78236gbe27823/marketing/Whatsapp2/images/YB_Mumbai" . "_" . $filenamedate . "_" . $number . "_admin_hin.jpg";
+
+            // $filepath = dirname(__FILE__) . "/images/YB_Mumbai" . "_" . $filenamedate . "_" . $number . "_admin_hin.jpg";
             $number++;
+
+            $t2 = time();
             $image = file_get_contents($imagelink);
+            echo "fetching time=" . (time() - $t2) . "sec";
+            echo "<br>";
 
             $handle = fopen($filepath, "w");
             fwrite($handle, $image);
             fclose($handle);
 
+            $t3 = time();
             try {
 
                 $text = (new TesseractOCR($filepath))->run();
+                echo "processing time=" . (time() - $t3) . "sec";
+                echo "<br>";
+
+
                 $matches = array();
                 preg_match_all('/\+91[0-9]{10}|[0]?[6-9][0-9]{4}[\s]?[-]?[0-9]{5}/', $text, $matches);
                 $matches = str_replace("+91", "", str_replace("\n", "", str_replace("-", "", str_replace(" ", "", $matches[0]))));
@@ -54,13 +61,16 @@ for ($page = 1; $page < 20; $page++) {
                     // echo 'Identified as a classifieds page..... <br>';
                 }
             } catch (Exception $e) {
-                unlink($filepath);
+                echo "processing time=" . (time() - $t3) . "sec";
+                echo "<br>";
                 echo "Does not seem to be a classifieds page..... deleting";
                 echo "<br>";
+                unlink($filepath);
             }
-
             ob_flush();
             flush();
         }
     }
 }
+echo "<br>";
+echo "total time = " . ((time() - $t1) / 60) . "min";
