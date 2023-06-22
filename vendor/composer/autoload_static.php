@@ -18,6 +18,10 @@ class ComposerStaticInitabea5a8614df1dc1721ee982b1f4ea25
         array (
             'thiagoalessio\\TesseractOCR\\' => 27,
         ),
+        'S' => 
+        array (
+            'Spatie\\PdfToImage\\' => 18,
+        ),
         'R' => 
         array (
             'Rize\\' => 5,
@@ -74,6 +78,10 @@ class ComposerStaticInitabea5a8614df1dc1721ee982b1f4ea25
         array (
             0 => __DIR__ . '/..' . '/thiagoalessio/tesseract_ocr/src',
         ),
+        'Spatie\\PdfToImage\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/pdf-to-image/src',
+        ),
         'Rize\\' => 
         array (
             0 => __DIR__ . '/..' . '/rize/uri-template/src/Rize',
@@ -84,8 +92,8 @@ class ComposerStaticInitabea5a8614df1dc1721ee982b1f4ea25
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (

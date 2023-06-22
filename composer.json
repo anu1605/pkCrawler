@@ -1,6 +1,7 @@
 {
     "require": {
         "thiagoalessio/tesseract_ocr": "^2.12",
-        "google/cloud-translate": "^1.13"
+        "google/cloud-translate": "^1.13",
+        "spatie/pdf-to-image": "^2.2"
     }
 }
