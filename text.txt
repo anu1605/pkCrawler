@@ -20,7 +20,7 @@ SBP (ben) - sangbad pratidin(Done)
 SKE(eng) - sikkim express
 SKL(mar) - sakal(https://epaper-sakal-application.s3.ap-south-1.amazonaws.com/EpaperData/Sakal/Akola/2023/05/22/Main/Sakal_Akola_2023_05_22_Main_DA_002/S/0.jpg) 403(forbidden)
 SMJ (ori) - Samaja(Done)
-SOM (kan) - Star of Mysore
+SOM (kan) - Star of Mysore(done)
 SY (kan) - Samyuktha(Done)
 TB (eng) - the tribune
 TH (eng) - the hindu(incomplete html content)

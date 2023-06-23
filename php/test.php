@@ -1,6 +1,6 @@
 <?php
 
-$data = file_get_contents("https://dainikagradoot.in/blog/2023/06/10/dainik-agradoot-print-edition-10-june2023/");
+$data = file_get_contents("http://epaper.heraldgoa.in/articlepage.php?articleid=OHERALDO_GOA_20230622_2_4");
 // $ch = curl_init();
 // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 // curl_setopt($ch, CURLOPT_URL, "https://www.bhaskar.com/epaper");
